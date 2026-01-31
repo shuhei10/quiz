@@ -1,4 +1,4 @@
-import type { Grade, Question } from "../types/quiz";
+import type { Grade, Question } from "../types/types";
 import { QUESTIONS } from "../data/questions";
 
 export async function loadQuestionsByGrade(grade: Grade): Promise<Question[]> {

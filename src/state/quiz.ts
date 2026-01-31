@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Question, AppScreen } from "../types/quiz";
+import type { Question, AppScreen } from "../types/types";
 
 type AnswerMap = Record<string, string>; // { [questionId]: choiceId }
 

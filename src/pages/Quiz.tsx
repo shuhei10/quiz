@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Question } from "../types/quiz";
+import type { Question } from "../types/types";
 
 type Props = {
   quiz: Question[];
@@ -8,7 +8,9 @@ type Props = {
 
 export default function Quiz({ quiz, onFinish }: Props) {
   const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<number | null>(null);
+
+  // ✅ 選択は choiceId(string) で保持
+  const [selected, setSelected] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
 
   const [correctCount, setCorrectCount] = useState(0);
@@ -16,7 +18,6 @@ export default function Quiz({ quiz, onFinish }: Props) {
   const [correctIds, setCorrectIds] = useState<string[]>([]);
 
   const q = quiz[index];
-  const qType = q?.type ?? "choice";
 
   const progress = useMemo(() => {
     const total = quiz.length || 1;
@@ -28,7 +29,11 @@ export default function Quiz({ quiz, onFinish }: Props) {
       <div className="screen">
         <div className="card">
           <div className="title">問題がありません</div>
-          <button className="primary" onClick={() => onFinish({ correct: 0, wrongIds: [], correctIds: [] })}>
+          <button
+            className="primary"
+            type="button"
+            onClick={() => onFinish({ correct: 0, wrongIds: [], correctIds: [] })}
+          >
             戻る
           </button>
         </div>
@@ -36,14 +41,15 @@ export default function Quiz({ quiz, onFinish }: Props) {
     );
   }
 
-  const isCorrect = selected === q.answerIndex;
+  const isCorrect = !!selected && selected === q.answerId;
 
-  const choose = (i: number) => {
+  const choose = (choiceId: string) => {
     if (showAnswer) return;
-    setSelected(i);
+
+    setSelected(choiceId);
     setShowAnswer(true);
 
-    if (i === q.answerIndex) {
+    if (choiceId === q.answerId) {
       setCorrectCount((c) => c + 1);
       setCorrectIds((ids) => [...ids, q.id]);
     } else {
@@ -74,38 +80,38 @@ export default function Quiz({ quiz, onFinish }: Props) {
           </div>
         </div>
 
-        {qType === "blank_choice" && <div className="badge">穴埋め</div>}
-        <div className="question">{q.text}</div>
+        <div className="question">{q.title}</div>
 
         <div className="choices">
           {q.choices.map((c, i) => {
-            const chosen = selected === i;
-            const right = showAnswer && i === q.answerIndex;
-            const wrong = showAnswer && chosen && i !== q.answerIndex;
+            const chosen = selected === c.id;
+            const right = showAnswer && c.id === q.answerId;
+            const wrong = showAnswer && chosen && c.id !== q.answerId;
 
             return (
               <button
-                key={i}
+                key={c.id}
+                type="button"
                 className={`choice ${chosen ? "choiceChosen" : ""} ${right ? "choiceRight" : ""} ${
                   wrong ? "choiceWrong" : ""
                 }`}
-                onClick={() => choose(i)}
+                onClick={() => choose(c.id)}
               >
                 <span className="choiceIndex">{i + 1}</span>
-                <span className="choiceText">{c}</span>
+                <span className="choiceText">{c.text}</span>
               </button>
             );
           })}
         </div>
 
         {showAnswer && (
-          <div className={`answerBox ${isCorrect ? "ok" : "ng"}`}>
-            <div className="answerTitle">{isCorrect ? "正解！" : "不正解"}</div>
-            <div className="answerText">{q.explanation}</div>
-          </div>
-        )}
+  <div className={`answerBox ${isCorrect ? "ok" : "ng"}`}>
+    <div className="answerTitle">{isCorrect ? "正解！" : "不正解"}</div>
+    {q.explanation && <div className="answerText">{q.explanation}</div>}
+  </div>
+)}
 
-        <button className="primary" onClick={next} disabled={!showAnswer}>
+        <button className="primary" type="button" onClick={next} disabled={!showAnswer}>
           {index === quiz.length - 1 ? "結果へ" : "次へ"}
         </button>
       </div>

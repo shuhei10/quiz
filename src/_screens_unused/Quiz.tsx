@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import type { Mode, Question } from "../types/quiz";
+import type { Mode, Question } from "../types/types";
 
 type FinishPayload = {
   correct: number;

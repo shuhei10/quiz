@@ -1,4 +1,4 @@
-import type { Mode } from "../types/quiz";
+import type { Mode } from "../types/types";
 
 type Props = {
   total: number;

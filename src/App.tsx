@@ -1,12 +1,12 @@
 import { useState } from "react";
-import type { AppScreen, Grade, Mode, Question } from "./types/quiz";
+import type { AppScreen, Grade, Mode, Question } from "./types/types";
 import { loadQuestionsByGradeAndChapter } from "./lib/questionsLoader";
 import { pickRandomQuestions } from "./lib/quizUtils";
 import { addWrongIds, loadWrongIds, removeWrongIds } from "./lib/storage";
 
-import Home from "./screens/Home";
-import Quiz from "./screens/Quiz";
-import Result from "./screens/Result";
+import Home from "./_screens_unused/Home";
+import Quiz from "./_screens_unused/Quiz";
+import Result from "./_screens_unused/Result";
 
 export default function App() {
   const [screen, setScreen] = useState<AppScreen>("home");

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Grade, Mode } from "../types/quiz";
+import type { Grade, Mode } from "../types/types";
 import { getChaptersByGrade } from "../lib/questionsLoader";
 import "./Home.css";
 

@@ -1,4 +1,4 @@
-import type { Grade } from "../types/quiz";
+import type { Grade } from "../types/types";
 
 const key = (grade: Grade, chapter: string) => `wh-quiz-wrong-${grade}-${chapter}`;
 
