@@ -208,7 +208,7 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
               )}
 
               <div>
-                <button onClick={handleNext} style={{ padding: "10px 14px", borderRadius: 10 }}>
+                <button onClick={handleNext} style={{ padding: "16", borderRadius: 10,paddingBottom: `calc(12px + env(safe-area-inset-bottom))`, }}>
                   {index + 1 >= total ? "結果へ" : "次へ"}
                 </button>
               </div>
