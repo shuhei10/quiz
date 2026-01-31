@@ -4,9 +4,9 @@ import { loadQuestionsByGradeAndChapter } from "./lib/questionsLoader";
 import { pickRandomQuestions } from "./lib/quizUtils";
 import { addWrongIds, loadWrongIds, removeWrongIds } from "./lib/storage";
 
-import Home from "./_screens_unused/Home";
-import Quiz from "./_screens_unused/Quiz";
-import Result from "./_screens_unused/Result";
+import Home from "./pages/Home";
+import Quiz from "./pages/Quiz";
+import Result from "./pages/Result";
 
 export default function App() {
   const [screen, setScreen] = useState<AppScreen>("home");
