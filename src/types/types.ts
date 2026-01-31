@@ -1,7 +1,9 @@
 // src/types/types.ts
 export type AppScreen = "home" | "quiz" | "result";
 export type Grade = 2 | 3 | 4;
-export type Mode = "normal" | "review" | "test";
+export type Mode = "normal" | "review";
+
+
 
 export type Choice = {
   id: string;

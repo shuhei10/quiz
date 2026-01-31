@@ -13,9 +13,18 @@ type Props = {
     count: number;
     mode: Mode;
   }) => void;
+
+  // テーマ別復習数
   getReviewCount: (grade: Grade, chapter: string) => number;
+
+  // 総まとめ復習数
+  getReviewCountAll: (grade: Grade) => number;
+
   loading: boolean;
   loadError: string | null;
+
+  // ★ホーム表示時の初期タブ（復習から戻ったらreviewに固定など）
+  initialTab: TabKey;
 };
 
 type TabKey = "practice" | "review" | "test";
@@ -169,11 +178,20 @@ function BottomTabs({
 export default function Home({
   onStart,
   getReviewCount,
+  getReviewCountAll,
   loading,
   loadError,
+  initialTab,
 }: Props) {
   const [grade] = useState<Grade>(4);
-  const [tab, setTab] = useState<TabKey>("practice");
+
+  // ★initialTab を初期値にする（Appから渡される）
+  const [tab, setTab] = useState<TabKey>(initialTab);
+
+  // ★Homeへ戻ってきたときも initialTab を反映（復習から戻ったらreview固定）
+  useEffect(() => {
+    setTab(initialTab);
+  }, [initialTab]);
 
   const [chapters, setChapters] = useState<string[]>([]);
 
@@ -195,7 +213,6 @@ export default function Home({
     };
   }, [grade]);
 
-  const reviewCount = getReviewCount(grade, "");
   const disabled = loading || !!loadError;
 
   /* ===== handlers ===== */
@@ -218,11 +235,22 @@ export default function Home({
     });
   };
 
-  const startReview = () => {
+  const startReviewAll = () => {
+    const allCount = getReviewCountAll(grade);
     onStart({
       grade,
       chapter: "",
-      count: reviewCount,
+      count: allCount,
+      mode: "review",
+    });
+  };
+
+  const startReviewChapter = (chapter: string) => {
+    const cCount = getReviewCount(grade, chapter);
+    onStart({
+      grade,
+      chapter,
+      count: cCount,
       mode: "review",
     });
   };
@@ -230,6 +258,8 @@ export default function Home({
   const resetReview = () => {
     alert("復習リセット処理をここに実装してね（今はダミー）");
   };
+
+  const allReviewCount = getReviewCountAll(grade);
 
   /* ========================= */
 
@@ -294,35 +324,62 @@ export default function Home({
 
       {tab === "review" && (
         <ScreenShell title="復習" subtitle="間違えた問題を復習しよう">
-          {reviewCount === 0 ? (
+          {loadError && <div className="msg msg--error">{loadError}</div>}
+          {loading && <div className="msg">読み込み中...</div>}
+
+          {/* 総まとめ */}
+          {allReviewCount === 0 ? (
             <div className="msg">復習する問題がまだありません</div>
           ) : (
             <>
               <div className="reviewBox">
                 <div className="reviewBox__row">
-                  <span className="reviewBox__badge">↩︎</span>
+                  <span className="reviewBox__badge">🧠</span>
                   <span className="reviewBox__text">
-                    間違えた問題：{reviewCount}問
+                    総まとめ：間違えた問題 {allReviewCount}問
                   </span>
                 </div>
               </div>
 
-              <div className="stack">
+              <div className="stack" style={{ marginBottom: 14 }}>
                 <PrimaryButton
-                  label="復習を始める"
+                  label="総まとめで復習を始める"
                   variant="green"
-                  onClick={startReview}
-                  disabled={disabled}
-                />
-                <PrimaryButton
-                  label="間違えた問題をリセット"
-                  variant="red"
-                  onClick={resetReview}
-                  disabled={disabled}
+                  onClick={startReviewAll}
+                  disabled={disabled || allReviewCount === 0}
                 />
               </div>
             </>
           )}
+
+          {/* テーマ別 */}
+          <div className="panel__title">テーマ別に復習</div>
+
+          <div className="stack">
+            {chapters.map((c, idx) => {
+              const cCount = getReviewCount(grade, c);
+              return (
+                <GradientCardButton
+                  key={c}
+                  variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
+                  icon={<span>↻</span>}
+                  title={c}
+                  subtitle={cCount === 0 ? "復習なし" : `間違えた問題：${cCount}問`}
+                  onClick={() => startReviewChapter(c)}
+                  disabled={disabled || cCount === 0}
+                />
+              );
+            })}
+          </div>
+
+          <div className="stack" style={{ marginTop: 14 }}>
+            <PrimaryButton
+              label="間違えた問題をリセット"
+              variant="red"
+              onClick={resetReview}
+              disabled={disabled}
+            />
+          </div>
         </ScreenShell>
       )}
 

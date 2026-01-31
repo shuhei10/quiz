@@ -62,18 +62,30 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
   };
 
   const handleNext = () => {
-    const next = index + 1;
+  const next = index + 1;
 
-    if (next >= total) {
-      const correctIds: string[] = [];
-      const wrongIds: string[] = [];
-      for (const l of logs) (l.isCorrect ? correctIds : wrongIds).push(l.questionId);
-      onFinish({ correct: correctIds.length, wrongIds, correctIds });
-      return;
-    }
+  // ★ 今の1問分のログを必ず集計に含める（取りこぼし防止）
+  const currentLog: AnswerLog | null =
+    answered && current && selectedId
+      ? { questionId: current.id, selectedId, isCorrect }
+      : null;
 
-    setIndex(next);
-  };
+  const mergedLogs =
+    currentLog && !logs.some((l) => l.questionId === currentLog.questionId)
+      ? [...logs, currentLog]
+      : logs;
+
+  if (next >= total) {
+    const correctIds: string[] = [];
+    const wrongIds: string[] = [];
+    for (const l of mergedLogs) (l.isCorrect ? correctIds : wrongIds).push(l.questionId);
+    onFinish({ correct: correctIds.length, wrongIds, correctIds });
+    return;
+  }
+
+  setIndex(next);
+};
+
 
   if (!quiz.length) return <div style={{ padding: 16 }}>問題がありません</div>;
   if (!current) return <div style={{ padding: 16 }}>問題が読み込めませんでした</div>;
