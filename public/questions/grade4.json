@@ -1,0 +1,60 @@
+[
+  {
+    "id": "g4-001",
+    "grade": 4,
+    "type": "choice",
+    "text": "世界遺産の登録基準はいくつ？",
+    "choices": ["8", "10", "12", "15"],
+    "answerIndex": 1,
+    "explanation": "文化遺産(1〜6)＋自然遺産(7〜10)で計10。"
+  },
+  {
+    "id": "g4-002",
+    "grade": 4,
+    "type": "blank_choice",
+    "text": "世界遺産条約が採択されたのは（　）年である。",
+    "choices": ["1954", "1972", "1988", "2001"],
+    "answerIndex": 1,
+    "explanation": "世界遺産条約は1972年に採択。"
+  },
+  {
+  "id": "g4-003",
+  "grade": 4,
+  "type": "blank_choice",
+  "text": "世界遺産が登録されるために必ず必要となる『国や時代を超えて認められる価値』を何というか。",
+  "choices": [
+    "顕著な普遍的価値",
+    "文化的多様性",
+    "歴史的重要価値",
+    "登録基準"
+  ],
+  "answerIndex": 0,
+  "explanation": "世界遺産の最も重要な概念。Outstanding Universal Value（OUV）＝顕著な普遍的価値。"
+},
+{
+  "id": "g4-004",
+  "grade": 4,
+  "type": "blank_choice",
+  "text": "顕著な普遍的価値の英語表記（略称）はどれか。",
+  "choices": ["OUV", "UNESCO", "ICOMOS", "WHS"],
+  "answerIndex": 0,
+  "explanation": "Outstanding Universal Value の略。"
+},
+{
+  "id": "g4-005",
+  "grade": 4,
+  "type": "choice",
+  "text": "世界遺産に登録されるための最重要条件はどれか。",
+  "choices": [
+    "顕著な普遍的価値を有すること",
+    "観光客が多いこと",
+    "国立公園であること",
+    "100年以上の歴史があること"
+  ],
+  "answerIndex": 0,
+  "explanation": "OUV（顕著な普遍的価値）を持つことが絶対条件。"
+}
+
+
+
+]
