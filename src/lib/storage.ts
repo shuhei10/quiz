@@ -79,3 +79,28 @@ export function removeWrongIdsFromAllChapters(grade: Grade, ids: string[]) {
     }
   }
 }
+
+/**
+ * ★指定chapterの復習データを削除（テーマ別リセット）
+ */
+export function clearWrongIds(grade: Grade, chapter: string) {
+  const ch = norm(chapter);
+  if (!ch) return;
+  localStorage.removeItem(key(grade, ch));
+}
+
+/**
+ * ★指定gradeの復習データを全部削除（総まとめリセット）
+ */
+export function clearAllWrongIdsByGrade(grade: Grade) {
+  const prefix = `wh-quiz-wrong-${grade}-`;
+
+  // 先に消すキー一覧を作る（remove中にlengthが変わるのを避ける）
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(prefix)) keysToRemove.push(k);
+  }
+
+  for (const k of keysToRemove) localStorage.removeItem(k);
+}

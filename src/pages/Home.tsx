@@ -3,36 +3,26 @@ import type { Grade, Mode } from "../types/types";
 import { getChaptersByGrade } from "../lib/questionsLoader";
 import "./Home.css";
 
-/* =========================
-   Props
-========================= */
 type Props = {
-  onStart: (opts: {
-    grade: Grade;
-    chapter: string;
-    count: number;
-    mode: Mode;
-  }) => void;
+  onStart: (opts: { grade: Grade; chapter: string; count: number; mode: Mode }) => void;
 
-  // テーマ別復習数
   getReviewCount: (grade: Grade, chapter: string) => number;
-
-  // 総まとめ復習数
   getReviewCountAll: (grade: Grade) => number;
 
   loading: boolean;
   loadError: string | null;
 
-  // ★ホーム表示時の初期タブ（復習から戻ったらreviewに固定など）
   initialTab: TabKey;
+
+  onResetReviewAll: (grade: Grade) => void;
+  onResetReviewChapter: (grade: Grade, chapter: string) => void; // ★追加
+
+  reviewTick: number;
 };
 
 type TabKey = "practice" | "review" | "test";
 type Variant = "blue" | "pink" | "purple" | "green" | "red";
 
-/* =========================
-   UI constants
-========================= */
 const GRAD: Record<Variant, string> = {
   blue: "linear-gradient(90deg,#2E7CF6,#19D3D1)",
   pink: "linear-gradient(90deg,#FF5AA5,#FF2E63)",
@@ -41,9 +31,6 @@ const GRAD: Record<Variant, string> = {
   red: "linear-gradient(90deg,#FF7A3D,#FF3D3D)",
 };
 
-/* =========================
-   UI components
-========================= */
 function ScreenShell({
   title,
   subtitle,
@@ -76,6 +63,7 @@ function GradientCardButton({
   variant = "blue",
   onClick,
   disabled,
+  rightSlot, // ★追加（右上のミニボタンなど）
 }: {
   icon: React.ReactNode;
   title: string;
@@ -83,11 +71,12 @@ function GradientCardButton({
   variant?: Variant;
   onClick?: () => void;
   disabled?: boolean;
+  rightSlot?: React.ReactNode;
 }) {
   return (
     <button
       className="gbtn"
-      style={{ background: GRAD[variant] }}
+      style={{ background: GRAD[variant], position: "relative" }}
       onClick={onClick}
       disabled={disabled}
       type="button"
@@ -100,6 +89,8 @@ function GradientCardButton({
       </span>
 
       <span className="gbtn__arrow">›</span>
+
+      {rightSlot}
     </button>
   );
 }
@@ -133,13 +124,7 @@ function PrimaryButton({
   );
 }
 
-function BottomTabs({
-  active,
-  onChange,
-}: {
-  active: TabKey;
-  onChange: (k: TabKey) => void;
-}) {
+function BottomTabs({ active, onChange }: { active: TabKey; onChange: (k: TabKey) => void }) {
   return (
     <nav className="tabs">
       <button
@@ -172,9 +157,6 @@ function BottomTabs({
   );
 }
 
-/* =========================
-   Home
-========================= */
 export default function Home({
   onStart,
   getReviewCount,
@@ -182,16 +164,14 @@ export default function Home({
   loading,
   loadError,
   initialTab,
+  onResetReviewAll,
+  onResetReviewChapter,
+  reviewTick,
 }: Props) {
   const [grade] = useState<Grade>(4);
 
-  // ★initialTab を初期値にする（Appから渡される）
   const [tab, setTab] = useState<TabKey>(initialTab);
-
-  // ★Homeへ戻ってきたときも initialTab を反映（復習から戻ったらreview固定）
-  useEffect(() => {
-    setTab(initialTab);
-  }, [initialTab]);
+  useEffect(() => setTab(initialTab), [initialTab]);
 
   const [chapters, setChapters] = useState<string[]>([]);
 
@@ -215,61 +195,33 @@ export default function Home({
 
   const disabled = loading || !!loadError;
 
-  /* ===== handlers ===== */
-
   const startPractice = (chapter: string) => {
-    onStart({
-      grade,
-      chapter,
-      count: 10,
-      mode: "normal",
-    });
+    onStart({ grade, chapter, count: 10, mode: "normal" });
   };
 
   const startTest = (count: number) => {
-    onStart({
-      grade,
-      chapter: "",
-      count,
-      mode: "normal",
-    });
+    onStart({ grade, chapter: "", count, mode: "normal" });
   };
 
   const startReviewAll = () => {
     const allCount = getReviewCountAll(grade);
-    onStart({
-      grade,
-      chapter: "",
-      count: allCount,
-      mode: "review",
-    });
+    onStart({ grade, chapter: "", count: allCount, mode: "review" });
   };
 
   const startReviewChapter = (chapter: string) => {
     const cCount = getReviewCount(grade, chapter);
-    onStart({
-      grade,
-      chapter,
-      count: cCount,
-      mode: "review",
-    });
+    onStart({ grade, chapter, count: cCount, mode: "review" });
   };
 
-  const resetReview = () => {
-    alert("復習リセット処理をここに実装してね（今はダミー）");
-  };
+  const resetReviewAll = () => onResetReviewAll(grade);
 
+  void reviewTick; // 表示更新トリガ
   const allReviewCount = getReviewCountAll(grade);
-
-  /* ========================= */
 
   return (
     <>
       {tab === "practice" && (
-        <ScreenShell
-          title="世界遺産検定4級クイズ"
-          subtitle="知識を深めて、世界の宝を発見しよう"
-        >
+        <ScreenShell title="世界遺産検定4級クイズ" subtitle="知識を深めて、世界の宝を発見しよう">
           <div className="panel__title">テーマを選んで開始</div>
 
           {loadError && <div className="msg msg--error">{loadError}</div>}
@@ -335,9 +287,7 @@ export default function Home({
               <div className="reviewBox">
                 <div className="reviewBox__row">
                   <span className="reviewBox__badge">🧠</span>
-                  <span className="reviewBox__text">
-                    総まとめ：間違えた問題 {allReviewCount}問
-                  </span>
+                  <span className="reviewBox__text">総まとめ：間違えた問題 {allReviewCount}問</span>
                 </div>
               </div>
 
@@ -358,6 +308,8 @@ export default function Home({
           <div className="stack">
             {chapters.map((c, idx) => {
               const cCount = getReviewCount(grade, c);
+              const canReset = cCount > 0;
+
               return (
                 <GradientCardButton
                   key={c}
@@ -367,16 +319,44 @@ export default function Home({
                   subtitle={cCount === 0 ? "復習なし" : `間違えた問題：${cCount}問`}
                   onClick={() => startReviewChapter(c)}
                   disabled={disabled || cCount === 0}
+                  rightSlot={
+                    <button
+                      type="button"
+                      aria-label={`${c} をリセット`}
+                      onClick={(e) => {
+                        e.stopPropagation(); // ★カードの復習開始を防ぐ
+                        onResetReviewChapter(grade, c);
+                      }}
+                      disabled={disabled || !canReset}
+                      style={{
+                        position: "absolute",
+                        right: 12,
+                        top: 12,
+                        width: 44,
+                        height: 44,
+                        borderRadius: 14,
+                        border: "1px solid rgba(255,255,255,.35)",
+                        background: "rgba(0,0,0,.18)",
+                        color: "#fff",
+                        display: "grid",
+                        placeItems: "center",
+                        cursor: disabled || !canReset ? "not-allowed" : "pointer",
+                      }}
+                    >
+                      🗑
+                    </button>
+                  }
                 />
               );
             })}
           </div>
 
+          {/* 全リセット */}
           <div className="stack" style={{ marginTop: 14 }}>
             <PrimaryButton
-              label="間違えた問題をリセット"
+              label="間違えた問題をリセット（全テーマ）"
               variant="red"
-              onClick={resetReview}
+              onClick={resetReviewAll}
               disabled={disabled}
             />
           </div>

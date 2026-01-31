@@ -8,13 +8,14 @@ import {
   removeWrongIds,
   loadAllWrongIdsByGrade,
   removeWrongIdsFromAllChapters,
+  clearAllWrongIdsByGrade,
+  clearWrongIds, // ★追加
 } from "./lib/storage";
 
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 
-// Home のタブ型（Home.tsx と揃える）
 type HomeTab = "practice" | "review" | "test";
 
 export default function App() {
@@ -32,14 +33,14 @@ export default function App() {
   const [mode, setMode] = useState<Mode>("normal");
   const [reviewCompleted, setReviewCompleted] = useState(false);
 
-  // ★ホームへ戻ったときに表示したいタブ（復習ならreviewのまま等）
   const [homeTab, setHomeTab] = useState<HomeTab>("practice");
 
-  // ★テーマ別復習数
+  // ★復習データが変わったことをHomeに伝える（再描画トリガ）
+  const [reviewTick, setReviewTick] = useState(0);
+
   const getReviewCount = (grade: Grade, chapter: string) =>
     loadWrongIds(grade, chapter.trim()).length;
 
-  // ★総まとめ復習数
   const getReviewCountAll = (grade: Grade) => loadAllWrongIdsByGrade(grade).length;
 
   const start = async (opts: { grade: Grade; chapter: string; count: number; mode: Mode }) => {
@@ -54,7 +55,6 @@ export default function App() {
       setMode(opts.mode);
       setReviewCompleted(false);
 
-      // ★どのタブから開始したかを記憶（復習開始ならreviewへ戻す）
       setHomeTab(opts.mode === "review" ? "review" : "practice");
 
       const all: Question[] = await loadQuestionsByGradeAndChapter(opts.grade, ch);
@@ -63,11 +63,9 @@ export default function App() {
 
       if (opts.mode === "review") {
         if (ch) {
-          // テーマ別復習
           const wrongSet = new Set(loadWrongIds(opts.grade, ch));
           pool = all.filter((q) => wrongSet.has(q.id));
         } else {
-          // 総まとめ復習（全テーマ横断）
           const wrongSet = new Set(loadAllWrongIdsByGrade(opts.grade));
           pool = all.filter((q) => wrongSet.has(q.id));
         }
@@ -90,36 +88,58 @@ export default function App() {
     const ch = selectedChapter.trim();
 
     if (mode === "review") {
-      // 復習モード：正解した分を弱点リストから削除
       if (ch) {
-        // テーマ別復習
         removeWrongIds(selectedGrade, ch, r.correctIds);
         const after = loadWrongIds(selectedGrade, ch);
         setReviewCompleted(after.length === 0);
       } else {
-        // 総まとめ復習
         removeWrongIdsFromAllChapters(selectedGrade, r.correctIds);
         const afterAll = loadAllWrongIdsByGrade(selectedGrade);
         setReviewCompleted(afterAll.length === 0);
       }
 
-      // ★復習終了後も、ホームでは復習タブのままにする
       setHomeTab("review");
+      setReviewTick((v) => v + 1);
     } else {
-      // 通常モード：間違えた分を弱点リストへ追加（chapter必須）
       addWrongIds(selectedGrade, ch, r.wrongIds);
       setReviewCompleted(false);
 
-      // ★通常は問題演習へ戻す
       setHomeTab("practice");
+      setReviewTick((v) => v + 1);
     }
 
     setResult({ total: quiz.length, correct: r.correct, wrongIds: r.wrongIds });
     setScreen("result");
   };
 
+  // ★総まとめリセット
+  const resetReviewAll = (grade: Grade) => {
+    const ok = window.confirm("間違えた問題をすべてリセットします。よろしいですか？");
+    if (!ok) return;
+
+    clearAllWrongIdsByGrade(grade);
+
+    setReviewCompleted(false);
+    setHomeTab("review");
+    setReviewTick((v) => v + 1);
+  };
+
+  // ★テーマ別リセット
+  const resetReviewChapter = (grade: Grade, chapter: string) => {
+    const ch = chapter.trim();
+    if (!ch) return;
+
+    const ok = window.confirm(`「${ch}」の間違えた問題をリセットします。よろしいですか？`);
+    if (!ok) return;
+
+    clearWrongIds(grade, ch);
+
+    setReviewCompleted(false);
+    setHomeTab("review");
+    setReviewTick((v) => v + 1);
+  };
+
   const goHome = () => {
-    // ★押下時点の mode を尊重（念押し）
     if (mode === "review") setHomeTab("review");
     setScreen("home");
     setQuiz([]);
@@ -150,6 +170,9 @@ export default function App() {
       loading={loading}
       loadError={loadError}
       initialTab={homeTab}
+      onResetReviewAll={resetReviewAll}
+      onResetReviewChapter={resetReviewChapter}
+      reviewTick={reviewTick}
     />
   );
 }
