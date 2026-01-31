@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Grade } from "../types";
+import type { Grade } from "../types/quiz";
 
 type Props = {
   onStart: (opts: { grade: Grade; count: number; mode: "normal" | "review" }) => void | Promise<void>;

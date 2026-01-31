@@ -1,4 +1,4 @@
-import type { Grade, Question, QuestionType } from "../types";
+import type { Grade, Question, QuestionType } from "../types/quiz";
 
 export async function loadQuestionsByGrade(grade: Grade): Promise<Question[]> {
   const res = await fetch(`/questions/grade${grade}.json`, { cache: "no-store" });

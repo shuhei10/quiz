@@ -1,0 +1,14 @@
+{
+  "4": [
+    { "id": "basics", "name": "基礎用語" },
+    { "id": "treaty", "name": "条約・機関" },
+    { "id": "criteria", "name": "登録基準" },
+    { "id": "japan", "name": "日本の世界遺産" }
+  ],
+  "3": [
+    { "id": "europe", "name": "ヨーロッパ" }
+  ],
+  "2": [
+    { "id": "asia", "name": "アジア" }
+  ]
+}

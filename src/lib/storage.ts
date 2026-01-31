@@ -1,4 +1,4 @@
-import type { Grade } from "../types";
+import type { Grade } from "../types/quiz";
 
 function keyWrong(grade: Grade) {
   return `wh_quiz_wrong_ids_grade_${grade}_v1`;

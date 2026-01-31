@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Question } from "../types";
+import type { Question } from "../types/quiz";
 
 type Props = {
   quiz: Question[];
@@ -74,9 +74,7 @@ export default function Quiz({ quiz, onFinish }: Props) {
           </div>
         </div>
 
-              {qType === "blank_choice" && <div className="badge">穴埋め</div>}
-              {q.image && (<img src={q.image} alt="" className="qimg" loading="lazy"/>)}
-
+        {qType === "blank_choice" && <div className="badge">穴埋め</div>}
         <div className="question">{q.text}</div>
 
         <div className="choices">
