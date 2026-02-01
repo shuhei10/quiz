@@ -6,10 +6,19 @@
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* 画面全体の左右余白と読みやすさ */
+/* ===== 画面全体を固定枠にする ===== */
 .screen {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    /* ここで左右の余白を管理 */
     padding: var(--sp-pad);
-    padding-bottom: calc(88px + env(safe-area-inset-bottom)); /* 下タブ分 + safe area */
+    padding-bottom: calc(var(--sp-pad) + env(safe-area-inset-bottom)); /* タブ分はscroll側で確保する */
+    background: #f6f7fb;
+
+    /* 重要：全体は伸ばさず、内側だけスクロールさせる */
+    overflow: hidden;
 }
 
 /* heroの詰まり感を改善 */
@@ -29,14 +38,20 @@
     margin-top: 8px;
 }
 
-/* panelをカードっぽく、幅広でも読みやすく */
 .panel {
     margin-top: 12px;
     border-radius: 20px;
     padding: 14px;
     box-shadow: var(--shadow);
-}
 
+    /* 追加：panelが伸びてスクロール領域になる */
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    /* 下タブに隠れないように、panelの中に余白を持たせる */
+    padding-bottom: calc(14px + 88px + env(safe-area-inset-bottom));
+}
 /* 縦スタックの間隔を広げて“タップの余裕”を作る */
 .stack {
     display: grid;
@@ -144,4 +159,11 @@
 
 .tabs__item.is-active .tabs__label {
     opacity: 1;
+}
+.settings {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-left: auto;
+    margin-bottom: 8px;
 }
