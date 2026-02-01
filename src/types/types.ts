@@ -22,4 +22,6 @@ export type Question = {
 
   explanation?: string;
   explanationEn?: string;
+  image?: string;
+  imageAlt?: string; 
 };

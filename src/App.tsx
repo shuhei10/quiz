@@ -146,8 +146,9 @@ export default function App() {
   };
 
   if (screen === "quiz") {
-    return <Quiz quiz={quiz} mode={mode} onFinish={finish} />;
-  }
+  return <Quiz quiz={quiz} mode={mode} onFinish={finish} onHome={goHome} />;
+}
+
 
   if (screen === "result" && result) {
     return (

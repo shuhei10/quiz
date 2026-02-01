@@ -11,6 +11,7 @@ type Props = {
   quiz: Question[];
   mode: Mode;
   onFinish: (r: FinishPayload) => void;
+  onHome: () => void;
 };
 
 type AnswerLog = {
@@ -19,7 +20,7 @@ type AnswerLog = {
   isCorrect: boolean;
 };
 
-export default function Quiz({ quiz, mode, onFinish }: Props) {
+export default function Quiz({ quiz, mode, onFinish, onHome }: Props) {
   const [index, setIndex] = useState(0);
   const current = quiz[index];
 
@@ -29,6 +30,12 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
 
   const total = quiz.length;
   const remaining = total - (index + 1);
+
+  const handleHome = () => {
+    const ok = window.confirm("途中までの解答はリセットされます。ホームに戻りますか？");
+    if (!ok) return;
+    onHome();
+  };
 
   useEffect(() => {
     // 次の問題に行ったら回答状態をリセット
@@ -55,56 +62,101 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
     setSelectedId(choiceId);
     setAnswered(true);
 
-    setLogs((prev) => [
-      ...prev,
-      { questionId: current.id, selectedId: choiceId, isCorrect: ok },
-    ]);
+    setLogs((prev) => [...prev, { questionId: current.id, selectedId: choiceId, isCorrect: ok }]);
   };
 
   const handleNext = () => {
-  const next = index + 1;
+    const next = index + 1;
 
-  // ★ 今の1問分のログを必ず集計に含める（取りこぼし防止）
-  const currentLog: AnswerLog | null =
-    answered && current && selectedId
-      ? { questionId: current.id, selectedId, isCorrect }
-      : null;
+    // ★ 今の1問分のログを必ず集計に含める（取りこぼし防止）
+    const currentLog: AnswerLog | null =
+      answered && current && selectedId ? { questionId: current.id, selectedId, isCorrect } : null;
 
-  const mergedLogs =
-    currentLog && !logs.some((l) => l.questionId === currentLog.questionId)
-      ? [...logs, currentLog]
-      : logs;
+    const mergedLogs =
+      currentLog && !logs.some((l) => l.questionId === currentLog.questionId)
+        ? [...logs, currentLog]
+        : logs;
 
-  if (next >= total) {
-    const correctIds: string[] = [];
-    const wrongIds: string[] = [];
-    for (const l of mergedLogs) (l.isCorrect ? correctIds : wrongIds).push(l.questionId);
-    onFinish({ correct: correctIds.length, wrongIds, correctIds });
-    return;
-  }
+    if (next >= total) {
+      const correctIds: string[] = [];
+      const wrongIds: string[] = [];
+      for (const l of mergedLogs) (l.isCorrect ? correctIds : wrongIds).push(l.questionId);
+      onFinish({ correct: correctIds.length, wrongIds, correctIds });
+      return;
+    }
 
-  setIndex(next);
-};
-
+    setIndex(next);
+  };
 
   if (!quiz.length) return <div style={{ padding: 16 }}>問題がありません</div>;
   if (!current) return <div style={{ padding: 16 }}>問題が読み込めませんでした</div>;
 
+  // 画像（あれば表示）
+  const imgSrc = current.image;
+  const imgAlt = current.imageAlt || current.title;
+
   return (
-    <div style={{ padding: 16, paddingBottom: 140 /* sticky分の余白 */ }}>
+    <div style={{ padding: 16, paddingBottom: 160 /* sticky分の余白 */ }}>
       {/* 上部：進捗 */}
-      <div style={{ display: "flex", gap: 12, alignItems: "baseline", flexWrap: "wrap" }}>
-        <b>
-          {index + 1} / {total}
-        </b>
-        {mode === "review" ? (
-          <span style={{ color: "#666" }}>復習モード：残り {remaining} 問</span>
-        ) : (
-          <span style={{ color: "#666" }}>通常モード</span>
-        )}
+      <div
+        style={{
+          display: "flex",
+          gap: 12,
+          alignItems: "center",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          maxWidth: 900,
+        }}
+      >
+        <div style={{ display: "flex", gap: 12, alignItems: "baseline", flexWrap: "wrap" }}>
+          <b>
+            {index + 1} / {total}
+          </b>
+          {mode === "review" ? (
+            <span style={{ color: "#666" }}>復習モード：残り {remaining} 問</span>
+          ) : (
+            <span style={{ color: "#666" }}>通常モード</span>
+          )}
+        </div>
+
+        {/* ホームに戻る */}
+        <button
+          onClick={handleHome}
+          style={{
+            height: 44,
+            padding: "0 14px",
+            borderRadius: 12,
+            border: "1px solid #ccc",
+            background: "white",
+            fontWeight: 800,
+            cursor: "pointer",
+            touchAction: "manipulation",
+          }}
+        >
+          ← ホーム
+        </button>
       </div>
 
-      <h2 style={{ marginTop: 10 }}>{current.title}</h2>
+      {/* ★写真（あれば） */}
+      {imgSrc && (
+        <div style={{ maxWidth: 900, marginTop: 12 }}>
+          <img
+            src={imgSrc}
+            alt={imgAlt}
+            loading="lazy"
+            style={{
+              width: "50%",
+              maxHeight: 500,
+              objectFit: "cover",
+              borderRadius: 16,
+              border: "1px solid #e6e6e6",
+              display: "block",
+            }}
+          />
+        </div>
+      )}
+
+      <h2 style={{ marginTop: 12, maxWidth: 900 }}>{current.title}</h2>
 
       {/* 選択肢 */}
       <div style={{ display: "grid", gap: 8, maxWidth: 760 }}>
@@ -145,13 +197,12 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
                 borderRadius: 12,
                 opacity,
                 cursor: answered ? "default" : "pointer",
+                touchAction: "manipulation",
               }}
             >
               <b style={{ marginRight: 8 }}>{c.id}.</b>
               {c.text}
-              {answered && isAnswer && (
-                <span style={{ marginLeft: 10, fontWeight: 700 }}>（正解）</span>
-              )}
+              {answered && isAnswer && <span style={{ marginLeft: 10, fontWeight: 700 }}>（正解）</span>}
               {answered && isSelected && !isAnswer && (
                 <span style={{ marginLeft: 10, fontWeight: 700 }}>（あなたの回答）</span>
               )}
@@ -160,7 +211,7 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
         })}
       </div>
 
-      {/* ①② sticky：正誤＋解説（日本語＋英語） */}
+      {/* sticky：正誤＋解説 */}
       <div
         style={{
           position: "fixed",
@@ -168,6 +219,7 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
           right: 0,
           bottom: 0,
           padding: 12,
+          paddingBottom: `calc(12px + env(safe-area-inset-bottom))`,
           background: "white",
           borderTop: "1px solid #ddd",
         }}
@@ -185,9 +237,7 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
                 borderRadius: 12,
               }}
             >
-              <div style={{ fontWeight: 900 }}>
-                {isCorrect ? "✅ 正解！" : "❌ 不正解"}
-              </div>
+              <div style={{ fontWeight: 900 }}>{isCorrect ? "✅ 正解！" : "❌ 不正解"}</div>
 
               <div>
                 正解： <b>{current.answerId}</b>（{correctChoiceText}）
@@ -208,7 +258,19 @@ export default function Quiz({ quiz, mode, onFinish }: Props) {
               )}
 
               <div>
-                <button onClick={handleNext} style={{ padding: "16", borderRadius: 10,paddingBottom: `calc(12px + env(safe-area-inset-bottom))`, }}>
+                <button
+                  onClick={handleNext}
+                  style={{
+                    width: "100%",
+                    height: 52,
+                    borderRadius: 12,
+                    border: "1px solid #ccc",
+                    background: "white",
+                    fontWeight: 900,
+                    cursor: "pointer",
+                    touchAction: "manipulation",
+                  }}
+                >
                   {index + 1 >= total ? "結果へ" : "次へ"}
                 </button>
               </div>

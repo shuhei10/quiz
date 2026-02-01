@@ -2,59 +2,2577 @@
   {
     "id": "g4-001",
     "grade": 4,
-    "type": "choice",
-    "text": "世界遺産の登録基準はいくつ？",
-    "choices": ["8", "10", "12", "15"],
-    "answerIndex": 1,
+    "chapter": "世界遺産基礎知識",
+    "title": "世界遺産の登録基準はいくつ？",
+    "choices": [
+      { "id": "A", "text": "8" },
+      { "id": "B", "text": "10" },
+      { "id": "C", "text": "12" },
+      { "id": "D", "text": "15" }
+    ],
+    "answerId": "B",
     "explanation": "文化遺産(1〜6)＋自然遺産(7〜10)で計10。"
   },
   {
     "id": "g4-002",
     "grade": 4,
-    "type": "blank_choice",
-    "text": "世界遺産条約が採択されたのは（　）年である。",
-    "choices": ["1954", "1972", "1988", "2001"],
-    "answerIndex": 1,
+    "chapter": "世界遺産基礎知識",
+    "title": "世界遺産条約が採択されたのは何年？",
+    "choices": [
+      { "id": "A", "text": "1954" },
+      { "id": "B", "text": "1972" },
+      { "id": "C", "text": "1988" },
+      { "id": "D", "text": "2001" }
+    ],
+    "answerId": "B",
     "explanation": "世界遺産条約は1972年に採択。"
   },
   {
-  "id": "g4-003",
+    "id": "g4-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎知識",
+    "title": "世界遺産が登録されるために必ず必要となる『国や時代を超えて認められる価値』を何というか。",
+    "choices": [
+      { "id": "A", "text": "顕著な普遍的価値" },
+      { "id": "B", "text": "文化的多様性" },
+      { "id": "C", "text": "歴史的重要価値" },
+      { "id": "D", "text": "登録基準" }
+    ],
+    "answerId": "A",
+    "explanation": "Outstanding Universal Value（OUV）＝顕著な普遍的価値。"
+  },
+  {
+    "id": "g4-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎知識",
+    "title": "顕著な普遍的価値の英語表記（略称）はどれか。",
+    "choices": [
+      { "id": "A", "text": "OUV" },
+      { "id": "B", "text": "UNESCO" },
+      { "id": "C", "text": "ICOMOS" },
+      { "id": "D", "text": "WHS" }
+    ],
+    "answerId": "A",
+    "explanation": "Outstanding Universal Value の略。"
+  },
+  {
+    "id": "g4-005",
+    "grade": 4,
+    "chapter": "世界遺産基礎知識",
+    "title": "世界遺産に登録されるための最重要条件はどれか。",
+    "choices": [
+      { "id": "A", "text": "顕著な普遍的価値を有すること" },
+      { "id": "B", "text": "観光客が多いこと" },
+      { "id": "C", "text": "国立公園であること" },
+      { "id": "D", "text": "100年以上の歴史があること" }
+    ],
+    "answerId": "A",
+    "explanation": "OUV（顕著な普遍的価値）を持つことが絶対条件。"
+  },
+
+  {
+    "id": "yakushima-001",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島で見られる代表的な植生の特徴は？",
+    "choices": [
+      { "id": "A", "text": "亜熱帯のマングローブ" },
+      { "id": "B", "text": "照葉樹林から亜寒帯性までの垂直分布" },
+      { "id": "C", "text": "砂漠植物のオアシス" },
+      { "id": "D", "text": "サバンナの草原" }
+    ],
+    "answerId": "B",
+    "explanation": "標高差による植生の垂直分布が特徴です。"
+  },
+  {
+    "id": "amami-001",
+    "grade": 4,
+    "chapter": "奄美大島",
+    "title": "奄美大島などで注目される生物多様性の特徴は？",
+    "choices": [
+      { "id": "A", "text": "固有種が少ない" },
+      { "id": "B", "text": "寒冷地の氷河生物が中心" },
+      { "id": "C", "text": "固有種が多い亜熱帯の森" },
+      { "id": "D", "text": "海底火山のみ" }
+    ],
+    "answerId": "C",
+    "explanation": "固有種が多い亜熱帯の森が特徴です。"
+  },
+  {
+  "id": "himeji-001",
   "grade": 4,
-  "type": "blank_choice",
-  "text": "世界遺産が登録されるために必ず必要となる『国や時代を超えて認められる価値』を何というか。",
+  "chapter": "姫路城",
+  "title": "姫路城 が登録されている世界遺産の種類はどれか。",
+  "image": "/images/g4/himeji.png",
+  "imageAlt": "姫路城の天守",
   "choices": [
-    "顕著な普遍的価値",
-    "文化的多様性",
-    "歴史的重要価値",
-    "登録基準"
+    { "id": "A", "text": "自然遺産" },
+    { "id": "B", "text": "複合遺産" },
+    { "id": "C", "text": "文化遺産" },
+    { "id": "D", "text": "無形遺産" }
   ],
-  "answerIndex": 0,
-  "explanation": "世界遺産の最も重要な概念。Outstanding Universal Value（OUV）＝顕著な普遍的価値。"
+  "answerId": "C",
+  "explanation": "姫路城は日本初の世界文化遺産の一つで、文化遺産として登録されています。"
 },
 {
-  "id": "g4-004",
-  "grade": 4,
-  "type": "blank_choice",
-  "text": "顕著な普遍的価値の英語表記（略称）はどれか。",
-  "choices": ["OUV", "UNESCO", "ICOMOS", "WHS"],
-  "answerIndex": 0,
-  "explanation": "Outstanding Universal Value の略。"
-},
-{
-  "id": "g4-005",
-  "grade": 4,
-  "type": "choice",
-  "text": "世界遺産に登録されるための最重要条件はどれか。",
-  "choices": [
-    "顕著な普遍的価値を有すること",
-    "観光客が多いこと",
-    "国立公園であること",
-    "100年以上の歴史があること"
-  ],
-  "answerIndex": 0,
-  "explanation": "OUV（顕著な普遍的価値）を持つことが絶対条件。"
-}
+    "id": "tomioka-001",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "明治政府が日本の産業を強化するために目指した政策はどれ？",
+    "choices": [
+      { "id": "A", "text": "文明開花" },
+      { "id": "B", "text": "殖産興業" },
+      { "id": "C", "text": "富国強兵" },
+      { "id": "D", "text": "廃藩置県" }
+    ],
+    "answerId": "B",
+    "explanation": "明治政府は産業の発展を目的として殖産興業政策を進めた。"
+  },
+  {
+    "id": "tomioka-002",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "富岡製糸場が世界遺産に登録された主な理由はどれ？",
+    "choices": [
+      { "id": "A", "text": "日本最古の木造建築だから" },
+      { "id": "B", "text": "近代製糸技術を全国に広めたから" },
+      { "id": "C", "text": "宗教施設として重要だから" },
+      { "id": "D", "text": "自然景観が優れているから" }
+    ],
+    "answerId": "B",
+    "explanation": "富岡製糸場は近代的な製糸技術を導入し、日本の絹産業発展に大きく貢献した。"
+  },
+  {
+    "id": "tomioka-003",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "富岡製糸場はどのような立場で運営された工場だった？",
+    "choices": [
+      { "id": "A", "text": "民間企業の工場" },
+      { "id": "B", "text": "地方自治体の工場" },
+      { "id": "C", "text": "官営の模範工場" },
+      { "id": "D", "text": "外国資本の工場" }
+    ],
+    "answerId": "C",
+    "explanation": "富岡製糸場は政府が直接運営する官営の模範工場として建設された。"
+  },
+  {
+    "id": "darwent-001",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "ダーヴェント峡谷の工場群が象徴する歴史的な出来事はどれ？",
+    "choices": [
+      { "id": "A", "text": "ルネサンス" },
+      { "id": "B", "text": "産業革命" },
+      { "id": "C", "text": "大航海時代" },
+      { "id": "D", "text": "宗教改革" }
+    ],
+    "answerId": "B",
+    "explanation": "ダーヴェント峡谷は工場制機械工業が発展した産業革命を象徴する地域である。"
+  },
+  {
+    "id": "darwent-002",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "ダーヴェント峡谷の工場群で中心となった産業はどれ？",
+    "choices": [
+      { "id": "A", "text": "製鉄業" },
+      { "id": "B", "text": "造船業" },
+      { "id": "C", "text": "綿工業（紡績）" },
+      { "id": "D", "text": "鉱山業" }
+    ],
+    "answerId": "C",
+    "explanation": "ダーヴェント峡谷では水力を利用した綿工業（紡績）が発展した。"
+  },
+  {
+    "id": "corbusier-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "ル・コルビュジエの建築作品が評価された主な理由はどれ？",
+    "choices": [
+      { "id": "A", "text": "ゴシック建築を完成させたから" },
+      { "id": "B", "text": "近代建築運動に大きく貢献したから" },
+      { "id": "C", "text": "宗教建築を多く残したから" },
+      { "id": "D", "text": "城郭建築を発展させたから" }
+    ],
+    "answerId": "B",
+    "explanation": "ル・コルビュジエは近代建築運動を理論と実作の両面で主導した。"
+  },
+  {
+    "id": "corbusier-002",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "日本にあるル・コルビュジエの建築作品はどれ？",
+    "choices": [
+      { "id": "A", "text": "東京駅" },
+      { "id": "B", "text": "国立西洋美術館" },
+      { "id": "C", "text": "迎賓館赤坂離宮" },
+      { "id": "D", "text": "京都国立博物館" }
+    ],
+    "answerId": "B",
+    "explanation": "国立西洋美術館はル・コルビュジエが設計した日本唯一の建築作品である。"
+  },
+  {
+    "id": "corbusier-003",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "ル・コルビュジエの建築作品群はどのような登録形式か？",
+    "choices": [
+      { "id": "A", "text": "単独遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "シリアル・サイト" },
+      { "id": "D", "text": "無形文化遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "複数国に点在する建築作品をまとめて登録するシリアル・サイトである。"
+  },
+  {
+    "id": "mzab-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "ムザブの谷がある国はどこ？",
+    "choices": [
+      { "id": "A", "text": "モロッコ" },
+      { "id": "B", "text": "チュニジア" },
+      { "id": "C", "text": "アルジェリア" },
+      { "id": "D", "text": "エジプト" }
+    ],
+    "answerId": "C",
+    "explanation": "ムザブの谷は北アフリカのアルジェリアに位置している。"
+  },
+  {
+    "id": "mzab-002",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "ムザブの谷の集落の特徴として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "高層ビルが立ち並ぶ都市" },
+      { "id": "B", "text": "迷路状の街路をもつ要塞的集落" },
+      { "id": "C", "text": "水上に築かれた都市" },
+      { "id": "D", "text": "洞窟住居が中心の集落" }
+    ],
+    "answerId": "B",
+    "explanation": "ムザブの谷は乾燥地帯で防御性を重視した要塞的な都市構造をもつ。"
+  },
+  {
+    "id": "mzab-003",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "title": "ムザブの谷の都市形成に影響を与えた宗教はどれ？",
+    "choices": [
+      { "id": "A", "text": "仏教" },
+      { "id": "B", "text": "キリスト教" },
+      { "id": "C", "text": "イスラム教（イバード派）" },
+      { "id": "D", "text": "ヒンドゥー教" }
+    ],
+    "answerId": "C",
+    "explanation": "ムザブの谷はイスラム教イバード派の教えに基づいて都市が形成された。"
+  },
+  {
+    "id": "ogasawara-001",
+    "grade": 4,
+    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "title": "小笠原諸島が世界遺産として登録された区分はどれ？",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "無形文化遺産" }
+    ],
+    "answerId": "B",
+    "explanation": "小笠原諸島は独自の生態系をもつ自然遺産である。"
+  },
+  {
+    "id": "ogasawara-002",
+    "grade": 4,
+    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "title": "小笠原諸島の特徴として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "大陸と陸続きである" },
+      { "id": "B", "text": "海洋島で固有種が多い" },
+      { "id": "C", "text": "砂漠地帯である" },
+      { "id": "D", "text": "火山活動がない" }
+    ],
+    "answerId": "B",
+    "explanation": "小笠原諸島は海洋島で、固有種が多く見られる。"
+  },
+  {
+    "id": "galapagos-001",
+    "grade": 4,
+    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "title": "ガラパゴス諸島で進化論の着想を得た人物は誰？",
+    "choices": [
+      { "id": "A", "text": "リンネ" },
+      { "id": "B", "text": "ダーウィン" },
+      { "id": "C", "text": "ニュートン" },
+      { "id": "D", "text": "メンデル" }
+    ],
+    "answerId": "B",
+    "explanation": "ダーウィンはガラパゴス諸島の生物観察から進化論を考えた。"
+  },
+  {
+    "id": "fuji-001",
+    "grade": 4,
+    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "title": "富士山が世界遺産に登録された理由はどれ？",
+    "choices": [
+      { "id": "A", "text": "日本一高い山だから" },
+      { "id": "B", "text": "信仰の対象と芸術の源泉だから" },
+      { "id": "C", "text": "火山活動が活発だから" },
+      { "id": "D", "text": "観光地として有名だから" }
+    ],
+    "answerId": "B",
+    "explanation": "富士山は信仰と芸術に大きな影響を与えた文化遺産である。"
+  },
+  {
+    "id": "uluru-001",
+    "grade": 4,
+    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "title": "ウルル＝カタ・ジュタ国立公園の遺産区分はどれ？",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "無形遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "自然的価値と先住民文化の両方をもつ複合遺産である。"
+  },
+  {
+    "id": "shirakawa-001",
+    "grade": 4,
+    "chapter": "白川郷・アルベロベッロ",
+    "title": "白川郷・五箇山の合掌造り集落の特徴はどれ？",
+    "choices": [
+      { "id": "A", "text": "平屋の石造建築" },
+      { "id": "B", "text": "急勾配の茅葺き屋根" },
+      { "id": "C", "text": "レンガ造りの家屋" },
+      { "id": "D", "text": "円形住居" }
+    ],
+    "answerId": "B",
+    "explanation": "豪雪に対応するため急勾配の屋根が特徴。"
+  },
+  {
+    "id": "alberobello-001",
+    "grade": 4,
+    "chapter": "白川郷・アルベロベッロ",
+    "title": "アルベロベッロのトゥルッリの屋根の形は？",
+    "choices": [
+      { "id": "A", "text": "三角形" },
+      { "id": "B", "text": "円錐形" },
+      { "id": "C", "text": "平屋根" },
+      { "id": "D", "text": "ドーム形" }
+    ],
+    "answerId": "B",
+    "explanation": "トゥルッリは円錐形の石積み屋根が特徴。"
+  },
+  {
+    "id": "kyoto-001",
+    "grade": 4,
+    "chapter": "京都・奈良",
+    "title": "京都が長く日本文化の中心であった理由はどれ？",
+    "choices": [
+      { "id": "A", "text": "港町だったから" },
+      { "id": "B", "text": "千年以上都が置かれたから" },
+      { "id": "C", "text": "工業都市だったから" },
+      { "id": "D", "text": "農業が盛んだったから" }
+    ],
+    "answerId": "B",
+    "explanation": "京都は千年以上にわたり都として栄えた。"
+  },
+  {
+    "id": "nara-001",
+    "grade": 4,
+    "chapter": "京都・奈良",
+    "title": "奈良時代に花開いた国際色豊かな文化はどれ？",
+    "choices": [
+      { "id": "A", "text": "国風文化" },
+      { "id": "B", "text": "天平文化" },
+      { "id": "C", "text": "桃山文化" },
+      { "id": "D", "text": "元禄文化" }
+    ],
+    "answerId": "B",
+    "explanation": "天平文化は唐の影響を受けた国際的文化。"
+  },
+  {
+    "id": "eng-tomioka-001",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "英文の（　）に入る最も適切な語はどれ？\nTomioka Silk Mill was a government-operated (　　 ) established by the Meiji government.",
+    "choices": [
+      { "id": "A", "text": "temple" },
+      { "id": "B", "text": "factory" },
+      { "id": "C", "text": "castle" },
+      { "id": "D", "text": "school" }
+    ],
+    "answerId": "B",
+    "explanation": "factory は「工場」。富岡製糸場は明治政府が設立した官営工場。"
+  },
+  {
+    "id": "eng-darwent-001",
+    "grade": 4,
+    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "title": "次の英文の内容として正しいものはどれ？\nThe Derwent Valley Mills played an important role in the Industrial Revolution.",
+    "choices": [
+      { "id": "A", "text": "農業革命を示す" },
+      { "id": "B", "text": "産業革命に重要な役割を果たした" },
+      { "id": "C", "text": "宗教改革の中心地だった" },
+      { "id": "D", "text": "自然景観が評価された" }
+    ],
+    "answerId": "B",
+    "explanation": "Industrial Revolution は産業革命。工場制機械工業の発展を示す。"
+  },
+  {
+    "id": "eng-ogasawara-001",
+    "grade": 4,
+    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "title": "英文中の endemic species の意味として正しいものはどれ？\nThe Ogasawara Islands are home to many endemic species.",
+    "choices": [
+      { "id": "A", "text": "外来種" },
+      { "id": "B", "text": "絶滅種" },
+      { "id": "C", "text": "固有種" },
+      { "id": "D", "text": "家畜" }
+    ],
+    "answerId": "C",
+    "explanation": "endemic species は「その地域だけに生息する固有種」。"
+  },
+  {
+    "id": "eng-galapagos-001",
+    "grade": 4,
+    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "title": "次の英文の内容として正しいものはどれ？\nCharles Darwin developed the theory of evolution after studying animals on the Galapagos Islands.",
+    "choices": [
+      { "id": "A", "text": "進化論は日本で生まれた" },
+      { "id": "B", "text": "ダーウィンはガラパゴスで研究した" },
+      { "id": "C", "text": "宗教改革について述べている" },
+      { "id": "D", "text": "建築様式を説明している" }
+    ],
+    "answerId": "B",
+    "explanation": "ダーウィンはガラパゴス諸島での研究から進化論を考えた。"
+  },
+  {
+    "id": "eng-fuji-001",
+    "grade": 4,
+    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "title": "英文中の worshipped の意味はどれ？\nMount Fuji has been worshipped as a sacred mountain.",
+    "choices": [
+      { "id": "A", "text": "登山された" },
+      { "id": "B", "text": "崇拝された" },
+      { "id": "C", "text": "調査された" },
+      { "id": "D", "text": "破壊された" }
+    ],
+    "answerId": "B",
+    "explanation": "worshipped は「崇拝された」という意味。"
+  },
+  {
+    "id": "eng-shirakawa-001",
+    "grade": 4,
+    "chapter": "白川郷・アルベロベッロ",
+    "title": "英文中の gassho style が指すものはどれ？\nThe houses are built in the gassho style.",
+    "choices": [
+      { "id": "A", "text": "石造建築" },
+      { "id": "B", "text": "合掌造り" },
+      { "id": "C", "text": "レンガ建築" },
+      { "id": "D", "text": "ドーム建築" }
+    ],
+    "answerId": "B",
+    "explanation": "gassho style は白川郷に見られる合掌造り。"
+  },
+  {
+    "id": "eng-kyoto-001",
+    "grade": 4,
+    "chapter": "京都・奈良",
+    "title": "英文の意味として正しいものはどれ？\nKyoto was the center of Japanese culture for more than 1,000 years.",
+    "choices": [
+      { "id": "A", "text": "京都は農業地帯だった" },
+      { "id": "B", "text": "京都は千年以上文化の中心だった" },
+      { "id": "C", "text": "京都は工業都市だった" },
+      { "id": "D", "text": "京都は新しい都市だった" }
+    ],
+    "answerId": "B",
+    "explanation": "center of Japanese culture は「日本文化の中心」。"
+  },
+  {
+    "id": "eng-nara-001",
+    "grade": 4,
+    "chapter": "京都・奈良",
+    "title": "英文中の cosmopolitan culture の意味はどれ？\nCosmopolitan culture developed in Nara during the 8th century.",
+    "choices": [
+      { "id": "A", "text": "地方文化" },
+      { "id": "B", "text": "軍事文化" },
+      { "id": "C", "text": "国際的文化" },
+      { "id": "D", "text": "宗教文化" }
+    ],
+    "answerId": "C",
+    "explanation": "cosmopolitan は「国際的な」という意味。"
+  },
+  {
+    "id": "eng-florence-001",
+    "grade": 4,
+    "chapter": "フィレンツェ・パリ・イスタンブール",
+    "title": "英文の内容として正しいものはどれ？\nFlorence is known as the birthplace of the Renaissance.",
+    "choices": [
+      { "id": "A", "text": "産業革命の発祥地" },
+      { "id": "B", "text": "ルネサンス発祥の地" },
+      { "id": "C", "text": "自然遺産である" },
+      { "id": "D", "text": "軍事都市である" }
+    ],
+    "answerId": "B",
+    "explanation": "birthplace of the Renaissance は「ルネサンス発祥の地」。"
+  },
+  {
+    "id": "eng-hiroshima-001",
+    "grade": 4,
+    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "title": "広島平和記念碑（原爆ドーム）が世界遺産として登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1945年" },
+      { "id": "B", "text": "1966年" },
+      { "id": "C", "text": "1995年" },
+      { "id": "D", "text": "1996年" }
+    ],
+    "answerId": "D",
+    "explanation": "広島平和記念碑（原爆ドーム）は1996年に世界遺産に登録された。"
+  },
+  {
+    "id": "eng-hiroshima-002",
+    "grade": 4,
+    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "title": "1945年8月6日、広島に投下された兵器は何か。",
+    "choices": [
+      { "id": "A", "text": "焼夷弾" },
+      { "id": "B", "text": "原子爆弾" },
+      { "id": "C", "text": "水素爆弾" },
+      { "id": "D", "text": "地雷" }
+    ],
+    "answerId": "B",
+    "explanation": "1945年8月6日、広島に投下されたのは原子爆弾である。"
+  },
+  {
+    "id": "eng-hiroshima-003",
+    "grade": 4,
+    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "title": "広島平和記念碑（原爆ドーム）は、何を伝える遺産として評価されているか。",
+    "choices": [
+      { "id": "A", "text": "戦争勝利の象徴" },
+      { "id": "B", "text": "科学技術の発展" },
+      { "id": "C", "text": "人類初の原子爆弾がもたらした惨禍" },
+      { "id": "D", "text": "都市復興の成功例" }
+    ],
+    "answerId": "C",
+    "explanation": "原爆ドームは、人類初の原子爆弾がもたらした惨禍を後世に伝える負の遺産として評価されている。"
+  },
+  {
+    "id": "eng-hiroshima-004",
+    "grade": 4,
+    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "title": "英文の内容として正しいものはどれ？\nThe Genbaku Dome is a reminder of the misery of war.",
+    "choices": [
+      { "id": "A", "text": "工業化の進展を示している" },
+      { "id": "B", "text": "戦争の悲惨さを思い起こさせる" },
+      { "id": "C", "text": "軍事力の象徴である" },
+      { "id": "D", "text": "経済成長を示す建物である" }
+    ],
+    "answerId": "B",
+    "explanation": "reminder of the misery of war は「戦争の悲惨さを思い起こさせる」という意味。"
+  },
+  {
+    "id": "eng-hiroshima-005",
+    "grade": 4,
+    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "title": "英文中の abolition の意味として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "建設" },
+      { "id": "B", "text": "強化" },
+      { "id": "C", "text": "廃絶" },
+      { "id": "D", "text": "拡大" }
+    ],
+    "answerId": "C",
+    "explanation": "abolition は「廃絶」を意味し、核兵器廃絶を指している。"
+  },
+  {
+    "id": "g4-itsukushima-001",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "厳島神社はどのような価値を表している世界遺産か。",
+    "choices": [
+      { "id": "A", "text": "日本の信仰と日本の美意識を表している" },
+      { "id": "B", "text": "日本の技術と産業の発展を表している" },
+      { "id": "C", "text": "日本の政治制度を表している" },
+      { "id": "D", "text": "日本の軍事力を表している" }
+    ],
+    "answerId": "A",
+    "explanation": "厳島神社は★日本の信仰と★日本の美意識を表す文化遺産である。"
+  },
+  {
+    "id": "g4-itsukushima-002",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "現在の厳島神社の姿を整えた人物は誰か。",
+    "choices": [
+      { "id": "A", "text": "源頼朝" },
+      { "id": "B", "text": "足利義満" },
+      { "id": "C", "text": "平清盛" },
+      { "id": "D", "text": "徳川家康" }
+    ],
+    "answerId": "C",
+    "explanation": "厳島神社は平安時代に平清盛によって現在の姿に整えられた。"
+  },
+  {
+    "id": "g4-itsukushima-003",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "厳島神社の建築上の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "山の斜面に直接建てられている" },
+      { "id": "B", "text": "地面に固定された石造建築である" },
+      { "id": "C", "text": "海に浮かんで見えるように建てられている" },
+      { "id": "D", "text": "洞窟の中に建てられている" }
+    ],
+    "answerId": "C",
+    "explanation": "厳島神社は潮の満ち引きによって海に浮かんで見えるように設計されている。"
+  },
+  {
+    "id": "eng-itsukushima-001",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "Itsukushima Shrine is located between Mount Misen and the Seto Inland Sea. この英文の内容として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "都市の中心部に建てられている" },
+      { "id": "B", "text": "山の頂上にのみ建てられている" },
+      { "id": "C", "text": "弥山と瀬戸内海の間にあり、自然と調和している" },
+      { "id": "D", "text": "人工的に造成された土地に建てられている" }
+    ],
+    "answerId": "C",
+    "explanation": "英文は、厳島神社が弥山と瀬戸内海の間に位置し、自然と調和していることを説明している。"
+  },
+  {
+    "id": "g4-meteora-001",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "メテオラの修道院群は、どの宗教の修道士によって建てられたか。",
+    "choices": [
+      { "id": "A", "text": "カトリック教会" },
+      { "id": "B", "text": "プロテスタント教会" },
+      { "id": "C", "text": "ギリシャ正教会" },
+      { "id": "D", "text": "仏教" }
+    ],
+    "answerId": "C",
+    "explanation": "メテオラの修道院群は赤文字で示されているギリシャ正教会の修道士によって建てられた。"
+  },
+  {
+    "id": "g4-meteora-002",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "メテオラの修道院群の立地として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "平地に広がって建てられている" },
+      { "id": "B", "text": "海上に建てられている" },
+      { "id": "C", "text": "森林の中に隠れるように建てられている" },
+      { "id": "D", "text": "空中に浮かぶような奇岩の上に建てられている" }
+    ],
+    "answerId": "D",
+    "explanation": "メテオラの修道院群は、空中に浮かぶような奇岩の上に建てられている点が特徴である。"
+  },
+  {
+    "id": "eng-meteora-001",
+    "grade": 4,
+    "chapter": "厳島神社・メテオラ",
+    "title": "The monasteries were built on top of towering rock pillars. この英文の内容として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "修道院は地下に建てられた" },
+      { "id": "B", "text": "修道院は町の中心に建てられた" },
+      { "id": "C", "text": "修道院は海に浮かぶように建てられた" },
+      { "id": "D", "text": "修道院は高くそびえる岩の上に建てられた" }
+    ],
+    "answerId": "D",
+    "explanation": "英文は、修道院が高くそびえる岩の上に建てられていることを説明している。"
+  },
+  {
+    "id": "g4-basic-heritage-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "title": "世界遺産がもつ、国や時代をこえて認められる価値を何というか。",
+    "choices": [
+      { "id": "A", "text": "文化的価値" },
+      { "id": "B", "text": "歴史的価値" },
+      { "id": "C", "text": "顕著な普遍的価値" },
+      { "id": "D", "text": "世界的評価" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産は「顕著な普遍的価値（Outstanding Universal Value）」をもつものとして登録される。"
+  },
+  {
+    "id": "g4-basic-heritage-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "title": "世界遺産が登録される一覧を何というか。",
+    "choices": [
+      { "id": "A", "text": "世界文化目録" },
+      { "id": "B", "text": "世界遺産リスト" },
+      { "id": "C", "text": "国際遺産台帳" },
+      { "id": "D", "text": "文化財登録表" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産は、世界遺産委員会によって世界遺産リストに登録される。"
+  },
+  {
+    "id": "g4-basic-heritage-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "title": "世界遺産条約が採択された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1954年" },
+      { "id": "B", "text": "1965年" },
+      { "id": "C", "text": "1972年" },
+      { "id": "D", "text": "1985年" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産条約は1972年に採択された。"
+  },
+  {
+    "id": "g4-basic-heritage-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "title": "世界遺産条約を採択した国際機関はどれか。",
+    "choices": [
+      { "id": "A", "text": "WHO" },
+      { "id": "B", "text": "UNESCO" },
+      { "id": "C", "text": "WTO" },
+      { "id": "D", "text": "IMF" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産条約は、国際連合教育科学文化機関（UNESCO）によって採択された。"
+  },
+  {
+    "id": "g4-basic-heritage-005",
+    "grade": 4,
+    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "title": "世界遺産が守られる理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "観光資源として利益を生むため" },
+      { "id": "B", "text": "一部の国の所有物だから" },
+      { "id": "C", "text": "人類共通の遺産だから" },
+      { "id": "D", "text": "新しい建物を建てるため" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産は、人類共通の遺産として将来の世代に引き継ぐために保護されている。"
+  },
+  {
+    "id": "g4-basic-heritage2-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "title": "人類がつくり上げた建造物や遺跡などが分類される世界遺産はどれか。",
+    "choices": [
+      { "id": "A", "text": "自然遺産" },
+      { "id": "B", "text": "文化遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "危機遺産" }
+    ],
+    "answerId": "B",
+    "explanation": "文化遺産は、建造物・遺跡・文化的景観など、人類の活動によって生み出された遺産である。"
+  },
+  {
+    "id": "g4-basic-heritage2-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "title": "自然環境や景観、生態系が評価される世界遺産はどれか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "記念遺産" },
+      { "id": "C", "text": "自然遺産" },
+      { "id": "D", "text": "複合遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "自然遺産は、自然景観や生態系など、自然の価値が評価された遺産である。"
+  },
+  {
+    "id": "g4-basic-heritage2-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "title": "文化遺産と自然遺産の両方の価値をもつ世界遺産はどれか。",
+    "choices": [
+      { "id": "A", "text": "自然遺産" },
+      { "id": "B", "text": "文化遺産" },
+      { "id": "C", "text": "危機遺産" },
+      { "id": "D", "text": "複合遺産" }
+    ],
+    "answerId": "D",
+    "explanation": "複合遺産は、文化的価値と自然的価値の両方が認められた世界遺産である。"
+  },
+  {
+    "id": "g4-basic-heritage2-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "title": "戦争や環境破壊などにより危険にさらされている世界遺産は何と呼ばれるか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "危機遺産" },
+      { "id": "D", "text": "複合遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "危機遺産は、保存が危ぶまれる状態にある世界遺産としてリストに掲載される。"
+  },
+  {
+    "id": "g4-basic-heritage2-005",
+    "grade": 4,
+    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "title": "世界遺産の分類として正しくないものはどれか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "産業遺産" }
+    ],
+    "answerId": "D",
+    "explanation": "世界遺産の正式な分類は、文化遺産・自然遺産・複合遺産の3つである。"
+  },
+  {
+    "id": "g4-basic-heritage3-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "title": "世界遺産の登録を決定する会議はどれか。",
+    "choices": [
+      { "id": "A", "text": "国際連合総会" },
+      { "id": "B", "text": "世界遺産委員会" },
+      { "id": "C", "text": "世界文化会議" },
+      { "id": "D", "text": "国際自然保護会議" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産の登録や保護状況の審議は、世界遺産委員会が行う。"
+  },
+  {
+    "id": "g4-basic-heritage3-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "title": "世界遺産に登録する前に各国が作成する候補一覧はどれか。",
+    "choices": [
+      { "id": "A", "text": "暫定リスト" },
+      { "id": "B", "text": "危機遺産リスト" },
+      { "id": "C", "text": "世界遺産リスト" },
+      { "id": "D", "text": "保護計画リスト" }
+    ],
+    "answerId": "A",
+    "explanation": "各国は登録を目指す候補を暫定リストに掲載し、そこから推薦する。"
+  },
+  {
+    "id": "g4-basic-heritage3-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "title": "世界遺産委員会が判断材料として参照するものとして正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "観光客数のみ" },
+      { "id": "B", "text": "各国の推薦書（推薦文書）" },
+      { "id": "C", "text": "SNSの人気" },
+      { "id": "D", "text": "国の面積" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産の登録審査では、各国が提出する推薦書（推薦文書）などが重要となる。"
+  },
+  {
+    "id": "g4-basic-heritage3-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "title": "世界遺産委員会の役割として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "世界遺産の登録と保護状況の審議" },
+      { "id": "B", "text": "世界の通貨を統一する" },
+      { "id": "C", "text": "国境を決める" },
+      { "id": "D", "text": "気象観測を行う" }
+    ],
+    "answerId": "A",
+    "explanation": "世界遺産委員会は、登録の可否や保護状況、危機遺産への掲載などを審議する。"
+  },
+  {
+    "id": "g4-basic-heritage3-005",
+    "grade": 4,
+    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "title": "世界遺産委員会が行うこととして正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "世界遺産リストへの登録を決める" },
+      { "id": "B", "text": "世界遺産条約を廃止する" },
+      { "id": "C", "text": "各国の法律を制定する" },
+      { "id": "D", "text": "世界の言語を統一する" }
+    ],
+    "answerId": "A",
+    "explanation": "登録の可否は世界遺産委員会で審議され、世界遺産リストへの登録が決定される。"
+  },
+  {
+    "id": "g4-basic-heritage4-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "title": "危険にさらされている世界遺産が掲載される一覧はどれか。",
+    "choices": [
+      { "id": "A", "text": "世界遺産リスト" },
+      { "id": "B", "text": "暫定リスト" },
+      { "id": "C", "text": "危機遺産リスト" },
+      { "id": "D", "text": "保護計画リスト" }
+    ],
+    "answerId": "C",
+    "explanation": "危機遺産リストは、戦争や環境破壊などで保護が危ぶまれる世界遺産が掲載される。"
+  },
+  {
+    "id": "g4-basic-heritage4-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "title": "危機遺産に分類される主な理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "人気が高すぎるため" },
+      { "id": "B", "text": "戦争や環境破壊などで保存が危ぶまれるため" },
+      { "id": "C", "text": "国が新しい建物を建てたいから" },
+      { "id": "D", "text": "世界遺産委員会が観光を禁止したから" }
+    ],
+    "answerId": "B",
+    "explanation": "危機遺産は、戦争・災害・開発・密猟などで保存が危ぶまれる状態にある遺産が対象となる。"
+  },
+  {
+    "id": "g4-basic-heritage4-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "title": "戦争や差別など、負の歴史を伝える世界遺産は何と呼ばれるか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "負の遺産" },
+      { "id": "D", "text": "複合遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "負の遺産は、戦争・虐殺・差別などの負の歴史を後世に伝えるために登録される遺産を指す。"
+  },
+  {
+    "id": "g4-basic-heritage4-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "title": "負の遺産の例として最も適切なものはどれか。",
+    "choices": [
+      { "id": "A", "text": "イエローストーン国立公園" },
+      { "id": "B", "text": "アウシュヴィッツ強制収容所" },
+      { "id": "C", "text": "タージ・マハル" },
+      { "id": "D", "text": "グレート・バリア・リーフ" }
+    ],
+    "answerId": "B",
+    "explanation": "アウシュヴィッツはホロコーストの歴史を伝える象徴的な遺産として知られる。"
+  },
+  {
+    "id": "g4-basic-heritage4-005",
+    "grade": 4,
+    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "title": "危機遺産リストに掲載されることの目的として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "観光を増やすため" },
+      { "id": "B", "text": "国の権利をなくすため" },
+      { "id": "C", "text": "国際的な支援や保護を促すため" },
+      { "id": "D", "text": "登録を永久に取り消すため" }
+    ],
+    "answerId": "C",
+    "explanation": "危機遺産への掲載は、問題を世界に知らせ、保護のための支援や対策を促す狙いがある。"
+  },
+  {
+    "id": "g4-basic-heritage5-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "title": "世界遺産制度が生まれるきっかけとなった出来事はどれか。",
+    "choices": [
+      { "id": "A", "text": "世界恐慌" },
+      { "id": "B", "text": "第二次世界大戦" },
+      { "id": "C", "text": "ダム建設による遺跡水没の危機" },
+      { "id": "D", "text": "観光客の急増" }
+    ],
+    "answerId": "C",
+    "explanation": "ダム建設によって歴史的遺跡が水没する危機が、世界遺産制度誕生の大きなきっかけとなった。"
+  },
+  {
+    "id": "g4-basic-heritage5-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "title": "世界遺産制度誕生のきっかけとなったダムはどれか。",
+    "choices": [
+      { "id": "A", "text": "フーバーダム" },
+      { "id": "B", "text": "三峡ダム" },
+      { "id": "C", "text": "アスワン・ハイ・ダム" },
+      { "id": "D", "text": "黒部ダム" }
+    ],
+    "answerId": "C",
+    "explanation": "アスワン・ハイ・ダム建設により、ヌビア遺跡群が水没の危機にさらされた。"
+  },
+  {
+    "id": "g4-basic-heritage5-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "title": "水没の危機から国際協力によって移設・保存された遺跡はどれか。",
+    "choices": [
+      { "id": "A", "text": "パルテノン神殿" },
+      { "id": "B", "text": "アブ・シンベル神殿" },
+      { "id": "C", "text": "ストーンヘンジ" },
+      { "id": "D", "text": "マチュ・ピチュ" }
+    ],
+    "answerId": "B",
+    "explanation": "アブ・シンベル神殿は国際協力により解体・移設され、保存された。"
+  },
+  {
+    "id": "g4-basic-heritage5-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "title": "この出来事から生まれた考え方として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "一国だけで文化財を守る" },
+      { "id": "B", "text": "文化財は不要になれば壊す" },
+      { "id": "C", "text": "人類全体で遺産を守る" },
+      { "id": "D", "text": "観光開発を優先する" }
+    ],
+    "answerId": "C",
+    "explanation": "文化や自然は人類共通の財産であり、国際協力で守るという考えが広まった。"
+  },
+  {
+    "id": "g4-basic-heritage6-001",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "title": "世界遺産が守られる最も重要な目的はどれか。",
+    "choices": [
+      { "id": "A", "text": "観光客を増やすため" },
+      { "id": "B", "text": "国の収入を増やすため" },
+      { "id": "C", "text": "人類共通の遺産として将来に残すため" },
+      { "id": "D", "text": "新しい建物を建てるため" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産は、人類共通の遺産として将来の世代に引き継ぐことを目的としている。"
+  },
+  {
+    "id": "g4-basic-heritage6-002",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "title": "世界遺産基金の役割として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "観光広告に使う" },
+      { "id": "B", "text": "軍事費として使う" },
+      { "id": "C", "text": "世界遺産の保護や修復を支援する" },
+      { "id": "D", "text": "国の借金を返す" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産基金は、保護・修復・調査などに必要な資金援助を行う。"
+  },
+  {
+    "id": "g4-basic-heritage6-003",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "title": "世界遺産を守るために重要とされている考え方はどれか。",
+    "choices": [
+      { "id": "A", "text": "大量消費" },
+      { "id": "B", "text": "持続可能な保護" },
+      { "id": "C", "text": "無制限な開発" },
+      { "id": "D", "text": "短期的利益" }
+    ],
+    "answerId": "B",
+    "explanation": "将来にわたって価値を保つため、持続可能な保護が重要とされている。"
+  },
+  {
+    "id": "g4-basic-heritage6-004",
+    "grade": 4,
+    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "title": "世界遺産が国際的に守られる理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "特定の国の私有財産だから" },
+      { "id": "B", "text": "人類全体の歴史や自然に関わるから" },
+      { "id": "C", "text": "新しい建物だから" },
+      { "id": "D", "text": "経済効果が高いから" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産は、人類全体の歴史や自然環境に関わる重要な価値をもつため、国際的に守られる。"
+  },
+  {
+    "id": "g4-shiretoko-001",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床が世界遺産に登録された区分として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "危機遺産" }
+    ],
+    "answerId": "B",
+    "explanation": "知床は、自然環境や生態系の価値が評価され、自然遺産として登録されている。"
+  },
+  {
+    "id": "g4-shiretoko-002",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床が世界遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1995年" },
+      { "id": "B", "text": "2000年" },
+      { "id": "C", "text": "2005年" },
+      { "id": "D", "text": "2010年" }
+    ],
+    "answerId": "C",
+    "explanation": "知床は2005年に世界自然遺産として登録された。"
+  },
+  {
+    "id": "g4-shiretoko-003",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床が評価された世界遺産の登録基準はどれか。",
+    "choices": [
+      { "id": "A", "text": "①②" },
+      { "id": "B", "text": "③④" },
+      { "id": "C", "text": "⑤⑥" },
+      { "id": "D", "text": "⑨⑩" }
+    ],
+    "answerId": "D",
+    "explanation": "知床は、生態系や生物多様性が評価され、登録基準⑨⑩が認められた。"
+  },
+  {
+    "id": "g4-shiretoko-004",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床の自然環境の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "砂漠の気候が広がっている" },
+      { "id": "B", "text": "海と陸が切り離された生態系" },
+      { "id": "C", "text": "海から陸へつながる食物連鎖" },
+      { "id": "D", "text": "人工的に整備された森林" }
+    ],
+    "answerId": "C",
+    "explanation": "知床では、海の栄養が川や森へとつながる食物連鎖が見られる。"
+  },
+  {
+    "id": "g4-shiretoko-005",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床の海に冬に流れ着く氷を何というか。",
+    "choices": [
+      { "id": "A", "text": "氷河" },
+      { "id": "B", "text": "流氷" },
+      { "id": "C", "text": "氷山" },
+      { "id": "D", "text": "永久凍土" }
+    ],
+    "answerId": "B",
+    "explanation": "知床周辺の海には、冬になるとオホーツク海から流氷が流れ着く。"
+  },
+  {
+    "id": "g4-shiretoko-006",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床に生息する大型哺乳類として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "ゾウ" },
+      { "id": "B", "text": "ライオン" },
+      { "id": "C", "text": "ヒグマ" },
+      { "id": "D", "text": "キリン" }
+    ],
+    "answerId": "C",
+    "explanation": "知床にはヒグマが生息しており、豊かな自然環境を象徴している。"
+  },
+  {
+    "id": "g4-shiretoko-007",
+    "grade": 4,
+    "chapter": "知床（自然遺産）",
+    "title": "知床で見られる鳥類として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "スズメ" },
+      { "id": "B", "text": "オジロワシ" },
+      { "id": "C", "text": "ハト" },
+      { "id": "D", "text": "ツバメ" }
+    ],
+    "answerId": "B",
+    "explanation": "知床ではオジロワシなどの猛禽類を見ることができる。"
+  },
+  {
+    "id": "g4-sichuanpanda-001",
+    "grade": 4,
+    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "title": "四川省のジャイアントパンダ保護区群が世界遺産に登録された理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "都市景観が美しいため" },
+      { "id": "B", "text": "希少な動物の生息地を守るため" },
+      { "id": "C", "text": "古代遺跡が多いため" },
+      { "id": "D", "text": "観光施設が整っているため" }
+    ],
+    "answerId": "B",
+    "explanation": "四川省の保護区群は、ジャイアントパンダなど希少動物の重要な生息地として評価された。"
+  },
+  {
+    "id": "g4-sichuanpanda-002",
+    "grade": 4,
+    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "title": "四川省のジャイアントパンダ保護区群が属する世界遺産の区分はどれか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "危機遺産" }
+    ],
+    "answerId": "B",
+    "explanation": "生態系や生物多様性が評価され、自然遺産として登録されている。"
+  },
+  {
+    "id": "g4-sichuanpanda-003",
+    "grade": 4,
+    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "title": "ジャイアントパンダが主に生息している環境として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "砂漠" },
+      { "id": "B", "text": "高山の森林地帯" },
+      { "id": "C", "text": "氷原" },
+      { "id": "D", "text": "熱帯の海岸" }
+    ],
+    "answerId": "B",
+    "explanation": "ジャイアントパンダは、標高の高い山地の森林に生息している。"
+  },
+  {
+    "id": "g4-jomon-001",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "北海道・北東北の縄文遺跡群の登録年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2015年" },
+      { "id": "B", "text": "2018年" },
+      { "id": "C", "text": "2021年" },
+      { "id": "D", "text": "2023年" }
+    ],
+    "answerId": "C",
+    "explanation": "北海道・北東北の縄文遺跡群は2021年に世界遺産に登録された。"
+  },
+  {
+    "id": "g4-jomon-002",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "この遺産の登録区分はどれか。",
+    "choices": [
+      { "id": "A", "text": "自然遺産" },
+      { "id": "B", "text": "複合遺産" },
+      { "id": "C", "text": "文化遺産" },
+      { "id": "D", "text": "負の遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "縄文遺跡群は文化的価値が評価され、文化遺産として登録された。"
+  },
+  {
+    "id": "g4-jomon-003",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文時代の生活として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "牧畜中心" },
+      { "id": "B", "text": "狩猟・採集・漁労" },
+      { "id": "C", "text": "稲作農業" },
+      { "id": "D", "text": "交易都市" }
+    ],
+    "answerId": "B",
+    "explanation": "縄文時代の人々は狩猟・採集・漁労を中心に生活していた。"
+  },
+  {
+    "id": "g4-jomon-004",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文時代の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "砂漠文明" },
+      { "id": "B", "text": "遊牧生活のみ" },
+      { "id": "C", "text": "定住生活" },
+      { "id": "D", "text": "海洋国家" }
+    ],
+    "answerId": "C",
+    "explanation": "縄文時代は狩猟採集社会でありながら定住生活を行っていた点が特徴である。"
+  },
+  {
+    "id": "g4-jomon-005",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文時代が始まったのは約いつか。",
+    "choices": [
+      { "id": "A", "text": "3000年前" },
+      { "id": "B", "text": "5000年前" },
+      { "id": "C", "text": "1万年前" },
+      { "id": "D", "text": "約1万5000年前" }
+    ],
+    "answerId": "D",
+    "explanation": "縄文時代は約1万5000年前に始まったとされている。"
+  },
+  {
+    "id": "g4-jomon-006",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文遺跡群の代表的遺跡はどれか。",
+    "choices": [
+      { "id": "A", "text": "吉野ヶ里遺跡" },
+      { "id": "B", "text": "三内丸山遺跡" },
+      { "id": "C", "text": "平城京" },
+      { "id": "D", "text": "姫路城" }
+    ],
+    "answerId": "B",
+    "explanation": "三内丸山遺跡は縄文遺跡群を代表する大規模遺跡である。"
+  },
+  {
+    "id": "g4-jomon-007",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "環状に石を並べた遺構を何というか。",
+    "choices": [
+      { "id": "A", "text": "貝塚" },
+      { "id": "B", "text": "石室" },
+      { "id": "C", "text": "環状列石" },
+      { "id": "D", "text": "古墳" }
+    ],
+    "answerId": "C",
+    "explanation": "環状に石を並べた遺構は環状列石と呼ばれる。"
+  },
+  {
+    "id": "g4-jomon-008",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文時代の代表的土器はどれか。",
+    "choices": [
+      { "id": "A", "text": "青磁" },
+      { "id": "B", "text": "須恵器" },
+      { "id": "C", "text": "縄文土器" },
+      { "id": "D", "text": "磁器" }
+    ],
+    "answerId": "C",
+    "explanation": "縄文時代の代表的な土器は縄文土器である。"
+  },
+  {
+    "id": "g4-jomon-009",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "縄文文化が評価された主な理由はどれか。",
+    "choices": [
+      { "id": "A", "text": "戦争技術" },
+      { "id": "B", "text": "金属文明" },
+      { "id": "C", "text": "農業革命" },
+      { "id": "D", "text": "定住生活と独自の精神文化" }
+    ],
+    "answerId": "D",
+    "explanation": "縄文文化は、定住生活と独自の精神文化を持つ点が評価された。"
+  },
+  {
+    "id": "g4-jomon-010",
+    "grade": 4,
+    "chapter": "北海道・北東北の縄文遺跡群",
+    "title": "遺跡群が分布している地域はどれか。",
+    "choices": [
+      { "id": "A", "text": "九州" },
+      { "id": "B", "text": "近畿" },
+      { "id": "C", "text": "北海道・東北" },
+      { "id": "D", "text": "四国" }
+    ],
+    "answerId": "C",
+    "explanation": "縄文遺跡群は北海道と東北地方北部に分布している。"
+  },
+  {
+    "id": "g4-chinchorro-001",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "この遺産がある国はどこか。",
+    "choices": [
+      { "id": "A", "text": "ペルー" },
+      { "id": "B", "text": "メキシコ" },
+      { "id": "C", "text": "チリ" },
+      { "id": "D", "text": "ブラジル" }
+    ],
+    "answerId": "C",
+    "explanation": "チンチョーロ文化はチリに存在する。"
+  },
+  {
+    "id": "g4-chinchorro-002",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "登録区分はどれか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "自然遺産" },
+      { "id": "C", "text": "複合遺産" },
+      { "id": "D", "text": "危機遺産" }
+    ],
+    "answerId": "A",
+    "explanation": "チンチョーロ文化は文化遺産として登録されている。"
+  },
+  {
+    "id": "g4-chinchorro-003",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "登録年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2015年" },
+      { "id": "B", "text": "2018年" },
+      { "id": "C", "text": "2021年" },
+      { "id": "D", "text": "2023年" }
+    ],
+    "answerId": "C",
+    "explanation": "チンチョーロ文化は2021年に世界遺産に登録された。"
+  },
+  {
+    "id": "g4-chinchorro-004",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "チンチョーロ文化の最大の特徴はどれか。",
+    "choices": [
+      { "id": "A", "text": "巨大ピラミッド" },
+      { "id": "B", "text": "世界最古級の人工ミイラ" },
+      { "id": "C", "text": "青銅器文明" },
+      { "id": "D", "text": "文字の発明" }
+    ],
+    "answerId": "B",
+    "explanation": "チンチョーロ文化は世界最古級の人工ミイラで知られる。"
+  },
+  {
+    "id": "g4-chinchorro-005",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "この地域がある砂漠はどれか。",
+    "choices": [
+      { "id": "A", "text": "サハラ砂漠" },
+      { "id": "B", "text": "ゴビ砂漠" },
+      { "id": "C", "text": "アタカマ砂漠" },
+      { "id": "D", "text": "カラハリ砂漠" }
+    ],
+    "answerId": "C",
+    "explanation": "チンチョーロ文化はアタカマ砂漠周辺で発展した。"
+  },
+  {
+    "id": "g4-chinchorro-006",
+    "grade": 4,
+    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "title": "チンチョーロ文化の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "王族のみミイラ化" },
+      { "id": "B", "text": "戦士のみ埋葬" },
+      { "id": "C", "text": "一般の人々もミイラ化" },
+      { "id": "D", "text": "火葬文化" }
+    ],
+    "answerId": "C",
+    "explanation": "チンチョーロ文化では、身分に関係なく一般の人々もミイラ化された。"
+  },
+  {
+    "id": "g4-sado-001",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "佐渡島の金山で、山がV字型に大きく割れて見える有名な採掘跡はどれか。",
+    "choices": [
+      { "id": "A", "text": "千枚田" },
+      { "id": "B", "text": "道遊の割戸" },
+      { "id": "C", "text": "鬼ヶ城" },
+      { "id": "D", "text": "龍飛崎" }
+    ],
+    "answerId": "B",
+    "explanation": "山がV字型に割れて見える採掘跡は「道遊の割戸」。"
+  },
+  {
+    "id": "g4-sado-002",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "佐渡島の金山で主に行われていた採掘方法として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "蒸気機関による機械採掘" },
+      { "id": "B", "text": "ダイナマイト採掘" },
+      { "id": "C", "text": "手作業中心の伝統的採掘" },
+      { "id": "D", "text": "海底採掘" }
+    ],
+    "answerId": "C",
+    "explanation": "佐渡島の金山は伝統的な手掘り採掘が特徴。"
+  },
+  {
+    "id": "g4-sado-003",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "佐渡島の金山が世界遺産登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1999年" },
+      { "id": "B", "text": "2014年" },
+      { "id": "C", "text": "2020年" },
+      { "id": "D", "text": "2024年" }
+    ],
+    "answerId": "D",
+    "explanation": "この問題セットでは、佐渡島の金山の登録年を2024年として扱っている。"
+  },
+  {
+    "id": "g4-nikko-001",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "日光の社寺が表している宗教的特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "キリスト教のみ" },
+      { "id": "B", "text": "イスラム教のみ" },
+      { "id": "C", "text": "神道と仏教の融合" },
+      { "id": "D", "text": "ヒンドゥー教" }
+    ],
+    "answerId": "C",
+    "explanation": "日光の社寺は神仏習合（神道と仏教の融合）を象徴する。"
+  },
+  {
+    "id": "g4-nikko-002",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "徳川家康をまつる神社はどれか。",
+    "choices": [
+      { "id": "A", "text": "春日大社" },
+      { "id": "B", "text": "出雲大社" },
+      { "id": "C", "text": "東照宮" },
+      { "id": "D", "text": "厳島神社" }
+    ],
+    "answerId": "C",
+    "explanation": "徳川家康をまつるのは日光東照宮。"
+  },
+  {
+    "id": "g4-nikko-003",
+    "grade": 4,
+    "chapter": "佐渡島の金山・日光の社寺",
+    "title": "日光の社寺が世界遺産登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1983年" },
+      { "id": "B", "text": "1993年" },
+      { "id": "C", "text": "1999年" },
+      { "id": "D", "text": "2011年" }
+    ],
+    "answerId": "C",
+    "explanation": "日光の社寺は1999年に世界遺産に登録された。"
+  },
+  {
+    "id": "g4-munakata-015",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "「神宿る島」宗像・沖ノ島と関連遺産群が世界文化遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2007年" },
+      { "id": "B", "text": "2011年" },
+      { "id": "C", "text": "2015年" },
+      { "id": "D", "text": "2017年" }
+    ],
+    "answerId": "D",
+    "explanation": "宗像・沖ノ島と関連遺産群は2017年に世界文化遺産に登録された。"
+  },
+  {
+    "id": "g4-munakata-016",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "沖ノ島で古代から行われてきた、国家的な性格をもつ宗教的行為を表す語句はどれか。",
+    "choices": [
+      { "id": "A", "text": "巡礼" },
+      { "id": "B", "text": "修験" },
+      { "id": "C", "text": "祭祀" },
+      { "id": "D", "text": "供養" }
+    ],
+    "answerId": "C",
+    "explanation": "沖ノ島では国家的な性格をもつ祭祀が古代から行われてきた。"
+  },
+  {
+    "id": "g4-munakata-017",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "沖ノ島において現在も厳格に守られている、一般人の立ち入りを制限する考え方を表す語句はどれか。",
+    "choices": [
+      { "id": "A", "text": "聖域" },
+      { "id": "B", "text": "結界" },
+      { "id": "C", "text": "神領" },
+      { "id": "D", "text": "禁足地" }
+    ],
+    "answerId": "D",
+    "explanation": "沖ノ島は現在も禁足地として一般人の立ち入りが厳しく制限されている。"
+  },
+  {
+    "id": "g4-munakata-018",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "宗像大社で信仰されている三柱の女神を総称して何というか。",
+    "choices": [
+      { "id": "A", "text": "伊勢三神" },
+      { "id": "B", "text": "宗像三女神" },
+      { "id": "C", "text": "出雲三神" },
+      { "id": "D", "text": "住吉三神" }
+    ],
+    "answerId": "B",
+    "explanation": "宗像大社では宗像三女神が信仰されている。"
+  },
+  {
+    "id": "g4-munakata-019",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "宗像・沖ノ島関連遺産群が評価された理由として正しい語句はどれか。",
+    "choices": [
+      { "id": "A", "text": "農耕文化の発展" },
+      { "id": "B", "text": "武士階級の成立" },
+      { "id": "C", "text": "航海安全信仰" },
+      { "id": "D", "text": "城郭防衛技術" }
+    ],
+    "answerId": "C",
+    "explanation": "宗像・沖ノ島関連遺産群は航海安全信仰を示す遺産として評価された。"
+  },
+  {
+    "id": "g4-munakata-020",
+    "grade": 4,
+    "chapter": "宗像・沖ノ島と関連遺産群",
+    "title": "次の英語説明が示す内容として正しい語句はどれか。Rituals performed for about 500 years from the latter half of the 4th century.",
+    "choices": [
+      { "id": "A", "text": "仏教儀礼" },
+      { "id": "B", "text": "古代祭祀" },
+      { "id": "C", "text": "神仏習合" },
+      { "id": "D", "text": "修験道" }
+    ],
+    "answerId": "B",
+    "explanation": "4世紀後半から約500年間続いた宗教的儀礼は古代祭祀を指す。"
+  },
+  {
+    "id": "g4-nagasaki-021",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "「長崎と天草地方の潜伏キリシタン関連遺産」が世界文化遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2013年" },
+      { "id": "B", "text": "2015年" },
+      { "id": "C", "text": "2017年" },
+      { "id": "D", "text": "2018年" }
+    ],
+    "answerId": "D",
+    "explanation": "長崎と天草地方の潜伏キリシタン関連遺産は2018年に世界文化遺産に登録された。"
+  },
+  {
+    "id": "g4-nagasaki-022",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "江戸時代に禁止されたキリスト教を、密かに信仰し続けた人々を何と呼ぶか。",
+    "choices": [
+      { "id": "A", "text": "隠れ念仏" },
+      { "id": "B", "text": "潜伏キリシタン" },
+      { "id": "C", "text": "修験者" },
+      { "id": "D", "text": "宣教師" }
+    ],
+    "answerId": "B",
+    "explanation": "禁教下でも密かにキリスト教信仰を続けた人々は潜伏キリシタンと呼ばれる。"
+  },
+  {
+    "id": "g4-nagasaki-023",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "潜伏キリシタンが信仰を続けるために、表向きは仏教徒を装った行為を指す語句はどれか。",
+    "choices": [
+      { "id": "A", "text": "神仏習合" },
+      { "id": "B", "text": "檀家制度" },
+      { "id": "C", "text": "仮装信仰" },
+      { "id": "D", "text": "偽装改宗" }
+    ],
+    "answerId": "D",
+    "explanation": "表向きは仏教徒を装って信仰を続けた行為は偽装改宗と呼ばれる。"
+  },
+  {
+    "id": "g4-nagasaki-024",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "日本でキリスト教が正式に解禁されたのは、次のうちどれか。",
+    "choices": [
+      { "id": "A", "text": "江戸時代初期" },
+      { "id": "B", "text": "鎖国政策開始時" },
+      { "id": "C", "text": "明治時代" },
+      { "id": "D", "text": "大正時代" }
+    ],
+    "answerId": "C",
+    "explanation": "キリスト教は明治時代に正式に解禁された。"
+  },
+  {
+    "id": "g4-nagasaki-025",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "潜伏キリシタンが、信仰対象を仏像などに置き換えて拝んだものを何というか。",
+    "choices": [
+      { "id": "A", "text": "マリア観音" },
+      { "id": "B", "text": "地蔵信仰" },
+      { "id": "C", "text": "阿弥陀信仰" },
+      { "id": "D", "text": "観音菩薩" }
+    ],
+    "answerId": "A",
+    "explanation": "マリア像を観音像に見立てた信仰対象はマリア観音と呼ばれる。"
+  },
+  {
+    "id": "g4-nagasaki-026",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "次の英語説明が示す人々として正しい語句はどれか。People who secretly continued to practice Christianity despite its prohibition.",
+    "choices": [
+      { "id": "A", "text": "宣教師" },
+      { "id": "B", "text": "修道士" },
+      { "id": "C", "text": "潜伏キリシタン" },
+      { "id": "D", "text": "仏僧" }
+    ],
+    "answerId": "C",
+    "explanation": "禁教下でも密かにキリスト教を信仰した人々は潜伏キリシタンである。"
+  },
+  {
+    "id": "g4-nagasaki-027",
+    "grade": 4,
+    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
+    "title": "「長崎と天草地方の潜伏キリシタン関連遺産」が評価された主な理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "城郭建築の発展" },
+      { "id": "B", "text": "海上交易の拠点" },
+      { "id": "C", "text": "信仰の継承と適応" },
+      { "id": "D", "text": "農村景観の保存" }
+    ],
+    "answerId": "C",
+    "explanation": "禁教下でも信仰を守り、適応させながら継承した点が評価された。"
+  },
 
+  {
+    "id": "g4-meiji-028",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "「明治日本の産業革命遺産」が世界文化遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2009年" },
+      { "id": "B", "text": "2011年" },
+      { "id": "C", "text": "2013年" },
+      { "id": "D", "text": "2015年" }
+    ],
+    "answerId": "D",
+    "explanation": "明治日本の産業革命遺産は2015年に世界文化遺産に登録された。"
+  },
+  {
+    "id": "g4-meiji-029",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "この世界遺産が評価された、日本の近代化の中心となった産業分野として正しい組み合わせはどれか。",
+    "choices": [
+      { "id": "A", "text": "農業・林業・水産業" },
+      { "id": "B", "text": "製鉄・製鋼・造船・石炭産業" },
+      { "id": "C", "text": "繊維工業・食品工業" },
+      { "id": "D", "text": "商業・金融業" }
+    ],
+    "answerId": "B",
+    "explanation": "製鉄・製鋼・造船・石炭産業が日本の近代化を支えた。"
+  },
+  {
+    "id": "g4-meiji-030",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "写真に示されている、軍艦のような外観からその名で呼ばれる島はどれか。",
+    "choices": [
+      { "id": "A", "text": "佐渡島" },
+      { "id": "B", "text": "端島" },
+      { "id": "C", "text": "屋久島" },
+      { "id": "D", "text": "犬島" }
+    ],
+    "answerId": "B",
+    "explanation": "軍艦のような外観から端島は注目された。"
+  },
+  {
+    "id": "g4-meiji-031",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "端島が通称として呼ばれている名称はどれか。",
+    "choices": [
+      { "id": "A", "text": "鉄島" },
+      { "id": "B", "text": "炭島" },
+      { "id": "C", "text": "軍艦島" },
+      { "id": "D", "text": "要塞島" }
+    ],
+    "answerId": "C",
+    "explanation": "端島はその外観から軍艦島と呼ばれている。"
+  },
+  {
+    "id": "g4-meiji-032",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "明治日本の産業革命遺産に含まれる資源産業として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "金鉱業" },
+      { "id": "B", "text": "銀鉱業" },
+      { "id": "C", "text": "石炭産業" },
+      { "id": "D", "text": "石油産業" }
+    ],
+    "answerId": "C",
+    "explanation": "明治日本の産業革命遺産には石炭産業が含まれる。"
+  },
+  {
+    "id": "g4-meiji-033",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "この遺産群が示している、日本の近代化の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "自然発生的に進んだ近代化" },
+      { "id": "B", "text": "西洋技術を導入した急速な工業化" },
+      { "id": "C", "text": "江戸時代からの連続的発展" },
+      { "id": "D", "text": "軍事目的のみの工業化" }
+    ],
+    "answerId": "B",
+    "explanation": "西洋技術の導入により急速に工業化した点が特徴である。"
+  },
+  {
+    "id": "g4-meiji-034",
+    "grade": 4,
+    "chapter": "明治日本の産業革命遺産",
+    "title": "明治日本の産業革命遺産は、何世紀後半からの発展を示しているか。",
+    "choices": [
+      { "id": "A", "text": "17世紀後半" },
+      { "id": "B", "text": "18世紀後半" },
+      { "id": "C", "text": "19世紀後半" },
+      { "id": "D", "text": "20世紀前半" }
+    ],
+    "answerId": "C",
+    "explanation": "19世紀後半からの近代化・工業化の歩みを示す遺産群である。"
+  },
 
+  {
+    "id": "g4-yakushima-035",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島が世界自然遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1989年" },
+      { "id": "B", "text": "1991年" },
+      { "id": "C", "text": "1993年" },
+      { "id": "D", "text": "1995年" }
+    ],
+    "answerId": "C",
+    "explanation": "屋久島は1993年に世界自然遺産に登録された。"
+  },
+  {
+    "id": "g4-yakushima-036",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島が位置する都道府県はどこか。",
+    "choices": [
+      { "id": "A", "text": "宮崎県" },
+      { "id": "B", "text": "熊本県" },
+      { "id": "C", "text": "沖縄県" },
+      { "id": "D", "text": "鹿児島県" }
+    ],
+    "answerId": "D",
+    "explanation": "屋久島は鹿児島県に属する。"
+  },
+  {
+    "id": "g4-yakushima-037",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島の自然的価値として評価されている、標高差による植生の変化を表す語句はどれか。",
+    "choices": [
+      { "id": "A", "text": "垂直分布" },
+      { "id": "B", "text": "水平分布" },
+      { "id": "C", "text": "生態遷移" },
+      { "id": "D", "text": "森林循環" }
+    ],
+    "answerId": "A",
+    "explanation": "標高差によって植生が変化することを垂直分布という。"
+  },
+  {
+    "id": "g4-yakushima-038",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島に見られる、樹齢1,000年以上のスギを何というか。",
+    "choices": [
+      { "id": "A", "text": "千年杉" },
+      { "id": "B", "text": "屋久杉" },
+      { "id": "C", "text": "縄文杉" },
+      { "id": "D", "text": "古代杉" }
+    ],
+    "answerId": "B",
+    "explanation": "樹齢1,000年以上のスギは屋久杉と呼ばれる。"
+  },
+  {
+    "id": "g4-yakushima-039",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島を代表する、樹齢数千年とされるスギの名称はどれか。",
+    "choices": [
+      { "id": "A", "text": "大王杉" },
+      { "id": "B", "text": "弥生杉" },
+      { "id": "C", "text": "縄文杉" },
+      { "id": "D", "text": "神代杉" }
+    ],
+    "answerId": "C",
+    "explanation": "屋久島を代表する古木として縄文杉が知られる。"
+  },
+  {
+    "id": "g4-yakushima-040",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島の自然環境の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "年間降水量が少ない" },
+      { "id": "B", "text": "乾燥した気候" },
+      { "id": "C", "text": "多雨な気候" },
+      { "id": "D", "text": "砂漠性気候" }
+    ],
+    "answerId": "C",
+    "explanation": "屋久島は雨が多い地域として知られる。"
+  },
+  {
+    "id": "g4-yakushima-041",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島に生息し、固有種として知られる動物はどれか。",
+    "choices": [
+      { "id": "A", "text": "ニホンジカ" },
+      { "id": "B", "text": "ヤクシカ" },
+      { "id": "C", "text": "エゾシカ" },
+      { "id": "D", "text": "リュウキュウジカ" }
+    ],
+    "answerId": "B",
+    "explanation": "屋久島の固有のシカとしてヤクシカが知られる。"
+  },
+  {
+    "id": "g4-yakushima-042",
+    "grade": 4,
+    "chapter": "屋久島",
+    "title": "屋久島の生態系の特徴として正しい説明はどれか。",
+    "choices": [
+      { "id": "A", "text": "単一の植生のみが分布する" },
+      { "id": "B", "text": "高山植物のみが見られる" },
+      { "id": "C", "text": "亜熱帯から冷温帯までの植生が連続する" },
+      { "id": "D", "text": "人工林が大部分を占める" }
+    ],
+    "answerId": "C",
+    "explanation": "標高差により亜熱帯〜冷温帯まで植生が連続する点が特徴である。"
+  },
 
+  {
+    "id": "g4-nansei-043",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "「奄美大島、徳之島、沖縄島北部及び西表島」が世界自然遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "2017年" },
+      { "id": "B", "text": "2019年" },
+      { "id": "C", "text": "2021年" },
+      { "id": "D", "text": "2023年" }
+    ],
+    "answerId": "C",
+    "explanation": "奄美大島、徳之島、沖縄島北部及び西表島は2021年に世界自然遺産に登録された。"
+  },
+  {
+    "id": "g4-nansei-044",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "この世界自然遺産が位置する地域として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "北海道" },
+      { "id": "B", "text": "本州" },
+      { "id": "C", "text": "九州" },
+      { "id": "D", "text": "南西諸島" }
+    ],
+    "answerId": "D",
+    "explanation": "対象地域は南西諸島に位置する。"
+  },
+  {
+    "id": "g4-nansei-045",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "奄美大島や沖縄島北部に多く見られる、生物の固有性が高い森林を何というか。",
+    "choices": [
+      { "id": "A", "text": "照葉樹林" },
+      { "id": "B", "text": "針葉樹林" },
+      { "id": "C", "text": "落葉広葉樹林" },
+      { "id": "D", "text": "マングローブ林" }
+    ],
+    "answerId": "A",
+    "explanation": "固有種が多い森林として照葉樹林が重要である。"
+  },
+  {
+    "id": "g4-nansei-046",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "この遺産群が評価された主な理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "氷河地形の保存" },
+      { "id": "B", "text": "大規模な火山活動" },
+      { "id": "C", "text": "高い生物多様性と固有種" },
+      { "id": "D", "text": "砂漠生態系の広がり" }
+    ],
+    "answerId": "C",
+    "explanation": "高い生物多様性と固有種の多さが評価された。"
+  },
+  {
+    "id": "g4-nansei-047",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "奄美大島や徳之島に生息する、国の特別天然記念物である動物はどれか。",
+    "choices": [
+      { "id": "A", "text": "ヤンバルクイナ" },
+      { "id": "B", "text": "アマミノクロウサギ" },
+      { "id": "C", "text": "イリオモテヤマネコ" },
+      { "id": "D", "text": "オキナワトゲネズミ" }
+    ],
+    "answerId": "B",
+    "explanation": "奄美の特別天然記念物としてアマミノクロウサギが知られる。"
+  },
+  {
+    "id": "g4-nansei-048",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "沖縄島北部（やんばる地域）に生息し、飛べない鳥として知られる固有種はどれか。",
+    "choices": [
+      { "id": "A", "text": "ヤンバルクイナ" },
+      { "id": "B", "text": "カンムリワシ" },
+      { "id": "C", "text": "オオコノハズク" },
+      { "id": "D", "text": "アカショウビン" }
+    ],
+    "answerId": "A",
+    "explanation": "飛べない鳥としてヤンバルクイナが有名である。"
+  },
+  {
+    "id": "g4-nansei-049",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "西表島に生息し、島全体に100頭程度しかいないとされる希少な動物はどれか。",
+    "choices": [
+      { "id": "A", "text": "ツシマヤマネコ" },
+      { "id": "B", "text": "アマミヤマシギ" },
+      { "id": "C", "text": "イリオモテヤマネコ" },
+      { "id": "D", "text": "ベンガルトラ" }
+    ],
+    "answerId": "C",
+    "explanation": "西表島の希少種としてイリオモテヤマネコが知られる。"
+  },
+  {
+    "id": "g4-nansei-050",
+    "grade": 4,
+    "chapter": "奄美大島、徳之島、沖縄島北部及び西表島",
+    "title": "奄美大島・沖縄島北部・西表島の自然環境の共通した特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "寒冷で乾燥した気候" },
+      { "id": "B", "text": "温暖多雨な亜熱帯気候" },
+      { "id": "C", "text": "高山性気候" },
+      { "id": "D", "text": "地中海性気候" }
+    ],
+    "answerId": "B",
+    "explanation": "南西諸島は温暖で雨が多い亜熱帯気候が特徴である。"
+  },
+
+  {
+    "id": "g4-ryukyu-051",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "「琉球王国のグスク及び関連遺産群」が世界文化遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1995年" },
+      { "id": "B", "text": "1998年" },
+      { "id": "C", "text": "2000年" },
+      { "id": "D", "text": "2003年" }
+    ],
+    "answerId": "C",
+    "explanation": "琉球王国のグスク及び関連遺産群は2000年に登録された。"
+  },
+  {
+    "id": "g4-ryukyu-052",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "「グスク」とは、琉球王国時代に築かれた何を指す語句か。",
+    "choices": [
+      { "id": "A", "text": "神殿" },
+      { "id": "B", "text": "城" },
+      { "id": "C", "text": "寺院" },
+      { "id": "D", "text": "墓" }
+    ],
+    "answerId": "B",
+    "explanation": "グスクは琉球の城（城郭）を指す。"
+  },
+  {
+    "id": "g4-ryukyu-053",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "琉球王国のグスクが築かれた主な時代として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "平安時代" },
+      { "id": "B", "text": "鎌倉時代" },
+      { "id": "C", "text": "室町時代" },
+      { "id": "D", "text": "中世（12〜16世紀）" }
+    ],
+    "answerId": "D",
+    "explanation": "グスク文化は中世（12〜16世紀）に形成された。"
+  },
+  {
+    "id": "g4-ryukyu-054",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "琉球王国のグスク及び関連遺産群が位置する都道府県はどこか。",
+    "choices": [
+      { "id": "A", "text": "鹿児島県" },
+      { "id": "B", "text": "沖縄県" },
+      { "id": "C", "text": "宮崎県" },
+      { "id": "D", "text": "熊本県" }
+    ],
+    "answerId": "B",
+    "explanation": "琉球王国のグスクは沖縄県に分布する。"
+  },
+  {
+    "id": "g4-ryukyu-055",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "琉球王国の信仰の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "仏教中心の信仰" },
+      { "id": "B", "text": "キリスト教信仰" },
+      { "id": "C", "text": "自然崇拝と祖先崇拝" },
+      { "id": "D", "text": "イスラム教信仰" }
+    ],
+    "answerId": "C",
+    "explanation": "琉球では自然崇拝と祖先崇拝が重要である。"
+  },
+  {
+    "id": "g4-ryukyu-056",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "琉球王国のグスクが評価された理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "西洋式要塞建築の導入" },
+      { "id": "B", "text": "日本本土の城郭文化の模倣" },
+      { "id": "C", "text": "独自の石造城郭文化" },
+      { "id": "D", "text": "木造建築技術の発展" }
+    ],
+    "answerId": "C",
+    "explanation": "琉球独自の石造城郭文化が評価された。"
+  },
+  {
+    "id": "g4-ryukyu-057",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "琉球王国のグスクと深く関わる、王や有力者が祈りを捧げた聖地を何というか。",
+    "choices": [
+      { "id": "A", "text": "寺" },
+      { "id": "B", "text": "神社" },
+      { "id": "C", "text": "御嶽（うたき）" },
+      { "id": "D", "text": "修験場" }
+    ],
+    "answerId": "C",
+    "explanation": "祈りの聖地は御嶽（うたき）と呼ばれる。"
+  },
+  {
+    "id": "g4-ryukyu-058",
+    "grade": 4,
+    "chapter": "琉球王国のグスク及び関連遺産群",
+    "title": "次のうち、「琉球王国のグスク及び関連遺産群」に含まれる代表的な遺跡はどれか。",
+    "choices": [
+      { "id": "A", "text": "首里城跡" },
+      { "id": "B", "text": "姫路城" },
+      { "id": "C", "text": "松本城" },
+      { "id": "D", "text": "熊本城" }
+    ],
+    "answerId": "A",
+    "explanation": "代表例として首里城跡が含まれる。"
+  },
+
+  {
+    "id": "g4-wh-059",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "世界遺産に登録される前段階として、各国が候補を掲載するリストを何というか。",
+    "choices": [
+      { "id": "A", "text": "推薦リスト" },
+      { "id": "B", "text": "予備リスト" },
+      { "id": "C", "text": "暫定リスト" },
+      { "id": "D", "text": "登録リスト" }
+    ],
+    "answerId": "C",
+    "explanation": "各国が候補を載せるのは暫定リストである。"
+  },
+  {
+    "id": "g4-wh-060",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "日本が世界遺産登録を目指すために、候補を提出する相手はどこか。",
+    "choices": [
+      { "id": "A", "text": "国連総会" },
+      { "id": "B", "text": "ユネスコ世界遺産センター" },
+      { "id": "C", "text": "ICOMOS" },
+      { "id": "D", "text": "世界銀行" }
+    ],
+    "answerId": "B",
+    "explanation": "推薦書類はユネスコ世界遺産センターへ提出する。"
+  },
+  {
+    "id": "g4-wh-061",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "文化遺産の評価を行う国際的な諮問機関はどれか。",
+    "choices": [
+      { "id": "A", "text": "IUCN" },
+      { "id": "B", "text": "ICCROM" },
+      { "id": "C", "text": "ICOMOS" },
+      { "id": "D", "text": "WHO" }
+    ],
+    "answerId": "C",
+    "explanation": "文化遺産の評価はICOMOSが担う。"
+  },
+  {
+    "id": "g4-wh-062",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "自然遺産の評価を行う国際的な諮問機関はどれか。",
+    "choices": [
+      { "id": "A", "text": "ICOMOS" },
+      { "id": "B", "text": "IUCN" },
+      { "id": "C", "text": "UNESCO" },
+      { "id": "D", "text": "FAO" }
+    ],
+    "answerId": "B",
+    "explanation": "自然遺産の評価はIUCNが担う。"
+  },
+  {
+    "id": "g4-wh-063",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "世界遺産として登録するかどうかを最終的に決定する機関はどれか。",
+    "choices": [
+      { "id": "A", "text": "ユネスコ事務局" },
+      { "id": "B", "text": "世界遺産委員会" },
+      { "id": "C", "text": "国際連合" },
+      { "id": "D", "text": "各国政府" }
+    ],
+    "answerId": "B",
+    "explanation": "最終決定は世界遺産委員会が行う。"
+  },
+  {
+    "id": "g4-wh-064",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "日本の世界遺産候補を選定する国内の専門家会議はどれか。",
+    "choices": [
+      { "id": "A", "text": "世界遺産登録審査会" },
+      { "id": "B", "text": "文化審議会" },
+      { "id": "C", "text": "国会文化委員会" },
+      { "id": "D", "text": "観光庁審査会" }
+    ],
+    "answerId": "B",
+    "explanation": "国内の候補選定は文化審議会が担う。"
+  },
+  {
+    "id": "g4-wh-065",
+    "grade": 4,
+    "chapter": "世界遺産の登録制度",
+    "title": "世界遺産登録までの流れとして正しい順番はどれか。",
+    "choices": [
+      { "id": "A", "text": "推薦 → 登録 → 評価" },
+      { "id": "B", "text": "評価 → 暫定リスト → 登録" },
+      { "id": "C", "text": "暫定リスト → 推薦 → 評価 → 登録" },
+      { "id": "D", "text": "登録 → 評価 → 推薦" }
+    ],
+    "answerId": "C",
+    "explanation": "暫定リスト掲載後に推薦し、諮問機関評価を経て登録が決まる。"
+  },
+
+  {
+    "id": "g4-intangible-066",
+    "grade": 4,
+    "chapter": "無形文化遺産",
+    "title": "写真に示されている、仮面や衣装を用いた伝統的な踊りは、どの分類の遺産に該当するか。",
+    "choices": [
+      { "id": "A", "text": "世界自然遺産" },
+      { "id": "B", "text": "世界文化遺産" },
+      { "id": "C", "text": "無形文化遺産" },
+      { "id": "D", "text": "複合遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "祭礼や芸能など形のない文化は無形文化遺産に該当する。"
+  },
+  {
+    "id": "g4-intangible-067",
+    "grade": 4,
+    "chapter": "無形文化遺産",
+    "title": "祭礼や芸能など、人々の生活の中で受け継がれてきた文化を何というか。",
+    "choices": [
+      { "id": "A", "text": "有形文化遺産" },
+      { "id": "B", "text": "無形文化遺産" },
+      { "id": "C", "text": "記念物" },
+      { "id": "D", "text": "史跡" }
+    ],
+    "answerId": "B",
+    "explanation": "生活の中で継承される祭礼・芸能などは無形文化遺産である。"
+  },
+  {
+    "id": "g4-intangible-068",
+    "grade": 4,
+    "chapter": "無形文化遺産",
+    "title": "無形文化遺産が重視する価値として最も適切なものはどれか。",
+    "choices": [
+      { "id": "A", "text": "建築技術" },
+      { "id": "B", "text": "経済的価値" },
+      { "id": "C", "text": "人々による継承" },
+      { "id": "D", "text": "観光資源" }
+    ],
+    "answerId": "C",
+    "explanation": "無形文化遺産は人々による継承（生きた伝承）を重視する。"
+  },
+
+  {
+    "id": "g4-world-069",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「モン・サン・ミシェルとその湾」が位置する国はどこか。",
+    "choices": [
+      { "id": "A", "text": "イタリア" },
+      { "id": "B", "text": "スペイン" },
+      { "id": "C", "text": "フランス" },
+      { "id": "D", "text": "イギリス" }
+    ],
+    "answerId": "C",
+    "explanation": "モン・サン・ミシェルはフランスにある。"
+  },
+  {
+    "id": "g4-world-070",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「ローマのコロッセオ」が建設された時代として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "紀元前5世紀" },
+      { "id": "B", "text": "紀元前1世紀" },
+      { "id": "C", "text": "1世紀" },
+      { "id": "D", "text": "5世紀" }
+    ],
+    "answerId": "C",
+    "explanation": "コロッセオは古代ローマの1世紀に建設された。"
+  },
+  {
+    "id": "g4-world-071",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「アテネのアクロポリス」にある代表的建造物はどれか。",
+    "choices": [
+      { "id": "A", "text": "パンテオン" },
+      { "id": "B", "text": "パルテノン神殿" },
+      { "id": "C", "text": "コロッセオ" },
+      { "id": "D", "text": "ストーンヘンジ" }
+    ],
+    "answerId": "B",
+    "explanation": "アクロポリスの代表的建造物はパルテノン神殿である。"
+  },
+  {
+    "id": "g4-world-072",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「ギザのピラミッド地帯」が評価された主な理由はどれか。",
+    "choices": [
+      { "id": "A", "text": "中世の城郭建築" },
+      { "id": "B", "text": "古代エジプト文明の王墓" },
+      { "id": "C", "text": "近代工業遺産" },
+      { "id": "D", "text": "自然景観の美しさ" }
+    ],
+    "answerId": "B",
+    "explanation": "ギザは古代エジプト文明の王墓（ピラミッド）として評価された。"
+  },
+  {
+    "id": "g4-world-073",
+    "grade": 4,
+    "chapter": "世界の世界遺産（自然・複合）",
+    "title": "「ウルル（エアーズロック）」がある国はどこか。",
+    "choices": [
+      { "id": "A", "text": "ニュージーランド" },
+      { "id": "B", "text": "南アフリカ" },
+      { "id": "C", "text": "オーストラリア" },
+      { "id": "D", "text": "カナダ" }
+    ],
+    "answerId": "C",
+    "explanation": "ウルルはオーストラリアにある。"
+  },
+  {
+    "id": "g4-world-074",
+    "grade": 4,
+    "chapter": "世界の世界遺産（自然・複合）",
+    "title": "「サガルマータ国立公園」に含まれる世界最高峰はどれか。",
+    "choices": [
+      { "id": "A", "text": "K2" },
+      { "id": "B", "text": "キリマンジャロ" },
+      { "id": "C", "text": "マッターホルン" },
+      { "id": "D", "text": "エベレスト" }
+    ],
+    "answerId": "D",
+    "explanation": "サガルマータ国立公園にはエベレストが含まれる。"
+  },
+  {
+    "id": "g4-world-075",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「万里の長城」が築かれた主な目的として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "宗教儀礼" },
+      { "id": "B", "text": "交易の促進" },
+      { "id": "C", "text": "防衛" },
+      { "id": "D", "text": "王墓の建設" }
+    ],
+    "answerId": "C",
+    "explanation": "外敵からの侵入を防ぐ防衛目的で築かれた。"
+  },
+  {
+    "id": "g4-world-076",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「自由の女神像」が象徴している理念はどれか。",
+    "choices": [
+      { "id": "A", "text": "富と繁栄" },
+      { "id": "B", "text": "自由" },
+      { "id": "C", "text": "王権" },
+      { "id": "D", "text": "勝利" }
+    ],
+    "answerId": "B",
+    "explanation": "自由の女神像は自由を象徴する。"
+  },
+  {
+    "id": "g4-world-077",
+    "grade": 4,
+    "chapter": "世界の世界遺産（文化）",
+    "title": "「ナスカとパルパの地上絵」が評価された理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "石造建築技術" },
+      { "id": "B", "text": "巨大な地上絵" },
+      { "id": "C", "text": "中世都市計画" },
+      { "id": "D", "text": "火山活動" }
+    ],
+    "answerId": "B",
+    "explanation": "広大な地表に描かれた巨大な地上絵が評価された。"
+  },
+  {
+    "id": "g4-world-078",
+    "grade": 4,
+    "chapter": "世界の世界遺産（自然・複合）",
+    "title": "「ロス・グラシアレス国立公園」が評価された主な自然要素はどれか。",
+    "choices": [
+      { "id": "A", "text": "砂漠" },
+      { "id": "B", "text": "サンゴ礁" },
+      { "id": "C", "text": "氷河" },
+      { "id": "D", "text": "熱帯雨林" }
+    ],
+    "answerId": "C",
+    "explanation": "ロス・グラシアレス国立公園は氷河景観が評価された。"
+  },
+  {
+    "id": "g4-basic-001",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産が持つ、国や時代をこえて認められる価値を何というか。",
+    "choices": [
+      { "id": "A", "text": "文化的価値" },
+      { "id": "B", "text": "歴史的価値" },
+      { "id": "C", "text": "顕著な普遍的価値" },
+      { "id": "D", "text": "世界的評価" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産は、国や時代をこえて重要と認められる「顕著な普遍的価値」をもつことが条件である。"
+  },
+  {
+    "id": "g4-basic-002",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産を保護するために1972年に採択された国際条約は何か。",
+    "choices": [
+      { "id": "A", "text": "世界文化条約" },
+      { "id": "B", "text": "世界遺産条約" },
+      { "id": "C", "text": "ユネスコ憲章" },
+      { "id": "D", "text": "国際文化保護条約" }
+    ],
+    "answerId": "B",
+    "explanation": "1972年に採択された世界遺産条約に基づき、世界遺産制度が運用されている。"
+  },
+  {
+    "id": "g4-basic-003",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産条約を採択し、教育・科学・文化を通じて平和を目指す国連機関はどこか。",
+    "choices": [
+      { "id": "A", "text": "WHO" },
+      { "id": "B", "text": "UNICEF" },
+      { "id": "C", "text": "UNESCO" },
+      { "id": "D", "text": "UNDP" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産条約を採択したのは、国連専門機関であるユネスコである。"
+  },
+  {
+    "id": "g4-basic-004",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産への登録を最終的に決定する機関は何か。",
+    "choices": [
+      { "id": "A", "text": "ユネスコ事務局" },
+      { "id": "B", "text": "世界遺産委員会" },
+      { "id": "C", "text": "国連総会" },
+      { "id": "D", "text": "世界遺産センター" }
+    ],
+    "answerId": "B",
+    "explanation": "世界遺産への登録は、世界遺産委員会で審議・決定される。"
+  },
+  {
+    "id": "g4-basic-005",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産として登録される前に、各国が候補として記載するリストを何というか。",
+    "choices": [
+      { "id": "A", "text": "登録候補リスト" },
+      { "id": "B", "text": "世界遺産リスト" },
+      { "id": "C", "text": "暫定リスト" },
+      { "id": "D", "text": "推薦リスト" }
+    ],
+    "answerId": "C",
+    "explanation": "暫定リストに記載されていない遺産は、世界遺産に推薦できない。"
+  },
+  {
+    "id": "g4-basic-006",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "戦争・開発・災害などで危機にさらされている世界遺産を何というか。",
+    "choices": [
+      { "id": "A", "text": "負の遺産" },
+      { "id": "B", "text": "危機遺産" },
+      { "id": "C", "text": "消滅遺産" },
+      { "id": "D", "text": "保護遺産" }
+    ],
+    "answerId": "B",
+    "explanation": "顕著な普遍的価値が危機にさらされている遺産は危機遺産と呼ばれる。"
+  },
+  {
+    "id": "g4-basic-007",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "危機にある世界遺産を記載するリストを何というか。",
+    "choices": [
+      { "id": "A", "text": "世界遺産リスト" },
+      { "id": "B", "text": "暫定リスト" },
+      { "id": "C", "text": "危機遺産リスト" },
+      { "id": "D", "text": "保護対象リスト" }
+    ],
+    "answerId": "C",
+    "explanation": "危機遺産は危機遺産リストに記載され、国際的支援の対象となる。"
+  },
+  {
+    "id": "g4-basic-008",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "近現代の戦争や差別など、人類の負の歴史を伝える遺産を何というか。",
+    "choices": [
+      { "id": "A", "text": "文化遺産" },
+      { "id": "B", "text": "記念遺産" },
+      { "id": "C", "text": "負の遺産" },
+      { "id": "D", "text": "危機遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "負の遺産は、過去の過ちを記憶し、繰り返さないための遺産である。"
+  },
+  {
+    "id": "g4-basic-009",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産は誰の遺産と考えられているか。",
+    "choices": [
+      { "id": "A", "text": "登録国の遺産" },
+      { "id": "B", "text": "地域の遺産" },
+      { "id": "C", "text": "人類共通の遺産" },
+      { "id": "D", "text": "ユネスコの遺産" }
+    ],
+    "answerId": "C",
+    "explanation": "世界遺産は人類共通の遺産として、国境をこえて守られるべきものとされている。"
+  },
+  {
+    "id": "g4-basic-010",
+    "grade": 4,
+    "chapter": "世界遺産の基礎知識",
+    "title": "世界遺産の理念誕生のきっかけとなった、エジプトの巨大ダム建設は何か。",
+    "choices": [
+      { "id": "A", "text": "アスワン・ダム" },
+      { "id": "B", "text": "アスワン・ハイ・ダム" },
+      { "id": "C", "text": "ナイル・ダム" },
+      { "id": "D", "text": "ギザ・ダム" }
+    ],
+    "answerId": "B",
+    "explanation": "アスワン・ハイ・ダム建設をきっかけに、世界遺産の理念が生まれた。"
+  }
 ]
+
+
+
+
