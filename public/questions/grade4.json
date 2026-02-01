@@ -1067,20 +1067,6 @@
     "explanation": "知床ではオジロワシなどの猛禽類を見ることができる。"
   },
   {
-    "id": "g4-sichuanpanda-001",
-    "grade": 4,
-    "chapter": "四川省のジャイアントパンダ保護区群",
-    "title": "四川省のジャイアントパンダ保護区群が世界遺産に登録された理由として正しいものはどれか。",
-    "choices": [
-      { "id": "A", "text": "都市景観が美しいため" },
-      { "id": "B", "text": "希少な動物の生息地を守るため" },
-      { "id": "C", "text": "古代遺跡が多いため" },
-      { "id": "D", "text": "観光施設が整っているため" }
-    ],
-    "answerId": "B",
-    "explanation": "四川省の保護区群は、ジャイアントパンダなど希少動物の重要な生息地として評価された。"
-  },
-  {
     "id": "g4-sichuanpanda-002",
     "grade": 4,
     "chapter": "四川省のジャイアントパンダ保護区群",
@@ -1093,20 +1079,6 @@
     ],
     "answerId": "B",
     "explanation": "生態系や生物多様性が評価され、自然遺産として登録されている。"
-  },
-  {
-    "id": "g4-sichuanpanda-003",
-    "grade": 4,
-    "chapter": "四川省のジャイアントパンダ保護区群",
-    "title": "ジャイアントパンダが主に生息している環境として正しいものはどれか。",
-    "choices": [
-      { "id": "A", "text": "砂漠" },
-      { "id": "B", "text": "高山の森林地帯" },
-      { "id": "C", "text": "氷原" },
-      { "id": "D", "text": "熱帯の海岸" }
-    ],
-    "answerId": "B",
-    "explanation": "ジャイアントパンダは、標高の高い山地の森林に生息している。"
   },
   {
     "id": "g4-jomon-001",
@@ -1359,20 +1331,6 @@
     ],
     "answerId": "C",
     "explanation": "佐渡島の金山は伝統的な手掘り採掘が特徴。"
-  },
-  {
-    "id": "g4-sado-003",
-    "grade": 4,
-    "chapter": "佐渡島の金山",
-    "title": "佐渡島の金山が世界遺産登録された年はいつか。",
-    "choices": [
-      { "id": "A", "text": "1999年" },
-      { "id": "B", "text": "2014年" },
-      { "id": "C", "text": "2020年" },
-      { "id": "D", "text": "2024年" }
-    ],
-    "answerId": "D",
-    "explanation": "この問題セットでは、佐渡島の金山の登録年を2024年として扱っている。"
   },
   {
     "id": "g4-nikko-001",
@@ -2430,7 +2388,682 @@
     ],
     "answerId": "B",
     "explanation": "アスワン・ハイ・ダム建設をきっかけに、世界遺産の理念が生まれた。"
-  }
+  },
+  {
+  "id": "g4-shiretoko-011",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "「冬に海が凍り、夏に解ける海域」を指す語句はどれか。",
+  "choices": [
+    { "id": "A", "text": "寒流海域" },
+    { "id": "B", "text": "季節海水域" },
+    { "id": "C", "text": "内海" },
+    { "id": "D", "text": "閉鎖性海域" }
+  ],
+  "answerId": "B",
+  "explanation": "季節海水域とは、冬に海水が凍結し、夏に解ける海域を指す。"
+},
+{
+  "id": "g4-shiretoko-012",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "森林・川・海が互いに影響し合い、生き物がつながって生きる仕組みを何というか。",
+  "choices": [
+    { "id": "A", "text": "生物圏" },
+    { "id": "B", "text": "生態系" },
+    { "id": "C", "text": "食物連鎖" },
+    { "id": "D", "text": "自然環境" }
+  ],
+  "answerId": "B",
+  "explanation": "生態系とは、生物とそれを取り巻く環境が相互に関係し合う仕組みのこと。"
+},
+{
+  "id": "g4-shiretoko-009",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "「しれとこ100平方メートル運動」の目的として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "観光施設を整備するため" },
+    { "id": "B", "text": "野生動物を人工的に増やすため" },
+    { "id": "C", "text": "知床の自然を市民の力で守るため" },
+    { "id": "D", "text": "世界遺産登録を申請するため" }
+  ],
+  "answerId": "C",
+  "explanation": "市民が土地を買い取り、知床の自然を守ることを目的とした運動である。"
+},
+{
+  "id": "g4-shiretoko-014",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "数が減少し、このままでは絶滅するおそれがある生物を何というか。",
+  "choices": [
+    { "id": "A", "text": "外来種" },
+    { "id": "B", "text": "天然記念物" },
+    { "id": "C", "text": "絶滅危惧種" },
+    { "id": "D", "text": "保護種" }
+  ],
+  "answerId": "C",
+  "explanation": "絶滅危惧種とは、数が減少し、将来絶滅するおそれがある生物のこと。"
+},
+{
+  "id": "g4-shiretoko-015",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "「生態系」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "environment" },
+    { "id": "B", "text": "ecosystem" },
+    { "id": "C", "text": "food chain" },
+    { "id": "D", "text": "habitat" }
+  ],
+  "answerId": "B",
+  "explanation": "生態系は英語で ecosystem という。"
+},
+{
+  "id": "g4-shiretoko-016",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "「変化に富む」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "varied" },
+    { "id": "B", "text": "dangerous" },
+    { "id": "C", "text": "limited" },
+    { "id": "D", "text": "ancient" }
+  ],
+  "answerId": "A",
+  "explanation": "変化に富むは英語で varied という。"
+},
+{
+  "id": "g4-shiretoko-017",
+  "grade": 4,
+  "chapter": "知床",
+  "title": "「食物連鎖」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "food web" },
+    { "id": "B", "text": "food cycle" },
+    { "id": "C", "text": "food chain" },
+    { "id": "D", "text": "food system" }
+  ],
+  "answerId": "C",
+  "explanation": "食物連鎖は英語で food chain という。"
+},
+{
+  "id": "g4-jomon-001",
+  "grade": 4,
+  "chapter": "北海道・北東北の縄文遺跡群",
+  "title": "大湯環状列石の意味として最も適切なものはどれか。",
+  "choices": [
+    { "id": "A", "text": "土器を焼くための施設" },
+    { "id": "B", "text": "石を円形に並べた祭祀や儀礼の場" },
+    { "id": "C", "text": "防御のために築かれた石の壁" },
+    { "id": "D", "text": "住居跡を囲むための石列" }
+  ],
+  "answerId": "B",
+  "explanation": "大湯環状列石は、石を円形に配置した遺構で、縄文時代の祭祀や儀礼に使われたと考えられている。"
+},
+{
+  "id": "g4-jomon-002",
+  "grade": 4,
+  "chapter": "北海道・北東北の縄文遺跡群",
+  "title": "大湯環状列石が位置する都道府県はどこか。",
+  "choices": [
+    { "id": "A", "text": "北海道" },
+    { "id": "B", "text": "青森県" },
+    { "id": "C", "text": "秋田県" },
+    { "id": "D", "text": "岩手県" }
+  ],
+  "answerId": "C",
+  "explanation": "大湯環状列石は、秋田県鹿角市に位置する縄文時代の遺跡である。"
+},
+{
+  "id": "g4-jomon-004",
+  "grade": 4,
+  "chapter": "北海道・北東北の縄文遺跡群",
+  "title": "「定住する」を表す英語として最も適切なものはどれか。",
+  "choices": [
+    { "id": "A", "text": "move around" },
+    { "id": "B", "text": "settle" },
+    { "id": "C", "text": "travel" },
+    { "id": "D", "text": "escape" }
+  ],
+  "answerId": "B",
+  "explanation": "定住するは英語で settle といい、一つの場所に住み続けることを表す。"
+},
+{
+  "id": "g4-jomon-005",
+  "grade": 4,
+  "chapter": "北海道・北東北の縄文遺跡群",
+  "title": "北海道・北東北の縄文遺跡群が世界文化遺産に登録された登録基準として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "①・②" },
+    { "id": "B", "text": "③・⑤" },
+    { "id": "C", "text": "⑨・⑩" },
+    { "id": "D", "text": "④・⑥" }
+  ],
+  "answerId": "B",
+  "explanation": "北海道・北東北の縄文遺跡群は、人類の文化的伝統を示す③と、伝統的な集落や生活様式を示す⑤が評価された。"
+},
+{
+  "id": "g4-shirakami-001",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "白神山地が世界自然遺産に登録された登録基準はどれか。",
+  "choices": [
+    { "id": "A", "text": "⑦" },
+    { "id": "B", "text": "⑧" },
+    { "id": "C", "text": "⑨" },
+    { "id": "D", "text": "⑩" }
+  ],
+  "answerId": "C",
+  "explanation": "白神山地は、ブナの原生林が生み出す独自の生態系が評価され、登録基準⑨が適用された。"
+},
+{
+  "id": "g4-shirakami-003",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "白神山地の森林を代表する樹木として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "スギ" },
+    { "id": "B", "text": "マツ" },
+    { "id": "C", "text": "ブナ" },
+    { "id": "D", "text": "ヒノキ" }
+  ],
+  "answerId": "C",
+  "explanation": "白神山地には、世界最大級のブナの原生林が広がっている。"
+},
+{
+  "id": "g4-shirakami-005",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "「〜がある（生息している）」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "live in" },
+    { "id": "B", "text": "home to" },
+    { "id": "C", "text": "made of" },
+    { "id": "D", "text": "famous for" }
+  ],
+  "answerId": "B",
+  "explanation": "home to は「〜が生息している」「〜がある」という意味で使われる。"
+},
+{
+  "id": "g4-shirakami-006",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "「原生林」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "rain forest" },
+    { "id": "B", "text": "primeval forest" },
+    { "id": "C", "text": "artificial forest" },
+    { "id": "D", "text": "national forest" }
+  ],
+  "answerId": "B",
+  "explanation": "原生林は英語で primeval forest という。"
+},
+{
+  "id": "g4-shirakami-007",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "「ブナ」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "oak" },
+    { "id": "B", "text": "cedar" },
+    { "id": "C", "text": "beech" },
+    { "id": "D", "text": "pine" }
+  ],
+  "answerId": "C",
+  "explanation": "ブナは英語で beech という。"
+},
+{
+  "id": "g4-shirakami-008",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "「希少な」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "common" },
+    { "id": "B", "text": "dangerous" },
+    { "id": "C", "text": "rare" },
+    { "id": "D", "text": "ancient" }
+  ],
+  "answerId": "C",
+  "explanation": "希少なは英語で rare という。"
+},
+{
+  "id": "g4-shirakami-011",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "白神山地に生息する生物として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "クマゲラ・ニホンカモシカ" },
+    { "id": "B", "text": "トキ・ライチョウ" },
+    { "id": "C", "text": "タンチョウ・ツシマヤマネコ" },
+    { "id": "D", "text": "ジュゴン・ウミガメ" }
+  ],
+  "answerId": "A",
+  "explanation": "白神山地には、クマゲラやニホンカモシカなどの希少な生物が生息している。"
+},
+{
+  "id": "g4-canaima-001",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "カナイマ国立公園が位置する国はどこか。",
+  "choices": [
+    { "id": "A", "text": "ブラジル" },
+    { "id": "B", "text": "コロンビア" },
+    { "id": "C", "text": "ベネズエラ" },
+    { "id": "D", "text": "ペルー" }
+  ],
+  "answerId": "C",
+  "explanation": "カナイマ国立公園は南アメリカのベネズエラに位置している。"
+},
+{
+  "id": "g4-canaima-002",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "カナイマ国立公園が世界自然遺産に登録された登録基準はどれか。",
+  "choices": [
+    { "id": "A", "text": "⑦" },
+    { "id": "B", "text": "⑧" },
+    { "id": "C", "text": "⑨" },
+    { "id": "D", "text": "⑩" }
+  ],
+  "answerId": "A",
+  "explanation": "カナイマ国立公園は、テーブルマウンテンなどの壮大な景観が評価され、登録基準⑦が適用された。"
+},
+{
+  "id": "g4-canaima-003",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "カナイマ国立公園が評価された主な理由として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "ブナの原生林が広がっているから" },
+    { "id": "B", "text": "氷河による地形が見られるから" },
+    { "id": "C", "text": "テーブルマウンテンと呼ばれる独特な地形があるから" },
+    { "id": "D", "text": "サンゴ礁が発達しているから" }
+  ],
+  "answerId": "C",
+  "explanation": "カナイマ国立公園には、テーブルマウンテン（卓状台地）と呼ばれる独特で壮大な景観が広がっている。"
+},
+{
+  "id": "g4-canaima-004",
+  "grade": 4,
+  "chapter": "白神山地",
+  "title": "アンヘルの滝についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "世界で最も幅の広い滝である" },
+    { "id": "B", "text": "世界で最も落差の大きい滝である" },
+    { "id": "C", "text": "氷河がとけてできた滝である" },
+    { "id": "D", "text": "人工的につくられた滝である" }
+  ],
+  "answerId": "B",
+  "explanation": "アンヘルの滝は、落差約979mを誇る世界最大級の落差をもつ滝である。"
+},
+{
+  "id": "g4-hiraizumi-001",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "平泉―仏国土（浄土）を表す建築・庭園及び考古学的遺跡群―が登録された登録基準として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "②・④" },
+    { "id": "B", "text": "②・⑥" },
+    { "id": "C", "text": "③・⑤" },
+    { "id": "D", "text": "⑨・⑩" }
+  ],
+  "answerId": "B",
+  "explanation": "平泉は、日本独自の浄土思想を表す文化的価値が評価され、登録基準②・⑥で登録された。"
+},
+{
+  "id": "g4-hiraizumi-002",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「仏国土（浄土）」の説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "仏が住むとされる理想の世界" },
+    { "id": "B", "text": "修行のための山岳地帯" },
+    { "id": "C", "text": "戦いに備えた城郭都市" },
+    { "id": "D", "text": "交易の中心となる港町" }
+  ],
+  "answerId": "A",
+  "explanation": "仏国土（浄土）とは、仏が住むとされる理想の世界を表す仏教思想である。"
+},
+{
+  "id": "g4-hiraizumi-003",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "平泉の建築や庭園のもとになった思想はどれか。",
+  "choices": [
+    { "id": "A", "text": "神道" },
+    { "id": "B", "text": "浄土思想" },
+    { "id": "C", "text": "儒教" },
+    { "id": "D", "text": "禅宗" }
+  ],
+  "answerId": "B",
+  "explanation": "平泉は、浄土思想にもとづいて仏国土（浄土）を地上に表現しようとした都市である。"
+},
+{
+  "id": "g4-hiraizumi-005",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "平泉の繁栄の基礎を築き、中尊寺を建立した人物は誰か。",
+  "choices": [
+    { "id": "A", "text": "藤原道長" },
+    { "id": "B", "text": "藤原清衡" },
+    { "id": "C", "text": "源頼朝" },
+    { "id": "D", "text": "坂上田村麻呂" }
+  ],
+  "answerId": "B",
+  "explanation": "藤原清衡は、奥州藤原氏の初代で、平泉に中尊寺を建立した人物である。"
+},
+{
+  "id": "g4-hiraizumi-006",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "藤原清衡が建立し、平泉を代表する寺院はどれか。",
+  "choices": [
+    { "id": "A", "text": "東大寺" },
+    { "id": "B", "text": "延暦寺" },
+    { "id": "C", "text": "中尊寺" },
+    { "id": "D", "text": "金閣寺" }
+  ],
+  "answerId": "C",
+  "explanation": "中尊寺は、藤原清衡が建立した寺院で、平泉の中心的存在である。"
+},
+{
+  "id": "g4-hiraizumi-007",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "藤原清衡が治め、平泉が栄えた地域はどこか。",
+  "choices": [
+    { "id": "A", "text": "関東" },
+    { "id": "B", "text": "畿内" },
+    { "id": "C", "text": "奥州" },
+    { "id": "D", "text": "九州" }
+  ],
+  "answerId": "C",
+  "explanation": "藤原清衡は奥州を治め、平泉を拠点として政治・文化を発展させた。"
+},
+{
+  "id": "g4-hiraizumi-mix-005",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "次のうち、中尊寺を除いた平泉の構成資産として正しい組み合わせはどれか。",
+  "choices": [
+    {
+      "id": "A",
+      "text": "毛越寺・観自在王院跡・無量光院跡・金鶏山"
+    },
+    {
+      "id": "B",
+      "text": "毛越寺・東大寺・金閣寺・金鶏山"
+    },
+    {
+      "id": "C",
+      "text": "観自在王院跡・平等院・無量寿寺・比叡山"
+    },
+    {
+      "id": "D",
+      "text": "毛越寺・延暦寺・清水寺・金鶏山"
+    }
+  ],
+  "answerId": "A",
+  "explanation": "平泉の構成資産は、中尊寺に加えて、毛越寺・観自在王院跡・無量光院跡・金鶏山の4つで構成されている。"
+},
+{
+  "id": "g4-hiraizumi-009",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「西方極楽浄土」の説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "現実世界に存在すると考えられた王国" },
+    { "id": "B", "text": "仏が住むとされる理想の世界" },
+    { "id": "C", "text": "修行の場としての山岳地帯" },
+    { "id": "D", "text": "死後に裁きを受ける場所" }
+  ],
+  "answerId": "B",
+  "explanation": "西方極楽浄土とは、仏が住むとされる理想の世界で、浄土思想の中心的な考え方である。"
+},
+{
+  "id": "g4-persian-004",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "アケメネス朝ペルシアについての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "古代ギリシャで成立した王朝" },
+    { "id": "B", "text": "古代ローマ帝国の一部であった王朝" },
+    { "id": "C", "text": "古代ペルシアで成立した最初の大帝国" },
+    { "id": "D", "text": "中世ヨーロッパの封建国家" }
+  ],
+  "answerId": "C",
+  "explanation": "アケメネス朝ペルシアは、古代ペルシアで成立した最初の大帝国である。"
+},
+{
+  "id": "g4-persian-005",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "ゾロアスター教の特徴として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "多神教で自然崇拝を行う宗教" },
+    { "id": "B", "text": "善と悪の対立を重視する宗教" },
+    { "id": "C", "text": "仏の教えを中心とする宗教" },
+    { "id": "D", "text": "唯一神への信仰を否定する宗教" }
+  ],
+  "answerId": "B",
+  "explanation": "ゾロアスター教は、善と悪の対立を重視する古代ペルシアの宗教である。"
+},
+{
+  "id": "g4-persian-006",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「エデンの園」の説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "古代ギリシャ神話に登場する楽園" },
+    { "id": "B", "text": "仏教における極楽浄土" },
+    { "id": "C", "text": "旧約聖書に登場する理想の楽園" },
+    { "id": "D", "text": "実在した古代都市の名称" }
+  ],
+  "answerId": "C",
+  "explanation": "エデンの園は、旧約聖書に登場する人類最初の理想的な楽園である。"
+},
+{
+  "id": "g4-persian-001",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "ペルシア庭園が世界文化遺産に登録された登録基準として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "①・②" },
+    { "id": "B", "text": "③・⑤" },
+    { "id": "C", "text": "④・⑥" },
+    { "id": "D", "text": "⑦・⑨" }
+  ],
+  "answerId": "B",
+  "explanation": "ペルシア庭園は、庭園文化の発展とその影響が評価され、登録基準③・⑤で登録された。"
+},
+{
+  "id": "g4-persian-002",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "ペルシア庭園の特徴である「四分庭園（チャハル・バーグ）」の説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "庭園を円形に配置する様式" },
+    { "id": "B", "text": "水路で庭園を四つに区切る様式" },
+    { "id": "C", "text": "山の斜面を利用した庭園様式" },
+    { "id": "D", "text": "自然のまま残された森林庭園" }
+  ],
+  "answerId": "B",
+  "explanation": "四分庭園（チャハル・バーグ）は、水路によって庭園を四つに分けるペルシア庭園の代表的な様式である。"
+},
+{
+  "id": "g4-hiraizumi-eng-001",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「〜を望む」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "protect" },
+    { "id": "B", "text": "hope for" },
+    { "id": "C", "text": "belong to" },
+    { "id": "D", "text": "take place" }
+  ],
+  "answerId": "B",
+  "explanation": "「〜を望む」は英語で hope for と表される。"
+},
+{
+  "id": "g4-hiraizumi-eng-002",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「表現する」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "express" },
+    { "id": "B", "text": "create" },
+    { "id": "C", "text": "control" },
+    { "id": "D", "text": "discover" }
+  ],
+  "answerId": "A",
+  "explanation": "「表現する」は英語で express という。"
+},
+{
+  "id": "g4-hiraizumi-eng-003",
+  "grade": 4,
+  "chapter": "平泉",
+  "title": "「極楽浄土」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "Sacred World" },
+    { "id": "B", "text": "Heaven of Gods" },
+    { "id": "C", "text": "the Buddhist Pure Land" },
+    { "id": "D", "text": "Holy Garden" }
+  ],
+  "answerId": "C",
+  "explanation": "極楽浄土は英語で the Buddhist Pure Land と表される。"
+},
+{
+  "id": "g4-sado-002",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "佐渡島の金山が世界遺産に登録された主な理由（登録基準④）はどれか。",
+  "choices": [
+    { "id": "A", "text": "美しい自然景観をもつため" },
+    { "id": "B", "text": "生物多様性が高いため" },
+    { "id": "C", "text": "独自の鉱山技術の発展を示しているため" },
+    { "id": "D", "text": "宗教的信仰の中心であったため" }
+  ],
+  "answerId": "C",
+  "explanation": "登録基準④は、人類の歴史における技術や産業の発展を示す点が評価される。"
+},
+{
+  "id": "g4-sado-003",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "佐渡島の金山の構成資産として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "西三川砂金山と相川鶴子金銀山" },
+    { "id": "B", "text": "石見銀山と佐渡奉行所" },
+    { "id": "C", "text": "相川金閣寺と西三川鉱山城" },
+    { "id": "D", "text": "佐渡島全域の鉱床" }
+  ],
+  "answerId": "A",
+  "explanation": "佐渡島の金山は、西三川砂金山と相川鶴子金銀山の2つの鉱山群で構成されている。"
+},
+{
+  "id": "g4-lasmedulas-003",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "ラス・メドゥラスが世界遺産に登録された登録基準の番号として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "②・④" },
+    { "id": "B", "text": "③・⑤" },
+    { "id": "C", "text": "④のみ" },
+    { "id": "D", "text": "⑦・⑧" }
+  ],
+  "answerId": "A",
+  "explanation": "ラス・メドゥラスは、ローマ帝国の鉱山技術の交流と発展（②）と、人類の歴史における鉱山技術を示す遺産（④）が評価されている。"
+},
+{
+  "id": "g4-lasmedulas-001",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "ラス・メドゥラスが世界遺産に登録された理由（登録基準）として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "自然景観の美しさを示しているため" },
+    { "id": "B", "text": "生物多様性が特に豊かなため" },
+    { "id": "C", "text": "ローマ時代の鉱山技術を示しているため" },
+    { "id": "D", "text": "宗教的信仰の中心地であったため" }
+  ],
+  "answerId": "C",
+  "explanation": "ラス・メドゥラスは、ローマ帝国による高度な鉱山技術を示す点が評価され、登録基準④で登録された。"
+},
+{
+  "id": "g4-lasmedulas-002",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "ラス・メドゥラスで行われた「ルイナ・モンティウム」とはどのような採掘方法か。",
+  "choices": [
+    { "id": "A", "text": "火薬を使って山を爆破する方法" },
+    { "id": "B", "text": "水の力で山を崩し金を採掘する方法" },
+    { "id": "C", "text": "手作業で坑道を掘る方法" },
+    { "id": "D", "text": "地表の砂をふるいにかける方法" }
+  ],
+  "answerId": "B",
+  "explanation": "ルイナ・モンティウムは、水を一気に流して山を崩し、鉱石を採掘するローマ時代の技術である。"
+},
+{
+  "id": "g4-lasmedulas-eng-001",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "「採掘する」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "build" },
+    { "id": "B", "text": "mine" },
+    { "id": "C", "text": "protect" },
+    { "id": "D", "text": "carry" }
+  ],
+  "answerId": "B",
+  "explanation": "「採掘する」は英語で mine と表される。"
+},
+{
+  "id": "g4-lasmedulas-eng-002",
+  "grade": 4,
+  "chapter": "佐渡島の金山",
+  "title": "「削り取る」を表す英語として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "grow" },
+    { "id": "B", "text": "carve away" },
+    { "id": "C", "text": "settle" },
+    { "id": "D", "text": "surround" }
+  ],
+  "answerId": "B",
+  "explanation": "「削り取る」は英語で carve away と表され、鉱山の説明文でよく使われる。"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
 
 
