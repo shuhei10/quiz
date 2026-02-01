@@ -117,7 +117,7 @@
 {
     "id": "tomioka-001",
     "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "chapter": "富岡製糸場",
     "title": "明治政府が日本の産業を強化するために目指した政策はどれ？",
     "choices": [
       { "id": "A", "text": "文明開花" },
@@ -131,7 +131,7 @@
   {
     "id": "tomioka-002",
     "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "chapter": "富岡製糸場",
     "title": "富岡製糸場が世界遺産に登録された主な理由はどれ？",
     "choices": [
       { "id": "A", "text": "日本最古の木造建築だから" },
@@ -145,7 +145,7 @@
   {
     "id": "tomioka-003",
     "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "chapter": "富岡製糸場",
     "title": "富岡製糸場はどのような立場で運営された工場だった？",
     "choices": [
       { "id": "A", "text": "民間企業の工場" },
@@ -159,7 +159,7 @@
   {
     "id": "darwent-001",
     "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "chapter": "富岡製糸場",
     "title": "ダーヴェント峡谷の工場群が象徴する歴史的な出来事はどれ？",
     "choices": [
       { "id": "A", "text": "ルネサンス" },
@@ -173,7 +173,7 @@
   {
     "id": "darwent-002",
     "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
+    "chapter": "富岡製糸場",
     "title": "ダーヴェント峡谷の工場群で中心となった産業はどれ？",
     "choices": [
       { "id": "A", "text": "製鉄業" },
@@ -187,7 +187,7 @@
   {
     "id": "corbusier-001",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "ル・コルビュジエの建築作品が評価された主な理由はどれ？",
     "choices": [
       { "id": "A", "text": "ゴシック建築を完成させたから" },
@@ -201,7 +201,7 @@
   {
     "id": "corbusier-002",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "日本にあるル・コルビュジエの建築作品はどれ？",
     "choices": [
       { "id": "A", "text": "東京駅" },
@@ -215,7 +215,7 @@
   {
     "id": "corbusier-003",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "ル・コルビュジエの建築作品群はどのような登録形式か？",
     "choices": [
       { "id": "A", "text": "単独遺産" },
@@ -229,7 +229,7 @@
   {
     "id": "mzab-001",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "ムザブの谷がある国はどこ？",
     "choices": [
       { "id": "A", "text": "モロッコ" },
@@ -243,7 +243,7 @@
   {
     "id": "mzab-002",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "ムザブの谷の集落の特徴として正しいものはどれ？",
     "choices": [
       { "id": "A", "text": "高層ビルが立ち並ぶ都市" },
@@ -257,7 +257,7 @@
   {
     "id": "mzab-003",
     "grade": 4,
-    "chapter": "ル・コルビュジエの建築作品・ムザブの谷",
+    "chapter": "ル・コルビュジエの建築作品",
     "title": "ムザブの谷の都市形成に影響を与えた宗教はどれ？",
     "choices": [
       { "id": "A", "text": "仏教" },
@@ -271,7 +271,7 @@
   {
     "id": "ogasawara-001",
     "grade": 4,
-    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "chapter": "小笠原諸島",
     "title": "小笠原諸島が世界遺産として登録された区分はどれ？",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -285,7 +285,7 @@
   {
     "id": "ogasawara-002",
     "grade": 4,
-    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "chapter": "小笠原諸島",
     "title": "小笠原諸島の特徴として正しいものはどれ？",
     "choices": [
       { "id": "A", "text": "大陸と陸続きである" },
@@ -299,7 +299,7 @@
   {
     "id": "galapagos-001",
     "grade": 4,
-    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "chapter": "小笠原諸島",
     "title": "ガラパゴス諸島で進化論の着想を得た人物は誰？",
     "choices": [
       { "id": "A", "text": "リンネ" },
@@ -313,7 +313,7 @@
   {
     "id": "fuji-001",
     "grade": 4,
-    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "chapter": "富士山",
     "title": "富士山が世界遺産に登録された理由はどれ？",
     "choices": [
       { "id": "A", "text": "日本一高い山だから" },
@@ -327,7 +327,7 @@
   {
     "id": "uluru-001",
     "grade": 4,
-    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "chapter": "富士山",
     "title": "ウルル＝カタ・ジュタ国立公園の遺産区分はどれ？",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -341,7 +341,7 @@
   {
     "id": "shirakawa-001",
     "grade": 4,
-    "chapter": "白川郷・アルベロベッロ",
+    "chapter": "白川郷",
     "title": "白川郷・五箇山の合掌造り集落の特徴はどれ？",
     "choices": [
       { "id": "A", "text": "平屋の石造建築" },
@@ -355,7 +355,7 @@
   {
     "id": "alberobello-001",
     "grade": 4,
-    "chapter": "白川郷・アルベロベッロ",
+    "chapter": "白川郷",
     "title": "アルベロベッロのトゥルッリの屋根の形は？",
     "choices": [
       { "id": "A", "text": "三角形" },
@@ -395,37 +395,9 @@
     "explanation": "天平文化は唐の影響を受けた国際的文化。"
   },
   {
-    "id": "eng-tomioka-001",
-    "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
-    "title": "英文の（　）に入る最も適切な語はどれ？\nTomioka Silk Mill was a government-operated (　　 ) established by the Meiji government.",
-    "choices": [
-      { "id": "A", "text": "temple" },
-      { "id": "B", "text": "factory" },
-      { "id": "C", "text": "castle" },
-      { "id": "D", "text": "school" }
-    ],
-    "answerId": "B",
-    "explanation": "factory は「工場」。富岡製糸場は明治政府が設立した官営工場。"
-  },
-  {
-    "id": "eng-darwent-001",
-    "grade": 4,
-    "chapter": "富岡製糸場・ダーヴェント峡谷",
-    "title": "次の英文の内容として正しいものはどれ？\nThe Derwent Valley Mills played an important role in the Industrial Revolution.",
-    "choices": [
-      { "id": "A", "text": "農業革命を示す" },
-      { "id": "B", "text": "産業革命に重要な役割を果たした" },
-      { "id": "C", "text": "宗教改革の中心地だった" },
-      { "id": "D", "text": "自然景観が評価された" }
-    ],
-    "answerId": "B",
-    "explanation": "Industrial Revolution は産業革命。工場制機械工業の発展を示す。"
-  },
-  {
     "id": "eng-ogasawara-001",
     "grade": 4,
-    "chapter": "小笠原諸島・ガラパゴス諸島",
+    "chapter": "小笠原諸島",
     "title": "英文中の endemic species の意味として正しいものはどれ？\nThe Ogasawara Islands are home to many endemic species.",
     "choices": [
       { "id": "A", "text": "外来種" },
@@ -437,23 +409,9 @@
     "explanation": "endemic species は「その地域だけに生息する固有種」。"
   },
   {
-    "id": "eng-galapagos-001",
-    "grade": 4,
-    "chapter": "小笠原諸島・ガラパゴス諸島",
-    "title": "次の英文の内容として正しいものはどれ？\nCharles Darwin developed the theory of evolution after studying animals on the Galapagos Islands.",
-    "choices": [
-      { "id": "A", "text": "進化論は日本で生まれた" },
-      { "id": "B", "text": "ダーウィンはガラパゴスで研究した" },
-      { "id": "C", "text": "宗教改革について述べている" },
-      { "id": "D", "text": "建築様式を説明している" }
-    ],
-    "answerId": "B",
-    "explanation": "ダーウィンはガラパゴス諸島での研究から進化論を考えた。"
-  },
-  {
     "id": "eng-fuji-001",
     "grade": 4,
-    "chapter": "富士山・ウルル＝カタ・ジュタ",
+    "chapter": "富士山",
     "title": "英文中の worshipped の意味はどれ？\nMount Fuji has been worshipped as a sacred mountain.",
     "choices": [
       { "id": "A", "text": "登山された" },
@@ -467,7 +425,7 @@
   {
     "id": "eng-shirakawa-001",
     "grade": 4,
-    "chapter": "白川郷・アルベロベッロ",
+    "chapter": "白川郷",
     "title": "英文中の gassho style が指すものはどれ？\nThe houses are built in the gassho style.",
     "choices": [
       { "id": "A", "text": "石造建築" },
@@ -477,20 +435,6 @@
     ],
     "answerId": "B",
     "explanation": "gassho style は白川郷に見られる合掌造り。"
-  },
-  {
-    "id": "eng-kyoto-001",
-    "grade": 4,
-    "chapter": "京都・奈良",
-    "title": "英文の意味として正しいものはどれ？\nKyoto was the center of Japanese culture for more than 1,000 years.",
-    "choices": [
-      { "id": "A", "text": "京都は農業地帯だった" },
-      { "id": "B", "text": "京都は千年以上文化の中心だった" },
-      { "id": "C", "text": "京都は工業都市だった" },
-      { "id": "D", "text": "京都は新しい都市だった" }
-    ],
-    "answerId": "B",
-    "explanation": "center of Japanese culture は「日本文化の中心」。"
   },
   {
     "id": "eng-nara-001",
@@ -507,23 +451,9 @@
     "explanation": "cosmopolitan は「国際的な」という意味。"
   },
   {
-    "id": "eng-florence-001",
-    "grade": 4,
-    "chapter": "フィレンツェ・パリ・イスタンブール",
-    "title": "英文の内容として正しいものはどれ？\nFlorence is known as the birthplace of the Renaissance.",
-    "choices": [
-      { "id": "A", "text": "産業革命の発祥地" },
-      { "id": "B", "text": "ルネサンス発祥の地" },
-      { "id": "C", "text": "自然遺産である" },
-      { "id": "D", "text": "軍事都市である" }
-    ],
-    "answerId": "B",
-    "explanation": "birthplace of the Renaissance は「ルネサンス発祥の地」。"
-  },
-  {
     "id": "eng-hiroshima-001",
     "grade": 4,
-    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "chapter": "広島平和記念碑",
     "title": "広島平和記念碑（原爆ドーム）が世界遺産として登録された年はいつか。",
     "choices": [
       { "id": "A", "text": "1945年" },
@@ -537,7 +467,7 @@
   {
     "id": "eng-hiroshima-002",
     "grade": 4,
-    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "chapter": "広島平和記念碑",
     "title": "1945年8月6日、広島に投下された兵器は何か。",
     "choices": [
       { "id": "A", "text": "焼夷弾" },
@@ -551,7 +481,7 @@
   {
     "id": "eng-hiroshima-003",
     "grade": 4,
-    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "chapter": "広島平和記念碑",
     "title": "広島平和記念碑（原爆ドーム）は、何を伝える遺産として評価されているか。",
     "choices": [
       { "id": "A", "text": "戦争勝利の象徴" },
@@ -563,23 +493,9 @@
     "explanation": "原爆ドームは、人類初の原子爆弾がもたらした惨禍を後世に伝える負の遺産として評価されている。"
   },
   {
-    "id": "eng-hiroshima-004",
-    "grade": 4,
-    "chapter": "広島平和記念碑・アウシュヴィッツ",
-    "title": "英文の内容として正しいものはどれ？\nThe Genbaku Dome is a reminder of the misery of war.",
-    "choices": [
-      { "id": "A", "text": "工業化の進展を示している" },
-      { "id": "B", "text": "戦争の悲惨さを思い起こさせる" },
-      { "id": "C", "text": "軍事力の象徴である" },
-      { "id": "D", "text": "経済成長を示す建物である" }
-    ],
-    "answerId": "B",
-    "explanation": "reminder of the misery of war は「戦争の悲惨さを思い起こさせる」という意味。"
-  },
-  {
     "id": "eng-hiroshima-005",
     "grade": 4,
-    "chapter": "広島平和記念碑・アウシュヴィッツ",
+    "chapter": "広島平和記念碑",
     "title": "英文中の abolition の意味として正しいものはどれ？",
     "choices": [
       { "id": "A", "text": "建設" },
@@ -593,7 +509,7 @@
   {
     "id": "g4-itsukushima-001",
     "grade": 4,
-    "chapter": "厳島神社・メテオラ",
+    "chapter": "厳島神社",
     "title": "厳島神社はどのような価値を表している世界遺産か。",
     "choices": [
       { "id": "A", "text": "日本の信仰と日本の美意識を表している" },
@@ -607,7 +523,7 @@
   {
     "id": "g4-itsukushima-002",
     "grade": 4,
-    "chapter": "厳島神社・メテオラ",
+    "chapter": "厳島神社",
     "title": "現在の厳島神社の姿を整えた人物は誰か。",
     "choices": [
       { "id": "A", "text": "源頼朝" },
@@ -621,7 +537,7 @@
   {
     "id": "g4-itsukushima-003",
     "grade": 4,
-    "chapter": "厳島神社・メテオラ",
+    "chapter": "厳島神社",
     "title": "厳島神社の建築上の特徴として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "山の斜面に直接建てられている" },
@@ -633,23 +549,9 @@
     "explanation": "厳島神社は潮の満ち引きによって海に浮かんで見えるように設計されている。"
   },
   {
-    "id": "eng-itsukushima-001",
-    "grade": 4,
-    "chapter": "厳島神社・メテオラ",
-    "title": "Itsukushima Shrine is located between Mount Misen and the Seto Inland Sea. この英文の内容として正しいものはどれか。",
-    "choices": [
-      { "id": "A", "text": "都市の中心部に建てられている" },
-      { "id": "B", "text": "山の頂上にのみ建てられている" },
-      { "id": "C", "text": "弥山と瀬戸内海の間にあり、自然と調和している" },
-      { "id": "D", "text": "人工的に造成された土地に建てられている" }
-    ],
-    "answerId": "C",
-    "explanation": "英文は、厳島神社が弥山と瀬戸内海の間に位置し、自然と調和していることを説明している。"
-  },
-  {
     "id": "g4-meteora-001",
     "grade": 4,
-    "chapter": "厳島神社・メテオラ",
+    "chapter": "厳島神社",
     "title": "メテオラの修道院群は、どの宗教の修道士によって建てられたか。",
     "choices": [
       { "id": "A", "text": "カトリック教会" },
@@ -663,7 +565,7 @@
   {
     "id": "g4-meteora-002",
     "grade": 4,
-    "chapter": "厳島神社・メテオラ",
+    "chapter": "厳島神社",
     "title": "メテオラの修道院群の立地として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "平地に広がって建てられている" },
@@ -675,23 +577,9 @@
     "explanation": "メテオラの修道院群は、空中に浮かぶような奇岩の上に建てられている点が特徴である。"
   },
   {
-    "id": "eng-meteora-001",
-    "grade": 4,
-    "chapter": "厳島神社・メテオラ",
-    "title": "The monasteries were built on top of towering rock pillars. この英文の内容として正しいものはどれか。",
-    "choices": [
-      { "id": "A", "text": "修道院は地下に建てられた" },
-      { "id": "B", "text": "修道院は町の中心に建てられた" },
-      { "id": "C", "text": "修道院は海に浮かぶように建てられた" },
-      { "id": "D", "text": "修道院は高くそびえる岩の上に建てられた" }
-    ],
-    "answerId": "D",
-    "explanation": "英文は、修道院が高くそびえる岩の上に建てられていることを説明している。"
-  },
-  {
     "id": "g4-basic-heritage-001",
     "grade": 4,
-    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産がもつ、国や時代をこえて認められる価値を何というか。",
     "choices": [
       { "id": "A", "text": "文化的価値" },
@@ -705,7 +593,7 @@
   {
     "id": "g4-basic-heritage-002",
     "grade": 4,
-    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産が登録される一覧を何というか。",
     "choices": [
       { "id": "A", "text": "世界文化目録" },
@@ -719,7 +607,7 @@
   {
     "id": "g4-basic-heritage-003",
     "grade": 4,
-    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産条約が採択された年はいつか。",
     "choices": [
       { "id": "A", "text": "1954年" },
@@ -733,7 +621,7 @@
   {
     "id": "g4-basic-heritage-004",
     "grade": 4,
-    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産条約を採択した国際機関はどれか。",
     "choices": [
       { "id": "A", "text": "WHO" },
@@ -747,7 +635,7 @@
   {
     "id": "g4-basic-heritage-005",
     "grade": 4,
-    "chapter": "世界遺産基礎① 世界遺産とは？",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産が守られる理由として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "観光資源として利益を生むため" },
@@ -761,7 +649,7 @@
   {
     "id": "g4-basic-heritage2-001",
     "grade": 4,
-    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "chapter": "世界遺産基礎知識",
     "title": "人類がつくり上げた建造物や遺跡などが分類される世界遺産はどれか。",
     "choices": [
       { "id": "A", "text": "自然遺産" },
@@ -775,7 +663,7 @@
   {
     "id": "g4-basic-heritage2-002",
     "grade": 4,
-    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "chapter": "世界遺産基礎知識",
     "title": "自然環境や景観、生態系が評価される世界遺産はどれか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -789,7 +677,7 @@
   {
     "id": "g4-basic-heritage2-003",
     "grade": 4,
-    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "chapter": "世界遺産基礎知識",
     "title": "文化遺産と自然遺産の両方の価値をもつ世界遺産はどれか。",
     "choices": [
       { "id": "A", "text": "自然遺産" },
@@ -803,7 +691,7 @@
   {
     "id": "g4-basic-heritage2-004",
     "grade": 4,
-    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "chapter": "世界遺産基礎知識",
     "title": "戦争や環境破壊などにより危険にさらされている世界遺産は何と呼ばれるか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -817,7 +705,7 @@
   {
     "id": "g4-basic-heritage2-005",
     "grade": 4,
-    "chapter": "世界遺産基礎② 世界遺産の分類",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産の分類として正しくないものはどれか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -831,7 +719,7 @@
   {
     "id": "g4-basic-heritage3-001",
     "grade": 4,
-    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産の登録を決定する会議はどれか。",
     "choices": [
       { "id": "A", "text": "国際連合総会" },
@@ -845,7 +733,7 @@
   {
     "id": "g4-basic-heritage3-002",
     "grade": 4,
-    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産に登録する前に各国が作成する候補一覧はどれか。",
     "choices": [
       { "id": "A", "text": "暫定リスト" },
@@ -859,7 +747,7 @@
   {
     "id": "g4-basic-heritage3-003",
     "grade": 4,
-    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産委員会が判断材料として参照するものとして正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "観光客数のみ" },
@@ -873,7 +761,7 @@
   {
     "id": "g4-basic-heritage3-004",
     "grade": 4,
-    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "chapter":"世界遺産基礎知識",
     "title": "世界遺産委員会の役割として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "世界遺産の登録と保護状況の審議" },
@@ -887,7 +775,7 @@
   {
     "id": "g4-basic-heritage3-005",
     "grade": 4,
-    "chapter": "世界遺産基礎③ 世界遺産委員会",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産委員会が行うこととして正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "世界遺産リストへの登録を決める" },
@@ -901,7 +789,7 @@
   {
     "id": "g4-basic-heritage4-001",
     "grade": 4,
-    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "chapter": "世界遺産基礎知識",
     "title": "危険にさらされている世界遺産が掲載される一覧はどれか。",
     "choices": [
       { "id": "A", "text": "世界遺産リスト" },
@@ -915,7 +803,7 @@
   {
     "id": "g4-basic-heritage4-002",
     "grade": 4,
-    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "chapter": "世界遺産基礎知識",
     "title": "危機遺産に分類される主な理由として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "人気が高すぎるため" },
@@ -929,7 +817,7 @@
   {
     "id": "g4-basic-heritage4-003",
     "grade": 4,
-    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "chapter": "世界遺産基礎知識",
     "title": "戦争や差別など、負の歴史を伝える世界遺産は何と呼ばれるか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -943,7 +831,7 @@
   {
     "id": "g4-basic-heritage4-004",
     "grade": 4,
-    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "chapter": "世界遺産基礎知識",
     "title": "負の遺産の例として最も適切なものはどれか。",
     "choices": [
       { "id": "A", "text": "イエローストーン国立公園" },
@@ -957,7 +845,7 @@
   {
     "id": "g4-basic-heritage4-005",
     "grade": 4,
-    "chapter": "世界遺産基礎④ 危機遺産・負の遺産",
+    "chapter": "世界遺産基礎知識",
     "title": "危機遺産リストに掲載されることの目的として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "観光を増やすため" },
@@ -971,7 +859,7 @@
   {
     "id": "g4-basic-heritage5-001",
     "grade": 4,
-    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産制度が生まれるきっかけとなった出来事はどれか。",
     "choices": [
       { "id": "A", "text": "世界恐慌" },
@@ -985,7 +873,7 @@
   {
     "id": "g4-basic-heritage5-002",
     "grade": 4,
-    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産制度誕生のきっかけとなったダムはどれか。",
     "choices": [
       { "id": "A", "text": "フーバーダム" },
@@ -999,7 +887,7 @@
   {
     "id": "g4-basic-heritage5-003",
     "grade": 4,
-    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "chapter": "世界遺産基礎知識",
     "title": "水没の危機から国際協力によって移設・保存された遺跡はどれか。",
     "choices": [
       { "id": "A", "text": "パルテノン神殿" },
@@ -1013,7 +901,7 @@
   {
     "id": "g4-basic-heritage5-004",
     "grade": 4,
-    "chapter": "世界遺産基礎⑤ 世界遺産制度の誕生",
+    "chapter": "世界遺産基礎知識",
     "title": "この出来事から生まれた考え方として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "一国だけで文化財を守る" },
@@ -1027,7 +915,7 @@
   {
     "id": "g4-basic-heritage6-001",
     "grade": 4,
-    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産が守られる最も重要な目的はどれか。",
     "choices": [
       { "id": "A", "text": "観光客を増やすため" },
@@ -1041,7 +929,7 @@
   {
     "id": "g4-basic-heritage6-002",
     "grade": 4,
-    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産基金の役割として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "観光広告に使う" },
@@ -1055,7 +943,7 @@
   {
     "id": "g4-basic-heritage6-003",
     "grade": 4,
-    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産を守るために重要とされている考え方はどれか。",
     "choices": [
       { "id": "A", "text": "大量消費" },
@@ -1069,7 +957,7 @@
   {
     "id": "g4-basic-heritage6-004",
     "grade": 4,
-    "chapter": "世界遺産基礎⑥ 世界遺産の目的・役割",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産が国際的に守られる理由として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "特定の国の私有財産だから" },
@@ -1083,7 +971,7 @@
   {
     "id": "g4-shiretoko-001",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床が世界遺産に登録された区分として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -1097,7 +985,7 @@
   {
     "id": "g4-shiretoko-002",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床が世界遺産に登録された年はいつか。",
     "choices": [
       { "id": "A", "text": "1995年" },
@@ -1111,7 +999,7 @@
   {
     "id": "g4-shiretoko-003",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床が評価された世界遺産の登録基準はどれか。",
     "choices": [
       { "id": "A", "text": "①②" },
@@ -1125,7 +1013,7 @@
   {
     "id": "g4-shiretoko-004",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床の自然環境の特徴として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "砂漠の気候が広がっている" },
@@ -1139,7 +1027,7 @@
   {
     "id": "g4-shiretoko-005",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床の海に冬に流れ着く氷を何というか。",
     "choices": [
       { "id": "A", "text": "氷河" },
@@ -1153,7 +1041,7 @@
   {
     "id": "g4-shiretoko-006",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床に生息する大型哺乳類として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "ゾウ" },
@@ -1167,7 +1055,7 @@
   {
     "id": "g4-shiretoko-007",
     "grade": 4,
-    "chapter": "知床（自然遺産）",
+    "chapter": "知床",
     "title": "知床で見られる鳥類として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "スズメ" },
@@ -1181,7 +1069,7 @@
   {
     "id": "g4-sichuanpanda-001",
     "grade": 4,
-    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "chapter": "四川省のジャイアントパンダ保護区群",
     "title": "四川省のジャイアントパンダ保護区群が世界遺産に登録された理由として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "都市景観が美しいため" },
@@ -1195,7 +1083,7 @@
   {
     "id": "g4-sichuanpanda-002",
     "grade": 4,
-    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "chapter": "四川省のジャイアントパンダ保護区群",
     "title": "四川省のジャイアントパンダ保護区群が属する世界遺産の区分はどれか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -1209,7 +1097,7 @@
   {
     "id": "g4-sichuanpanda-003",
     "grade": 4,
-    "chapter": "四川省のジャイアントパンダ保護区群（自然遺産）",
+    "chapter": "四川省のジャイアントパンダ保護区群",
     "title": "ジャイアントパンダが主に生息している環境として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "砂漠" },
@@ -1363,7 +1251,7 @@
   {
     "id": "g4-chinchorro-001",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "この遺産がある国はどこか。",
     "choices": [
       { "id": "A", "text": "ペルー" },
@@ -1377,7 +1265,7 @@
   {
     "id": "g4-chinchorro-002",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "登録区分はどれか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -1391,7 +1279,7 @@
   {
     "id": "g4-chinchorro-003",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "登録年はいつか。",
     "choices": [
       { "id": "A", "text": "2015年" },
@@ -1405,7 +1293,7 @@
   {
     "id": "g4-chinchorro-004",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "チンチョーロ文化の最大の特徴はどれか。",
     "choices": [
       { "id": "A", "text": "巨大ピラミッド" },
@@ -1419,7 +1307,7 @@
   {
     "id": "g4-chinchorro-005",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "この地域がある砂漠はどれか。",
     "choices": [
       { "id": "A", "text": "サハラ砂漠" },
@@ -1433,7 +1321,7 @@
   {
     "id": "g4-chinchorro-006",
     "grade": 4,
-    "chapter": "チンチョーロ文化（アリカ・パリナコータ州）",
+    "chapter": "チンチョーロ文化",
     "title": "チンチョーロ文化の特徴として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "王族のみミイラ化" },
@@ -1447,7 +1335,7 @@
   {
     "id": "g4-sado-001",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "佐渡島の金山",
     "title": "佐渡島の金山で、山がV字型に大きく割れて見える有名な採掘跡はどれか。",
     "choices": [
       { "id": "A", "text": "千枚田" },
@@ -1461,7 +1349,7 @@
   {
     "id": "g4-sado-002",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "佐渡島の金山",
     "title": "佐渡島の金山で主に行われていた採掘方法として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "蒸気機関による機械採掘" },
@@ -1475,7 +1363,7 @@
   {
     "id": "g4-sado-003",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "佐渡島の金山",
     "title": "佐渡島の金山が世界遺産登録された年はいつか。",
     "choices": [
       { "id": "A", "text": "1999年" },
@@ -1489,7 +1377,7 @@
   {
     "id": "g4-nikko-001",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "日光の社寺",
     "title": "日光の社寺が表している宗教的特徴として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "キリスト教のみ" },
@@ -1503,7 +1391,7 @@
   {
     "id": "g4-nikko-002",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "日光の社寺",
     "title": "徳川家康をまつる神社はどれか。",
     "choices": [
       { "id": "A", "text": "春日大社" },
@@ -1517,7 +1405,7 @@
   {
     "id": "g4-nikko-003",
     "grade": 4,
-    "chapter": "佐渡島の金山・日光の社寺",
+    "chapter": "日光の社寺",
     "title": "日光の社寺が世界遺産登録された年はいつか。",
     "choices": [
       { "id": "A", "text": "1983年" },
@@ -1599,20 +1487,6 @@
     "explanation": "宗像・沖ノ島関連遺産群は航海安全信仰を示す遺産として評価された。"
   },
   {
-    "id": "g4-munakata-020",
-    "grade": 4,
-    "chapter": "宗像・沖ノ島と関連遺産群",
-    "title": "次の英語説明が示す内容として正しい語句はどれか。Rituals performed for about 500 years from the latter half of the 4th century.",
-    "choices": [
-      { "id": "A", "text": "仏教儀礼" },
-      { "id": "B", "text": "古代祭祀" },
-      { "id": "C", "text": "神仏習合" },
-      { "id": "D", "text": "修験道" }
-    ],
-    "answerId": "B",
-    "explanation": "4世紀後半から約500年間続いた宗教的儀礼は古代祭祀を指す。"
-  },
-  {
     "id": "g4-nagasaki-021",
     "grade": 4,
     "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
@@ -1681,20 +1555,6 @@
     ],
     "answerId": "A",
     "explanation": "マリア像を観音像に見立てた信仰対象はマリア観音と呼ばれる。"
-  },
-  {
-    "id": "g4-nagasaki-026",
-    "grade": 4,
-    "chapter": "長崎と天草地方の潜伏キリシタン関連遺産",
-    "title": "次の英語説明が示す人々として正しい語句はどれか。People who secretly continued to practice Christianity despite its prohibition.",
-    "choices": [
-      { "id": "A", "text": "宣教師" },
-      { "id": "B", "text": "修道士" },
-      { "id": "C", "text": "潜伏キリシタン" },
-      { "id": "D", "text": "仏僧" }
-    ],
-    "answerId": "C",
-    "explanation": "禁教下でも密かにキリスト教を信仰した人々は潜伏キリシタンである。"
   },
   {
     "id": "g4-nagasaki-027",
@@ -2434,7 +2294,7 @@
   {
     "id": "g4-basic-001",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産が持つ、国や時代をこえて認められる価値を何というか。",
     "choices": [
       { "id": "A", "text": "文化的価値" },
@@ -2448,7 +2308,7 @@
   {
     "id": "g4-basic-002",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産を保護するために1972年に採択された国際条約は何か。",
     "choices": [
       { "id": "A", "text": "世界文化条約" },
@@ -2462,7 +2322,7 @@
   {
     "id": "g4-basic-003",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産条約を採択し、教育・科学・文化を通じて平和を目指す国連機関はどこか。",
     "choices": [
       { "id": "A", "text": "WHO" },
@@ -2476,7 +2336,7 @@
   {
     "id": "g4-basic-004",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産への登録を最終的に決定する機関は何か。",
     "choices": [
       { "id": "A", "text": "ユネスコ事務局" },
@@ -2490,7 +2350,7 @@
   {
     "id": "g4-basic-005",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産として登録される前に、各国が候補として記載するリストを何というか。",
     "choices": [
       { "id": "A", "text": "登録候補リスト" },
@@ -2504,7 +2364,7 @@
   {
     "id": "g4-basic-006",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "戦争・開発・災害などで危機にさらされている世界遺産を何というか。",
     "choices": [
       { "id": "A", "text": "負の遺産" },
@@ -2518,7 +2378,7 @@
   {
     "id": "g4-basic-007",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "危機にある世界遺産を記載するリストを何というか。",
     "choices": [
       { "id": "A", "text": "世界遺産リスト" },
@@ -2532,7 +2392,7 @@
   {
     "id": "g4-basic-008",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "近現代の戦争や差別など、人類の負の歴史を伝える遺産を何というか。",
     "choices": [
       { "id": "A", "text": "文化遺産" },
@@ -2546,7 +2406,7 @@
   {
     "id": "g4-basic-009",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産は誰の遺産と考えられているか。",
     "choices": [
       { "id": "A", "text": "登録国の遺産" },
@@ -2560,7 +2420,7 @@
   {
     "id": "g4-basic-010",
     "grade": 4,
-    "chapter": "世界遺産の基礎知識",
+    "chapter": "世界遺産基礎知識",
     "title": "世界遺産の理念誕生のきっかけとなった、エジプトの巨大ダム建設は何か。",
     "choices": [
       { "id": "A", "text": "アスワン・ダム" },
