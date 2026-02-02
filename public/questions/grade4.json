@@ -128,6 +128,20 @@
     "answerId": "B",
     "explanation": "明治政府は産業の発展を目的として殖産興業政策を進めた。"
   },
+   {
+    "id": "g4-tomioka-002",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "富岡製糸場で指導にあたったフランス人技術者は誰か。",
+    "choices": [
+      { "id": "A", "text": "アークライト" },
+      { "id": "B", "text": "ブリュナ" },
+      { "id": "C", "text": "ワット" },
+      { "id": "D", "text": "エッフェル" }
+    ],
+    "answerId": "B",
+    "explanation": "富岡製糸場ではフランス人技術者ポール・ブリュナが製糸技術を指導した。"
+  },
   {
     "id": "tomioka-002",
     "grade": 4,
@@ -157,6 +171,20 @@
     "explanation": "富岡製糸場は政府が直接運営する官営の模範工場として建設された。"
   },
   {
+    "id": "g4-tomioka-004",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "富岡製糸場と絹産業遺産群の登録基準として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "①と②" },
+      { "id": "B", "text": "②と③" },
+      { "id": "C", "text": "②と④" },
+      { "id": "D", "text": "③と④" }
+    ],
+    "answerId": "C",
+    "explanation": "技術交流を示す登録基準②と、産業技術の発展を示す登録基準④が評価された。"
+  },
+  {
     "id": "darwent-001",
     "grade": 4,
     "chapter": "富岡製糸場",
@@ -183,6 +211,244 @@
     ],
     "answerId": "C",
     "explanation": "ダーヴェント峡谷では水力を利用した綿工業（紡績）が発展した。"
+  },
+  {
+    "id": "g4-tomioka-basic-006",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "富岡製糸場と深く関係する「養蚕」とは何か。",
+    "choices": [
+      { "id": "A", "text": "綿花を栽培すること" },
+      { "id": "B", "text": "蚕を育てて繭を生産すること" },
+      { "id": "C", "text": "羊を育てて毛をとること" },
+      { "id": "D", "text": "機械で糸を織ること" }
+    ],
+    "answerId": "B",
+    "explanation": "養蚕とは蚕を育て、絹の原料となる繭を生産することを指す。"
+  },
+  {
+    "id": "g4-tomioka-basic-007",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "富岡製糸場の建物に用いられた「木骨レンガ造」の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "すべて石で造られている" },
+      { "id": "B", "text": "木の骨組みにレンガを組み合わせている" },
+      { "id": "C", "text": "鉄骨のみで造られている" },
+      { "id": "D", "text": "土壁だけで造られている" }
+    ],
+    "answerId": "B",
+    "explanation": "木骨レンガ造は、木の骨組みにレンガを組み合わせた建築方法で、耐久性と施工のしやすさを兼ね備えている。"
+  },
+  {
+    "id": "g4-tomioka-basic-008",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "富岡製糸場が建設された時代背景として関係が深い出来事はどれか。",
+    "choices": [
+      { "id": "A", "text": "鎌倉幕府の成立" },
+      { "id": "B", "text": "江戸幕府の開府" },
+      { "id": "C", "text": "明治維新" },
+      { "id": "D", "text": "大政奉還" }
+    ],
+    "answerId": "C",
+    "explanation": "富岡製糸場は明治維新後、日本の近代化と殖産興業政策の一環として建設された。"
+  },
+  {
+    "id": "g4-derwent-002",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "ダーウェント峡谷の工場群と関係の深い人物は誰か。",
+    "choices": [
+      { "id": "A", "text": "ブリュナ" },
+      { "id": "B", "text": "アークライト" },
+      { "id": "C", "text": "シャー・ジャハーン" },
+      { "id": "D", "text": "藤原清衡" }
+    ],
+    "answerId": "B",
+    "explanation": "リチャード・アークライトは水力紡績工場を発展させた人物。"
+  },
+  {
+    "id": "g4-derwent-003",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "ダーウェント峡谷の工場群が世界遺産に登録された理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "宗教建築の代表例だから" },
+      { "id": "B", "text": "産業革命初期の工場モデルだから" },
+      { "id": "C", "text": "自然景観が美しいから" },
+      { "id": "D", "text": "農村文化を保存しているから" }
+    ],
+    "answerId": "B",
+    "explanation": "産業革命初期における近代的工場群のモデルとして評価された。"
+  },
+  {
+    "id": "g4-derwent-004",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "ダーウェント峡谷の工場群の登録基準はどれか。",
+    "choices": [
+      { "id": "A", "text": "①" },
+      { "id": "B", "text": "②" },
+      { "id": "C", "text": "③" },
+      { "id": "D", "text": "④" }
+    ],
+    "answerId": "B",
+    "explanation": "産業革命による技術と社会構造の変化を示す登録基準②が評価された。"
+  },
+  {
+    "id": "g4-tomioka-term-009",
+    "grade": 4,
+    "chapter": "富岡製糸場と絹産業遺産群",
+    "title": "富岡製糸場の建築に見られる「コロニアル様式」の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "日本の寺院建築を模した様式" },
+      { "id": "B", "text": "西洋風の建築様式を取り入れた建物" },
+      { "id": "C", "text": "すべて木造で造られた建築様式" },
+      { "id": "D", "text": "地下に造られた防災用建築様式" }
+    ],
+    "answerId": "B",
+    "explanation": "コロニアル様式とは、西洋の建築技術や意匠を取り入れた建築様式で、富岡製糸場にもその特徴が見られる。"
+  },
+  {
+    "id": "g4-tomioka-term-010",
+    "grade": 4,
+    "chapter": "富岡製糸場と絹産業遺産群",
+    "title": "養蚕における「清温育」とは何を重視した方法か。",
+    "choices": [
+      { "id": "A", "text": "蚕を屋外で自然に育てること" },
+      { "id": "B", "text": "温度と清潔さを管理して蚕を育てること" },
+      { "id": "C", "text": "寒冷地でのみ行う養蚕方法" },
+      { "id": "D", "text": "水中で蚕を育てる方法" }
+    ],
+    "answerId": "B",
+    "explanation": "清温育は、蚕の成長に適した温度管理と清潔な環境を保つことを重視した養蚕方法である。"
+  },
+  {
+    "id": "g4-tomioka-term-011",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「蚕種」とは何を指す言葉か。",
+    "choices": [
+      { "id": "A", "text": "蚕のえさとなる桑の葉" },
+      { "id": "B", "text": "蚕の卵" },
+      { "id": "C", "text": "繭から取れる糸" },
+      { "id": "D", "text": "蚕を育てるための道具" }
+    ],
+    "answerId": "B",
+    "explanation": "蚕種（さんしゅ）とは、養蚕に用いられる蚕の卵のことを指す。"
+  },
+  {
+    "id": "g4-tomioka-term-012",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「清涼育」とはどのような養蚕方法か。",
+    "choices": [
+      { "id": "A", "text": "高温多湿な環境で育てる方法" },
+      { "id": "B", "text": "冷却装置を使って人工的に育てる方法" },
+      { "id": "C", "text": "風通しを良くし、涼しい環境で育てる方法" },
+      { "id": "D", "text": "屋外で放し飼いにする方法" }
+    ],
+    "answerId": "C",
+    "explanation": "清涼育は、風通しを良くし、涼しい環境を保つことで蚕を健康に育てる方法である。"
+  },
+  {
+    "id": "g4-tomioka-term-013",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「紡績」とは何を行う工程か。",
+    "choices": [
+      { "id": "A", "text": "繭を育てる工程" },
+      { "id": "B", "text": "糸を織って布にする工程" },
+      { "id": "C", "text": "繊維をより合わせて糸にする工程" },
+      { "id": "D", "text": "完成した布を染める工程" }
+    ],
+    "answerId": "C",
+    "explanation": "紡績とは、繊維をより合わせて糸を作る工程のことを指す。"
+  },
+  {
+    "id": "g4-tomioka-eng-001",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「government-operated」の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "民間企業が経営する" },
+      { "id": "B", "text": "外国が運営する" },
+      { "id": "C", "text": "政府が運営する" },
+      { "id": "D", "text": "個人が経営する" }
+    ],
+    "answerId": "C",
+    "explanation": "government-operated は「政府が運営する」という意味である。"
+  },
+  {
+    "id": "g4-tomioka-eng-002",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「establish」の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "破壊する" },
+      { "id": "B", "text": "輸出する" },
+      { "id": "C", "text": "設立する" },
+      { "id": "D", "text": "移動する" }
+    ],
+    "answerId": "C",
+    "explanation": "establish は「設立する」という意味を持つ動詞である。"
+  },
+  {
+    "id": "g4-tomioka-eng-003",
+    "grade": 4,
+    "chapter": "富岡製糸場",
+    "title": "「export」の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "輸入する" },
+      { "id": "B", "text": "国内で消費する" },
+      { "id": "C", "text": "廃棄する" },
+      { "id": "D", "text": "輸出する" }
+    ],
+    "answerId": "D",
+    "explanation": "export は「輸出する」という意味で、日本の生糸は海外へ輸出された。"
+  },
+  {
+    "id": "g4-corbusier-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "「ル・コルビュジエの建築作品」が評価された理由として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "中世ヨーロッパの宗教建築を代表するため" },
+      { "id": "B", "text": "近代建築運動に大きな影響を与えたため" },
+      { "id": "C", "text": "木造建築の技術を発展させたため" },
+      { "id": "D", "text": "王宮建築として使用されたため" }
+    ],
+    "answerId": "B",
+    "explanation": "ル・コルビュジエは近代建築運動を代表する建築家で、その作品群は世界の建築に大きな影響を与えた。"
+  },
+  {
+    "id": "g4-corbusier-002",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ル・コルビュジエが提唱した近代建築の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "左右対称を重視した装飾的建築" },
+      { "id": "B", "text": "自然石のみを使った建築" },
+      { "id": "C", "text": "機能性と合理性を重視した建築" },
+      { "id": "D", "text": "神殿建築を模倣した建築" }
+    ],
+    "answerId": "C",
+    "explanation": "ル・コルビュジエは機能性・合理性を重視する近代建築の考え方を提唱した。"
+  },
+  {
+    "id": "g4-corbusier-003",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "「ル・コルビュジエの建築作品」はいくつの国にまたがる世界遺産か。",
+    "choices": [
+      { "id": "A", "text": "3か国" },
+      { "id": "B", "text": "5か国" },
+      { "id": "C", "text": "7か国" },
+      { "id": "D", "text": "10か国" }
+    ],
+    "answerId": "C",
+    "explanation": "ル・コルビュジエの建築作品は7か国に分布するトランスバウンダリー・サイトである。"
   },
   {
     "id": "corbusier-001",
@@ -269,6 +535,202 @@
     "explanation": "ムザブの谷はイスラム教イバード派の教えに基づいて都市が形成された。"
   },
   {
+    "id": "g4-modern-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ル・コルビュジエが提唱した「近代建築の五原則」に含まれないものはどれか。",
+    "choices": [
+      { "id": "A", "text": "ピロティ" },
+      { "id": "B", "text": "自由な平面" },
+      { "id": "C", "text": "左右対称の構造" },
+      { "id": "D", "text": "屋上庭園" }
+    ],
+    "answerId": "C",
+    "explanation": "近代建築の五原則には左右対称の構造は含まれない。"
+  },
+  {
+    "id": "g4-modern-002",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "「松方コレクション」を展示するために建設された日本の建築物はどれか。",
+    "choices": [
+      { "id": "A", "text": "法隆寺金堂" },
+      { "id": "B", "text": "国立西洋美術館" },
+      { "id": "C", "text": "迎賓館赤坂離宮" },
+      { "id": "D", "text": "東京都庁舎" }
+    ],
+    "answerId": "B",
+    "explanation": "国立西洋美術館は松方コレクションを展示する目的で建設された。"
+  },
+  {
+    "id": "g4-modern-003",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "「無限成長美術館」という考え方を採用している建築物はどれか。",
+    "choices": [
+      { "id": "A", "text": "東大寺大仏殿" },
+      { "id": "B", "text": "国立西洋美術館" },
+      { "id": "C", "text": "姫路城" },
+      { "id": "D", "text": "桂離宮" }
+    ],
+    "answerId": "B",
+    "explanation": "国立西洋美術館は、展示空間を将来的に拡張できる無限成長美術館の構想で設計された。"
+  },
+  {
+    "id": "g4-modern-004",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "建物を柱で持ち上げ、地上階を開放する構造を何というか。",
+    "choices": [
+      { "id": "A", "text": "アーチ" },
+      { "id": "B", "text": "ドーム" },
+      { "id": "C", "text": "ピロティ" },
+      { "id": "D", "text": "バシリカ" }
+    ],
+    "answerId": "C",
+    "explanation": "ピロティは建物を柱で支え、地上部分を開放する構造である。"
+  },
+  {
+    "id": "g4-modern-005",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "人体の寸法を基準にした、ル・コルビュジエの比例体系を何というか。",
+    "choices": [
+      { "id": "A", "text": "モザイク" },
+      { "id": "B", "text": "モデュロール" },
+      { "id": "C", "text": "オーダー" },
+      { "id": "D", "text": "コリント式" }
+    ],
+    "answerId": "B",
+    "explanation": "モデュロールは人体寸法を基準とした比例体系である。"
+  },
+  {
+    "id": "g4-modern-006",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "建物に地震の揺れを直接伝えにくくする構造を何というか。",
+    "choices": [
+      { "id": "A", "text": "耐火化" },
+      { "id": "B", "text": "免震化" },
+      { "id": "C", "text": "石造化" },
+      { "id": "D", "text": "高層化" }
+    ],
+    "answerId": "B",
+    "explanation": "免震化は地震の揺れを建物に直接伝えにくくする構造である。"
+  },
+  {
+    "id": "g4-mzab-004",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ムザブの谷が評価された登録基準として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "⑦ 自然美" },
+      { "id": "B", "text": "③ 文明の証拠" },
+      { "id": "C", "text": "⑩ 生物多様性" },
+      { "id": "D", "text": "① 人類の傑作" }
+    ],
+    "answerId": "B",
+    "explanation": "ムザブの谷は、伝統的な都市計画と文明の証拠として登録基準③で評価された。"
+  },
+  {
+    "id": "g4-mzab-005",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ムザブの谷を築いた人々として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "ベルベル人" },
+      { "id": "B", "text": "アラブ商人" },
+      { "id": "C", "text": "ローマ人" },
+      { "id": "D", "text": "フェニキア人" }
+    ],
+    "answerId": "A",
+    "explanation": "ムザブの谷はベルベル人によって築かれた。"
+  },
+  {
+    "id": "g4-mzab-006",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ムザブの谷の人々が信仰するイスラム教の宗派はどれか。",
+    "choices": [
+      { "id": "A", "text": "スンナ派" },
+      { "id": "B", "text": "シーア派" },
+      { "id": "C", "text": "イバード派" },
+      { "id": "D", "text": "スーフィズム" }
+    ],
+    "answerId": "C",
+    "explanation": "ムザブの谷の住民はイスラム教のイバード派を信仰している。"
+  },
+  {
+    "id": "g4-mzab-007",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "イバード派が成立した時代と関係の深いイスラム王朝はどれか。",
+    "choices": [
+      { "id": "A", "text": "アッバース朝" },
+      { "id": "B", "text": "ウマイヤ朝" },
+      { "id": "C", "text": "ファーティマ朝" },
+      { "id": "D", "text": "オスマン帝国" }
+    ],
+    "answerId": "B",
+    "explanation": "イバード派はウマイヤ朝時代に形成された宗派である。"
+  },
+  {
+    "id": "g4-mzab-vocab-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "ムザブの谷に暮らす人々として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "ガルダイヤ" },
+      { "id": "B", "text": "ムガル人" },
+      { "id": "C", "text": "アーリア人" },
+      { "id": "D", "text": "ノルマン人" }
+    ],
+    "answerId": "A",
+    "explanation": "ムザブの谷にはベルベル系民族であるガルダイヤの人々が暮らしている。"
+  },
+  {
+    "id": "g4-eng-verb-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "次のうち「提案する」を意味する英単語はどれか。",
+    "choices": [
+      { "id": "A", "text": "establish" },
+      { "id": "B", "text": "export" },
+      { "id": "C", "text": "propose" },
+      { "id": "D", "text": "include" }
+    ],
+    "answerId": "C",
+    "explanation": "propose は「提案する」という意味を持つ動詞である。"
+  },
+  {
+    "id": "g4-eng-phrase-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "「〜から成る」を表す英語表現として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "consist of ~" },
+      { "id": "B", "text": "propose ~" },
+      { "id": "C", "text": "depend on ~" },
+      { "id": "D", "text": "take part ~" }
+    ],
+    "answerId": "A",
+    "explanation": "consist of ~ は「〜から成る」という意味の表現である。"
+  },
+  {
+    "id": "g4-eng-sentence-001",
+    "grade": 4,
+    "chapter": "ル・コルビュジエの建築作品",
+    "title": "次の英文の意味として正しいものはどれか。\nThe heritage consists of five villages.",
+    "choices": [
+      { "id": "A", "text": "この遺産は5つの村から成る。" },
+      { "id": "B", "text": "この遺産は5つの村を提案した。" },
+      { "id": "C", "text": "この遺産は5つの村を輸出した。" },
+      { "id": "D", "text": "この遺産は5つの村に建設された。" }
+    ],
+    "answerId": "A",
+    "explanation": "consists of は「〜から成る」という意味である。"
+  },
+  {
     "id": "ogasawara-001",
     "grade": 4,
     "chapter": "小笠原諸島",
@@ -311,6 +773,146 @@
     "explanation": "ダーウィンはガラパゴス諸島の生物観察から進化論を考えた。"
   },
   {
+    "id": "ogasawara-criteria-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "小笠原諸島が世界自然遺産に登録された際に評価された登録基準はどれか。",
+    "choices": [
+      { "id": "A", "text": "登録基準⑦" },
+      { "id": "B", "text": "登録基準⑨" },
+      { "id": "C", "text": "登録基準⑩" },
+      { "id": "D", "text": "登録基準⑦・⑩" }
+    ],
+    "answerId": "B",
+    "explanation": "小笠原諸島は登録基準⑨（生態系の進化と発展）が評価されている。"
+  },
+  {
+    "id": "ogasawara-endemic-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "小笠原諸島に固有種が多い最大の理由として最も適切なものはどれか。",
+    "choices": [
+      { "id": "A", "text": "気候が温暖だから" },
+      { "id": "B", "text": "人の居住が遅れたから" },
+      { "id": "C", "text": "大陸と陸続きになったことがない海洋島だから" },
+      { "id": "D", "text": "火山活動が活発だから" }
+    ],
+    "answerId": "C",
+    "explanation": "小笠原諸島は海洋島で、独自の進化が進みやすい環境にある。"
+  },
+  {
+    "id": "ogasawara-snail-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "小笠原諸島が世界的にも重要とされる生物群として特に知られているものはどれか。",
+    "choices": [
+      { "id": "A", "text": "哺乳類" },
+      { "id": "B", "text": "両生類" },
+      { "id": "C", "text": "陸産貝類" },
+      { "id": "D", "text": "昆虫類" }
+    ],
+    "answerId": "C",
+    "explanation": "小笠原諸島は陸産貝類の固有種が多いことで知られている。"
+  },
+  {
+    "id": "ogasawara-adaptive-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "小笠原諸島で見られる「適応放散」とはどのような現象か。",
+    "choices": [
+      { "id": "A", "text": "外来種が増える現象" },
+      { "id": "B", "text": "一つの種が急激に減少する現象" },
+      { "id": "C", "text": "共通の祖先から多様な種に分化する現象" },
+      { "id": "D", "text": "生物が絶滅する現象" }
+    ],
+    "answerId": "C",
+    "explanation": "適応放散とは、同じ祖先から環境に適応して多様な種に分かれる現象。"
+  },
+  {
+    "id": "ogasawara-alien-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "現在の小笠原諸島で生態系の大きな課題となっている問題はどれか。",
+    "choices": [
+      { "id": "A", "text": "火山噴火" },
+      { "id": "B", "text": "海面上昇" },
+      { "id": "C", "text": "観光客の減少" },
+      { "id": "D", "text": "外来種の侵入" }
+    ],
+    "answerId": "D",
+    "explanation": "外来種の侵入により、固有種が脅かされている。"
+  },
+  {
+    "id": "galapagos-finch-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "ガラパゴス諸島の研究で、進化論の着想を得るきっかけとなった鳥はどれか。",
+    "choices": [
+      { "id": "A", "text": "ペンギン" },
+      { "id": "B", "text": "フィンチ" },
+      { "id": "C", "text": "ハチドリ" },
+      { "id": "D", "text": "ワシ" }
+    ],
+    "answerId": "B",
+    "explanation": "フィンチは島ごとにくちばしの形が異なり、進化の例として有名。"
+  },
+  {
+    "id": "galapagos-tortoise-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "ガラパゴス諸島のゾウガメについて正しい説明はどれか。",
+    "choices": [
+      { "id": "A", "text": "世界最大の爬虫類である" },
+      { "id": "B", "text": "外来種である" },
+      { "id": "C", "text": "島ごとに甲羅の形が異なる" },
+      { "id": "D", "text": "野生では見られない" }
+    ],
+    "answerId": "C",
+    "explanation": "ゾウガメは島ごとの環境に適応し、甲羅の形が分化している。"
+  },
+  {
+    "id": "galapagos-endemic-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "“endemic species” の意味として最も適切なものはどれか。",
+    "choices": [
+      { "id": "A", "text": "絶滅危惧種" },
+      { "id": "B", "text": "外来種" },
+      { "id": "C", "text": "特定の地域にしか生息しない固有種" },
+      { "id": "D", "text": "人工的に増やされた生物" }
+    ],
+    "answerId": "C",
+    "explanation": "endemic species は特定の地域にのみ分布する固有種を指す。"
+  },
+  {
+    "id": "galapagos-evolve-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "英文中の “evolve” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "絶滅した" },
+      { "id": "B", "text": "移動した" },
+      { "id": "C", "text": "進化した" },
+      { "id": "D", "text": "保護された" }
+    ],
+    "answerId": "C",
+    "explanation": "evolve は「進化する」という意味。"
+  },
+  {
+    "id": "galapagos-uniquely-001",
+    "grade": 4,
+    "chapter": "小笠原諸島",
+    "title": "英文中の “uniquely” の意味として最も適切なものはどれか。",
+    "choices": [
+      { "id": "A", "text": "急速に" },
+      { "id": "B", "text": "偶然に" },
+      { "id": "C", "text": "独自に" },
+      { "id": "D", "text": "人為的に" }
+    ],
+    "answerId": "C",
+    "explanation": "uniquely は「独自に」という意味。"
+  },
+  {
     "id": "fuji-001",
     "grade": 4,
     "chapter": "富士山",
@@ -337,6 +939,188 @@
     ],
     "answerId": "C",
     "explanation": "自然的価値と先住民文化の両方をもつ複合遺産である。"
+  },
+  {
+    "id": "fuji-basic-002",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山が世界遺産に登録された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "1993年" },
+      { "id": "B", "text": "2001年" },
+      { "id": "C", "text": "2011年" },
+      { "id": "D", "text": "2013年" }
+    ],
+    "answerId": "D",
+    "explanation": "富士山は2013年に世界文化遺産に登録された。"
+  },
+  {
+    "id": "fuji-criteria-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山が世界遺産に登録された際に評価された登録基準の組み合わせはどれか。",
+    "choices": [
+      { "id": "A", "text": "③・④" },
+      { "id": "B", "text": "⑤・⑥" },
+      { "id": "C", "text": "⑥のみ" },
+      { "id": "D", "text": "⑦・⑨" }
+    ],
+    "answerId": "B",
+    "explanation": "富士山は登録基準⑤と⑥が評価された。"
+  },
+  {
+    "id": "fuji-faith-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山の噴火を鎮めるために浅間神社を祀ったとされる人物は誰か。",
+    "choices": [
+      { "id": "A", "text": "空海" },
+      { "id": "B", "text": "最澄" },
+      { "id": "C", "text": "坂上田村麻呂" },
+      { "id": "D", "text": "源頼朝" }
+    ],
+    "answerId": "C",
+    "explanation": "坂上田村麻呂は富士山の噴火を鎮めるため浅間神社を祀ったと伝えられている。"
+  },
+  {
+    "id": "fuji-faith-002",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山信仰において、富士山の女神として祀られている神は誰か。",
+    "choices": [
+      { "id": "A", "text": "天照大神" },
+      { "id": "B", "text": "木花之佐久夜毘売命" },
+      { "id": "C", "text": "伊邪那美命" },
+      { "id": "D", "text": "大国主命" }
+    ],
+    "answerId": "B",
+    "explanation": "木花之佐久夜毘売命は富士山の女神として信仰されている。"
+  },
+  {
+    "id": "fuji-faith-003",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "全国の浅間神社の総本社とされる神社はどれか。",
+    "choices": [
+      { "id": "A", "text": "富士山頂浅間大社" },
+      { "id": "B", "text": "富士山本宮浅間大社" },
+      { "id": "C", "text": "久能山東照宮" },
+      { "id": "D", "text": "三嶋大社" }
+    ],
+    "answerId": "B",
+    "explanation": "富士山本宮浅間大社は全国の浅間神社の総本社である。"
+  },
+  {
+    "id": "fuji-faith-004",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "信仰の目的で富士山に登ることを表す語はどれか。",
+    "choices": [
+      { "id": "A", "text": "巡礼" },
+      { "id": "B", "text": "登山" },
+      { "id": "C", "text": "登拝" },
+      { "id": "D", "text": "修行" }
+    ],
+    "answerId": "C",
+    "explanation": "信仰として山に登る行為は登拝と呼ばれる。"
+  },
+  {
+    "id": "fuji-faith-005",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "江戸時代に広まり、集団で富士山を信仰・登拝した人々の組織を何というか。",
+    "choices": [
+      { "id": "A", "text": "修験道" },
+      { "id": "B", "text": "山岳講" },
+      { "id": "C", "text": "富士講" },
+      { "id": "D", "text": "神仏講" }
+    ],
+    "answerId": "C",
+    "explanation": "富士講は江戸時代に庶民の間で広まった富士山信仰の集団。"
+  },
+   {
+    "id": "fuji-legend-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山に関する伝説として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "ヤマトタケル伝説" },
+      { "id": "B", "text": "羽衣伝説" },
+      { "id": "C", "text": "天岩戸伝説" },
+      { "id": "D", "text": "因幡の白兎" }
+    ],
+    "answerId": "B",
+    "explanation": "羽衣伝説は富士山周辺に伝わる代表的な伝説。"
+  },
+  {
+    "id": "fuji-assets-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "富士山の構成資産に含まれるものはどれか。",
+    "choices": [
+      { "id": "A", "text": "忍野八海" },
+      { "id": "B", "text": "富士五湖" },
+      { "id": "C", "text": "伊豆半島" },
+      { "id": "D", "text": "駿河湾" }
+    ],
+    "answerId": "B",
+    "explanation": "富士五湖は富士山の構成資産の一つ。"
+  },
+  {
+    "id": "fuji-art-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "葛飾北斎が富士山を描いた代表的な浮世絵作品はどれか。",
+    "choices": [
+      { "id": "A", "text": "東海道五十三次" },
+      { "id": "B", "text": "冨嶽百景" },
+      { "id": "C", "text": "富嶽三十六景" },
+      { "id": "D", "text": "名所江戸百景" }
+    ],
+    "answerId": "C",
+    "explanation": "富嶽三十六景は富士山を描いた代表作。"
+  },
+  {
+    "id": "uluru-basic-001",
+    "grade": 4,
+    "chapter": "ウルル＝カタ・ジュタ",
+    "title": "エアーズロックとして知られる巨大な一枚岩の正式名称はどれか。",
+    "choices": [
+      { "id": "A", "text": "カタジュタ" },
+      { "id": "B", "text": "ウルル" },
+      { "id": "C", "text": "マウント・オーガスタス" },
+      { "id": "D", "text": "オルガ" }
+    ],
+    "answerId": "B",
+    "explanation": "エアーズロックの正式名称はウルル。"
+  },
+  {
+    "id": "english-depict-001",
+    "grade": 4,
+    "chapter": "英語表現",
+    "title": "英文中の “depict” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "登られた" },
+      { "id": "B", "text": "描かれた" },
+      { "id": "C", "text": "守られた" },
+      { "id": "D", "text": "調査された" }
+    ],
+    "answerId": "B",
+    "explanation": "depict は「描く」という意味。"
+  },
+  {
+    "id": "fuji-english-001",
+    "grade": 4,
+    "chapter": "富士山",
+    "title": "英文中の “worship” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "描かれた" },
+      { "id": "B", "text": "登録された" },
+      { "id": "C", "text": "信仰された" },
+      { "id": "D", "text": "保護された" }
+    ],
+    "answerId": "C",
+    "explanation": "worship は「信仰する」という意味。"
   },
   {
     "id": "shirakawa-001",
@@ -1333,19 +2117,90 @@
     "explanation": "佐渡島の金山は伝統的な手掘り採掘が特徴。"
   },
   {
-    "id": "g4-nikko-001",
-    "grade": 4,
-    "chapter": "日光の社寺",
-    "title": "日光の社寺が表している宗教的特徴として正しいものはどれか。",
-    "choices": [
-      { "id": "A", "text": "キリスト教のみ" },
-      { "id": "B", "text": "イスラム教のみ" },
-      { "id": "C", "text": "神道と仏教の融合" },
-      { "id": "D", "text": "ヒンドゥー教" }
-    ],
-    "answerId": "C",
-    "explanation": "日光の社寺は神仏習合（神道と仏教の融合）を象徴する。"
-  },
+  "id": "g4-nikko-term-001",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "修験道についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "仏教のみを信仰する宗派" },
+    { "id": "B", "text": "山での修行を重視する日本独自の信仰" },
+    { "id": "C", "text": "神社の祭礼を中心とする信仰" },
+    { "id": "D", "text": "中国から伝わった道教の一派" }
+  ],
+  "answerId": "B",
+  "explanation": "修験道は、山での修行を通じて悟りや霊力を得ようとする日本独自の信仰である。"
+},
+{
+  "id": "g4-nikko-term-002",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "東照社（東照宮）についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "天皇家の祖先を祀る神社" },
+    { "id": "B", "text": "徳川家康を神として祀る社" },
+    { "id": "C", "text": "仏像のみを安置する寺院" },
+    { "id": "D", "text": "修験者の修行場として建てられた寺" }
+  ],
+  "answerId": "B",
+  "explanation": "東照社（後の東照宮）は、徳川家康を神として祀るために建てられた。"
+},
+{
+  "id": "g4-nikko-term-003",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "「寛永の大造替」についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "鎌倉時代に行われた寺院の修復" },
+    { "id": "B", "text": "明治時代の神仏分離に伴う改修" },
+    { "id": "C", "text": "江戸時代に日光東照宮が大規模に整備された工事" },
+    { "id": "D", "text": "自然災害後に行われた応急修理" }
+  ],
+  "answerId": "C",
+  "explanation": "寛永の大造替は、江戸時代に徳川幕府によって行われた日光東照宮の大規模な整備事業である。"
+},
+{
+  "id": "g4-nikko-term-004",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "神仏習合についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "神道と仏教を完全に分離する考え方" },
+    { "id": "B", "text": "仏教を排除して神道を重視する思想" },
+    { "id": "C", "text": "神と仏を同一視・融合させる日本独自の信仰" },
+    { "id": "D", "text": "海外から伝来した一神教" }
+  ],
+  "answerId": "C",
+  "explanation": "神仏習合は、神と仏を融合させて信仰する日本独自の宗教観で、日光の社寺の特徴でもある。"
+},
+  {
+  "id": "g4-nikko-001",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "世界遺産「日光の社寺」の登録基準として正しい組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "①・④・⑥" },
+    { "id": "B", "text": "②・③・⑤" },
+    { "id": "C", "text": "③・⑦" },
+    { "id": "D", "text": "④のみ" }
+  ],
+  "answerId": "A",
+  "explanation": "日光の社寺は、芸術性（①）、建築技術の発展（④）、信仰や思想との関わり（⑥）が評価されている。"
+},
+{
+  "id": "g4-nikko-002",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "日光の社寺の特徴として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "仏教のみを信仰する寺院群である" },
+    { "id": "B", "text": "神道と仏教が融合した信仰形態が見られる" },
+    { "id": "C", "text": "近代以降に建設された建造物群である" },
+    { "id": "D", "text": "自然景観のみが評価対象である" }
+  ],
+  "answerId": "B",
+  "explanation": "日光の社寺では、神道と仏教が融合した日本独自の信仰形態が見られる。"
+},
+
   {
     "id": "g4-nikko-002",
     "grade": 4,
@@ -1374,6 +2229,140 @@
     "answerId": "C",
     "explanation": "日光の社寺は1999年に世界遺産に登録された。"
   },
+{
+  "id": "g4-tajmahal-001",
+  "grade": 4,
+  "chapter":  "日光の社寺",
+  "title": "タージ・マハルが世界遺産に登録された主な登録基準はどれか。",
+  "choices": [
+    { "id": "A", "text": "①のみ" },
+    { "id": "B", "text": "①・②" },
+    { "id": "C", "text": "①・④" },
+    { "id": "D", "text": "②・⑥" }
+  ],
+  "answerId": "A",
+  "explanation": "タージ・マハルは、白大理石による高い芸術性が評価され、登録基準①で登録されている。"
+},
+{
+  "id": "g4-taj-term-003",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "タージ・マハルの建築上の特徴として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "左右非対称な構造" },
+    { "id": "B", "text": "円形のみで構成されている" },
+    { "id": "C", "text": "左右対称の美しい配置" },
+    { "id": "D", "text": "木造建築が中心である" }
+  ],
+  "answerId": "C",
+  "explanation": "タージ・マハルは、左右対称の整った配置が特徴である。"
+},
+{
+  "id": "g4-taj-term-002",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "タージ・マハルを建設したムガル帝国の皇帝は誰か。",
+  "choices": [
+    { "id": "A", "text": "アクバル" },
+    { "id": "B", "text": "バーブル" },
+    { "id": "C", "text": "シャー・ジャハーン" },
+    { "id": "D", "text": "アウラングゼーブ" }
+  ],
+  "answerId": "C",
+  "explanation": "シャー・ジャハーンは、王妃のためにタージ・マハルを建設した皇帝である。"
+},
+{
+  "id": "g4-taj-term-001",
+  "grade": 4,
+  "chapter":  "日光の社寺",
+  "title": "ムガル帝国についての説明として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "古代ローマに成立した帝国" },
+    { "id": "B", "text": "インドを支配したイスラーム王朝" },
+    { "id": "C", "text": "中国で成立した王朝" },
+    { "id": "D", "text": "中世ヨーロッパの封建国家" }
+  ],
+  "answerId": "B",
+  "explanation": "ムガル帝国は、インドを支配したイスラーム王朝である。"
+},
+{
+  "id": "g4-nikko-eng-001",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "次の英文で使われている fuse の意味として最も適切なものはどれか。\n“Nikko is a sacred site that fuses Shinto and Buddhism.”",
+  "choices": [
+    { "id": "A", "text": "対立させる" },
+    { "id": "B", "text": "分離する" },
+    { "id": "C", "text": "融合させる" },
+    { "id": "D", "text": "否定する" }
+  ],
+  "answerId": "C",
+  "explanation": "fuse は「融合させる」という意味で、日光の社寺の宗教的特徴を表している。"
+},
+{
+  "id": "g4-nikko-eng-002",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "Shinto が指すものとして正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "仏教" },
+    { "id": "B", "text": "キリスト教" },
+    { "id": "C", "text": "神道" },
+    { "id": "D", "text": "イスラーム教" }
+  ],
+  "answerId": "C",
+  "explanation": "Shinto は、日本固有の宗教である神道を指す。"
+},
+{
+  "id": "g4-nikko-eng-003",
+  "grade": 4,
+  "chapter": "日光の社寺",
+  "title": "Buddhism が指すものとして正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "神道" },
+    { "id": "B", "text": "仏教" },
+    { "id": "C", "text": "道教" },
+    { "id": "D", "text": "儒教" }
+  ],
+  "answerId": "B",
+  "explanation": "Buddhism は仏教を意味する。"
+},
+{
+  "id": "g4-eng-basic-001",
+  "grade": 4,
+  "chapter":  "日光の社寺",
+  "title": "magnificent の意味として最も適切なものはどれか。",
+  "choices": [
+    { "id": "A", "text": "小さい" },
+    { "id": "B", "text": "質素な" },
+    { "id": "C", "text": "壮大な" },
+    { "id": "D", "text": "古い" }
+  ],
+  "answerId": "C",
+  "explanation": "magnificent は「壮大な・見事な」という意味である。"
+},
+{
+  "id": "g4-eng-basic-002",
+  "grade": 4,
+  "chapter":  "日光の社寺",
+  "title": "include ~ の意味として正しいものはどれか。",
+  "choices": [
+    { "id": "A", "text": "〜を除外する" },
+    { "id": "B", "text": "〜を破壊する" },
+    { "id": "C", "text": "〜を含む" },
+    { "id": "D", "text": "〜を比較する" }
+  ],
+  "answerId": "C",
+  "explanation": "include は「〜を含む」という意味である。"
+},
+
+
+
+
+
+
+
+
   {
     "id": "g4-munakata-015",
     "grade": 4,
