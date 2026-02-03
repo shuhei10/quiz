@@ -1083,7 +1083,7 @@
   {
     "id": "uluru-basic-001",
     "grade": 4,
-    "chapter": "ウルル＝カタ・ジュタ",
+    "chapter": "富士山",
     "title": "エアーズロックとして知られる巨大な一枚岩の正式名称はどれか。",
     "choices": [
       { "id": "A", "text": "カタジュタ" },
@@ -1097,7 +1097,7 @@
   {
     "id": "english-depict-001",
     "grade": 4,
-    "chapter": "英語表現",
+    "chapter": "富士山",
     "title": "英文中の “depict” の意味として正しいものはどれか。",
     "choices": [
       { "id": "A", "text": "登られた" },
@@ -1123,23 +1123,107 @@
     "explanation": "worship は「信仰する」という意味。"
   },
   {
-    "id": "shirakawa-001",
+  "id": "shirakawago-criteria-001",
+  "grade": 4,
+  "chapter": "白川郷・五箇山",
+  "title": "白川郷・五箇山の合掌造り集落が評価された登録基準の組み合わせはどれか。",
+  "choices": [
+    { "id": "A", "text": "③・④" },
+    { "id": "B", "text": "④・⑤" },
+    { "id": "C", "text": "⑤・⑥" },
+    { "id": "D", "text": "⑥・⑦" }
+  ],
+  "answerId": "B",
+  "explanation": "登録基準④（建築技術の優れた例）と⑤（伝統的な人間居住・土地利用）が評価されている。"
+},
+  {
+    "id": "shirakawago-structure-001",
     "grade": 4,
-    "chapter": "白川郷",
-    "title": "白川郷・五箇山の合掌造り集落の特徴はどれ？",
+    "chapter": "白川郷・五箇山",
+    "title": "合掌造り家屋の屋根が急勾配になっている主な理由はどれか。",
     "choices": [
-      { "id": "A", "text": "平屋の石造建築" },
-      { "id": "B", "text": "急勾配の茅葺き屋根" },
-      { "id": "C", "text": "レンガ造りの家屋" },
-      { "id": "D", "text": "円形住居" }
+      { "id": "A", "text": "台風への備え" },
+      { "id": "B", "text": "日差しを防ぐため" },
+      { "id": "C", "text": "雪を落とすため" },
+      { "id": "D", "text": "外敵から身を守るため" }
+    ],
+    "answerId": "C",
+    "explanation": "豪雪地帯のため、雪を落としやすい構造になっている。"
+  },
+ {
+    "id": "shirakawago-life-001",
+    "grade": 4,
+    "chapter": "白川郷・五箇山",
+    "title": "合掌造り家屋の屋根裏空間が広く使われた主な目的はどれか。",
+    "choices": [
+      { "id": "A", "text": "家畜の飼育" },
+      { "id": "B", "text": "貯水" },
+      { "id": "C", "text": "養蚕" },
+      { "id": "D", "text": "武器の保管" }
+    ],
+    "answerId": "C",
+    "explanation": "屋根裏は通気性が良く、養蚕に適していた。"
+  },
+  {
+    "id": "shirakawago-roof-001",
+    "grade": 4,
+    "chapter": "白川郷・五箇山",
+    "title": "合掌造り家屋で屋根の妻が向けられている方角はどれか。",
+    "choices": [
+      { "id": "A", "text": "東西" },
+      { "id": "B", "text": "北" },
+      { "id": "C", "text": "南" },
+      { "id": "D", "text": "決まっていない" }
+    ],
+    "answerId": "A",
+    "explanation": "日本海側からの風を避けるため、屋根の妻は東西方向に向けられている。"
+  },
+  {
+    "id": "shirakawago-industry-001",
+    "grade": 4,
+    "chapter": "白川郷・五箇山",
+    "title": "白川郷・五箇山で江戸時代に重要な現金収入源となったものはどれか。",
+    "choices": [
+      { "id": "A", "text": "金" },
+      { "id": "B", "text": "塩" },
+      { "id": "C", "text": "塩硝" },
+      { "id": "D", "text": "鉄" }
+    ],
+    "answerId": "C",
+    "explanation": "塩硝は火薬の原料として重要な産業だった。"
+  },
+  {
+    "id": "shirakawago-family-001",
+    "grade": 4,
+    "chapter": "白川郷・五箇山",
+    "title": "合掌造り集落で見られる大家族制の特徴として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "核家族中心" },
+      { "id": "B", "text": "少人数制" },
+      { "id": "C", "text": "多人数で一つの家に暮らす" },
+      { "id": "D", "text": "貴族のみが居住" }
+    ],
+    "answerId": "C",
+    "explanation": "養蚕や家屋維持のため、多人数で生活する大家族制が発達した。"
+  },
+  {
+    "id": "shirakawago-eval-001",
+    "grade": 4,
+    "chapter": "白川郷・五箇山",
+    "title": "白川郷の合掌造り集落を高く評価した建築家は誰か。",
+    "choices": [
+      { "id": "A", "text": "ル・コルビュジエ" },
+      { "id": "B", "text": "ブルーノ・タウト" },
+      { "id": "C", "text": "フランク・ロイド・ライト" },
+      { "id": "D", "text": "アントニ・ガウディ" }
     ],
     "answerId": "B",
-    "explanation": "豪雪に対応するため急勾配の屋根が特徴。"
+    "explanation": "ドイツの建築家ブルーノ・タウトが高く評価した。"
   },
   {
     "id": "alberobello-001",
     "grade": 4,
-    "chapter": "白川郷",
+    "chapter": "白川郷・五箇山",
     "title": "アルベロベッロのトゥルッリの屋根の形は？",
     "choices": [
       { "id": "A", "text": "三角形" },
@@ -1151,88 +1235,902 @@
     "explanation": "トゥルッリは円錐形の石積み屋根が特徴。"
   },
   {
-    "id": "kyoto-001",
+    "id": "shirakawago-yui-001",
     "grade": 4,
-    "chapter": "京都・奈良",
-    "title": "京都が長く日本文化の中心であった理由はどれ？",
+    "chapter": "白川郷・五箇山",
+    "title": "白川郷・五箇山の合掌造り集落で、屋根の葺き替えなどを共同で行う相互扶助の仕組みを何というか。",
     "choices": [
-      { "id": "A", "text": "港町だったから" },
-      { "id": "B", "text": "千年以上都が置かれたから" },
-      { "id": "C", "text": "工業都市だったから" },
-      { "id": "D", "text": "農業が盛んだったから" }
+      { "id": "A", "text": "富士講" },
+      { "id": "B", "text": "結" },
+      { "id": "C", "text": "座" },
+      { "id": "D", "text": "講中" }
     ],
     "answerId": "B",
-    "explanation": "京都は千年以上にわたり都として栄えた。"
+    "explanation": "結は、住民同士が助け合って生活や建築を支える相互扶助の仕組み。"
   },
   {
-    "id": "nara-001",
+    "id": "alberobello-trulli-001",
     "grade": 4,
-    "chapter": "京都・奈良",
-    "title": "奈良時代に花開いた国際色豊かな文化はどれ？",
+    "chapter": "アルベロベッロ",
+    "title": "トゥルッリと呼ばれる独特な建築が集中して見られる町はどこか。",
     "choices": [
-      { "id": "A", "text": "国風文化" },
-      { "id": "B", "text": "天平文化" },
-      { "id": "C", "text": "桃山文化" },
-      { "id": "D", "text": "元禄文化" }
-    ],
-    "answerId": "B",
-    "explanation": "天平文化は唐の影響を受けた国際的文化。"
-  },
-  {
-    "id": "eng-ogasawara-001",
-    "grade": 4,
-    "chapter": "小笠原諸島",
-    "title": "英文中の endemic species の意味として正しいものはどれ？\nThe Ogasawara Islands are home to many endemic species.",
-    "choices": [
-      { "id": "A", "text": "外来種" },
-      { "id": "B", "text": "絶滅種" },
-      { "id": "C", "text": "固有種" },
-      { "id": "D", "text": "家畜" }
+      { "id": "A", "text": "ローマ" },
+      { "id": "B", "text": "ナポリ" },
+      { "id": "C", "text": "アルベロベッロ" },
+      { "id": "D", "text": "フィレンツェ" }
     ],
     "answerId": "C",
-    "explanation": "endemic species は「その地域だけに生息する固有種」。"
+    "explanation": "トゥルッリはイタリア南部の町アルベロベッロに集中して残っている。"
   },
   {
-    "id": "eng-fuji-001",
+    "id": "alberobello-roof-001",
     "grade": 4,
-    "chapter": "富士山",
-    "title": "英文中の worshipped の意味はどれ？\nMount Fuji has been worshipped as a sacred mountain.",
+    "chapter": "アルベロベッロ",
+    "title": "トゥルッリの屋根の形として正しいものはどれか。",
     "choices": [
-      { "id": "A", "text": "登山された" },
-      { "id": "B", "text": "崇拝された" },
-      { "id": "C", "text": "調査された" },
-      { "id": "D", "text": "破壊された" }
+      { "id": "A", "text": "切妻屋根" },
+      { "id": "B", "text": "寄棟屋根" },
+      { "id": "C", "text": "円錐形の屋根" },
+      { "id": "D", "text": "平屋根" }
     ],
-    "answerId": "B",
-    "explanation": "worshipped は「崇拝された」という意味。"
+    "answerId": "C",
+    "explanation": "トゥルッリは石を積み上げた円錐形の屋根が特徴。"
   },
   {
-    "id": "eng-shirakawa-001",
+    "id": "alberobello-naples-001",
     "grade": 4,
-    "chapter": "白川郷",
-    "title": "英文中の gassho style が指すものはどれ？\nThe houses are built in the gassho style.",
+    "chapter": "アルベロベッロ",
+    "title": "トゥルッリが解体しやすい構造で建てられた理由はどれか。",
     "choices": [
-      { "id": "A", "text": "石造建築" },
+      { "id": "A", "text": "石材不足のため" },
+      { "id": "B", "text": "地震対策のため" },
+      { "id": "C", "text": "ナポリ王国の課税を避けるため" },
+      { "id": "D", "text": "宗教的理由のため" }
+    ],
+    "answerId": "C",
+    "explanation": "ナポリ王国の課税を避けるため、簡単に解体できる構造で建てられた。"
+  },
+  {
+    "id": "english-gassho-001",
+    "grade": 4,
+    "chapter": "英語表現",
+    "title": "“gassho style” が指す建築様式はどれか。",
+    "choices": [
+      { "id": "A", "text": "トゥルッリ" },
       { "id": "B", "text": "合掌造り" },
-      { "id": "C", "text": "レンガ建築" },
-      { "id": "D", "text": "ドーム建築" }
+      { "id": "C", "text": "円形住居" },
+      { "id": "D", "text": "石造建築" }
     ],
     "answerId": "B",
-    "explanation": "gassho style は白川郷に見られる合掌造り。"
+    "explanation": "gassho style は白川郷・五箇山の合掌造りを指す。"
   },
   {
-    "id": "eng-nara-001",
+    "id": "english-originate-001",
     "grade": 4,
-    "chapter": "京都・奈良",
-    "title": "英文中の cosmopolitan culture の意味はどれ？\nCosmopolitan culture developed in Nara during the 8th century.",
+    "chapter": "英語表現",
+    "title": "英文中の “originate” の意味として正しいものはどれか。",
     "choices": [
-      { "id": "A", "text": "地方文化" },
-      { "id": "B", "text": "軍事文化" },
-      { "id": "C", "text": "国際的文化" },
-      { "id": "D", "text": "宗教文化" }
+      { "id": "A", "text": "保護される" },
+      { "id": "B", "text": "描かれる" },
+      { "id": "C", "text": "由来する" },
+      { "id": "D", "text": "変化する" }
+    ],
+    "answerId": "C",
+    "explanation": "originate from ～ は「～に由来する」という意味。"
+  },
+  {
+    "id": "kyoto-criteria-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "古都京都の文化財が評価された登録基準の組み合わせはどれか。",
+    "choices": [
+      { "id": "A", "text": "①・②" },
+      { "id": "B", "text": "②・④" },
+      { "id": "C", "text": "③・⑤" },
+      { "id": "D", "text": "④・⑥" }
+    ],
+    "answerId": "B",
+    "explanation": "登録基準②（文化の交流）と④（建築・都市計画）が評価された。"
+  },
+  {
+    "id": "kyoto-temple-001",
+    "grade": 4,
+    "image": "/images/g4/Kinkakuji.jpg",
+    "chapter": "古都京都の文化財",
+    "title": "金色の外観で知られる京都の寺院はどれか。",
+    "choices": [
+      { "id": "A", "text": "清水寺" },
+      { "id": "B", "text": "銀閣寺" },
+      { "id": "C", "text": "金閣寺" },
+      { "id": "D", "text": "東寺" }
+    ],
+    "answerId": "C",
+    "explanation": "金閣寺（鹿苑寺）は金箔で覆われた外観が特徴。"
+  },
+  {
+    "id": "kyoto-history-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "平安京に都を移した天皇は誰か。",
+    "choices": [
+      { "id": "A", "text": "聖武天皇" },
+      { "id": "B", "text": "桓武天皇" },
+      { "id": "C", "text": "醍醐天皇" },
+      { "id": "D", "text": "後白河天皇" }
+    ],
+    "answerId": "B",
+    "explanation": "桓武天皇は794年に都を平安京へ移した。"
+  },
+  {
+    "id": "kyoto-history-002",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "平安京が造営された年はいつか。",
+    "choices": [
+      { "id": "A", "text": "710年" },
+      { "id": "B", "text": "740年" },
+      { "id": "C", "text": "794年" },
+      { "id": "D", "text": "806年" }
+    ],
+    "answerId": "C",
+    "explanation": "794年に平安京へ遷都された。"
+  },
+  {
+    "id": "kyoto-history-003",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "平安京の都市構造として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "円形都市" },
+      { "id": "B", "text": "城郭都市" },
+      { "id": "C", "text": "条坊制による碁盤目状の都市" },
+      { "id": "D", "text": "河川中心の自然都市" }
+    ],
+    "answerId": "C",
+    "explanation": "平安京は条坊制に基づく計画都市である。"
+  },
+  {
+    "id": "kyoto-temple-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "平安京の西側に置かれた官寺はどれか。",
+    "choices": [
+      { "id": "A", "text": "東寺" },
+      { "id": "B", "text": "延暦寺" },
+      { "id": "C", "text": "西寺" },
+      { "id": "D", "text": "清水寺" }
+    ],
+    "answerId": "C",
+    "explanation": "平安京には東寺と西寺が置かれ、西寺は後に衰退した。"
+  },
+  {
+    "id": "kyoto-temple-002",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "比叡山に建立された、日本仏教に大きな影響を与えた寺院はどれか。",
+    "choices": [
+      { "id": "A", "text": "東寺" },
+      { "id": "B", "text": "興福寺" },
+      { "id": "C", "text": "延暦寺" },
+      { "id": "D", "text": "醍醐寺" }
+    ],
+    "answerId": "C",
+    "explanation": "延暦寺は最澄により開かれ、日本仏教の母山とされる。"
+  },
+  {
+    "id": "kyoto-war-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "京都の多くの寺社や町並みが荒廃する原因となった戦乱はどれか。",
+    "choices": [
+      { "id": "A", "text": "壬申の乱" },
+      { "id": "B", "text": "承久の乱" },
+      { "id": "C", "text": "応仁の乱" },
+      { "id": "D", "text": "島原の乱" }
+    ],
+    "answerId": "C",
+    "explanation": "応仁の乱により京都は大きな被害を受けた。"
+  },
+  {
+    "id": "paris-building-001",
+    "grade": 4,
+    "image": "/images/g4/Notre-Dame.jpg",
+    "chapter": "古都京都の文化財",
+    "title": "ゴシック建築を代表し、セーヌ河岸に建つ大聖堂はどれか。",
+    "choices": [
+      { "id": "A", "text": "サント・シャペル" },
+      { "id": "B", "text": "ノートルダム聖堂" },
+      { "id": "C", "text": "アンヴァリッド" },
+      { "id": "D", "text": "サクレ・クール寺院" }
+    ],
+    "answerId": "B",
+    "explanation": "ノートルダム聖堂はパリを代表するゴシック建築である。"
+  },
+  {
+    "id": "paris-building-002",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "ステンドグラスで有名な王の礼拝堂はどれか。",
+    "choices": [
+      { "id": "A", "text": "ルーヴル宮" },
+      { "id": "B", "text": "アンヴァリッド" },
+      { "id": "C", "text": "サント・シャペル" },
+      { "id": "D", "text": "エッフェル塔" }
+    ],
+    "answerId": "C",
+    "explanation": "サント・シャペルはルイ9世によって建てられた王の礼拝堂。"
+  },
+  {
+    "id": "paris-building-003",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "ナポレオンの墓がある建築物はどれか。",
+    "choices": [
+      { "id": "A", "text": "ノートルダム聖堂" },
+      { "id": "B", "text": "ルーヴル宮" },
+      { "id": "C", "text": "アンヴァリッド" },
+      { "id": "D", "text": "パンテオン" }
+    ],
+    "answerId": "C",
+    "explanation": "アンヴァリッドにはナポレオンの墓がある。"
+  },
+  {
+    "id": "paris-building-004",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "1889年のパリ万国博覧会のために建設された建造物はどれか。",
+    "choices": [
+      { "id": "A", "text": "ルーヴル宮" },
+      { "id": "B", "text": "エッフェル塔" },
+      { "id": "C", "text": "サント・シャペル" },
+      { "id": "D", "text": "ノートルダム聖堂" }
+    ],
+    "answerId": "B",
+    "explanation": "エッフェル塔は1889年のパリ万博のために建てられた。"
+  },
+  {
+    "id": "paris-area-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "セーヌ川右岸に位置し、現在は美術館として利用されている宮殿はどれか。",
+    "choices": [
+      { "id": "A", "text": "ベルサイユ宮殿" },
+      { "id": "B", "text": "ルーヴル宮" },
+      { "id": "C", "text": "エリゼ宮" },
+      { "id": "D", "text": "パレ・ロワイヤル" }
+    ],
+    "answerId": "B",
+    "explanation": "ルーヴル宮はかつての王宮で、現在は美術館。"
+  },
+  {
+    "id": "paris-area-002",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "学生の街として知られるセーヌ左岸の地区はどこか。",
+    "choices": [
+      { "id": "A", "text": "マレ地区" },
+      { "id": "B", "text": "モンマルトル" },
+      { "id": "C", "text": "カルティエ・ラタン" },
+      { "id": "D", "text": "ラ・デファンス" }
+    ],
+    "answerId": "C",
+    "explanation": "カルティエ・ラタンは大学が集まる学生の街。"
+  },
+  {
+    "id": "english-remain-001",
+    "grade": 4,
+    "chapter": "古都京都の文化財",
+    "title": "英文中の “remain” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "建設される" },
+      { "id": "B", "text": "描かれる" },
+      { "id": "C", "text": "残っている" },
+      { "id": "D", "text": "破壊される" }
+    ],
+    "answerId": "C",
+    "explanation": "remain は「今も残っている」という意味。"
+  },
+  {
+    "id": "nara-culture-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "奈良時代に花開いた国際色豊かな文化を何というか。",
+    "choices": [
+      { "id": "A", "text": "国風文化" },
+      { "id": "B", "text": "飛鳥文化" },
+      { "id": "C", "text": "天平文化" },
+      { "id": "D", "text": "北山文化" }
+    ],
+    "answerId": "C",
+    "explanation": "天平文化は唐や西アジアの影響を受けた国際的な文化。"
+  },
+  {
+    "id": "nara-criteria-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "古都奈良の文化財が評価された登録基準の組み合わせとして正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "①・②・③" },
+      { "id": "B", "text": "②・③・④・⑥" },
+      { "id": "C", "text": "③・④・⑤" },
+      { "id": "D", "text": "④・⑤・⑥" }
+    ],
+    "answerId": "B",
+    "explanation": "古都奈良の文化財は登録基準②③④⑥が評価されている。"
+  },
+  {
+    "id": "nara-literature-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "奈良時代の人々の自然観や生活感情を詠んだ和歌集はどれか。",
+    "choices": [
+      { "id": "A", "text": "古今和歌集" },
+      { "id": "B", "text": "新古今和歌集" },
+      { "id": "C", "text": "万葉集" },
+      { "id": "D", "text": "伊勢物語" }
+    ],
+    "answerId": "C",
+    "explanation": "万葉集は奈良時代に成立した日本最古の和歌集。"
+  },
+  {
+    "id": "nara-emperor-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "東大寺大仏の建立を進めた天皇は誰か。",
+    "choices": [
+      { "id": "A", "text": "桓武天皇" },
+      { "id": "B", "text": "聖武天皇" },
+      { "id": "C", "text": "天武天皇" },
+      { "id": "D", "text": "醍醐天皇" }
+    ],
+    "answerId": "B",
+    "explanation": "聖武天皇は仏教による国家鎮護を目指した。"
+  },
+  {
+    "id": "nara-buddha-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "東大寺の大仏の正式名称はどれか。",
+    "choices": [
+      { "id": "A", "text": "阿弥陀如来" },
+      { "id": "B", "text": "釈迦如来" },
+      { "id": "C", "text": "盧舎那仏" },
+      { "id": "D", "text": "薬師如来" }
+    ],
+    "answerId": "C",
+    "explanation": "東大寺大仏は盧舎那仏である。"
+  },
+  {
+    "id": "nara-edict-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "天皇が公式に出す命令文を何というか。",
+    "choices": [
+      { "id": "A", "text": "勅" },
+      { "id": "B", "text": "詔" },
+      { "id": "C", "text": "宣旨" },
+      { "id": "D", "text": "法令" }
+    ],
+    "answerId": "B",
+    "explanation": "詔は天皇が国に向けて出す公式な命令。"
+  },
+  {
+    "id": "nara-architecture-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "寺院建築における「移築」とはどのような保存方法か。",
+    "choices": [
+      { "id": "A", "text": "石造に建て替えること" },
+      { "id": "B", "text": "別の場所へ移して保存すること" },
+      { "id": "C", "text": "完全に解体すること" },
+      { "id": "D", "text": "地下に保存すること" }
+    ],
+    "answerId": "B",
+    "explanation": "移築は建物を別の場所へ移して保存する方法。"
+  },
+  {
+    "id": "nara-monk-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "日本に正式な戒律を伝え、唐から来日した僧は誰か。",
+    "choices": [
+      { "id": "A", "text": "玄奘" },
+      { "id": "B", "text": "鑑真和上" },
+      { "id": "C", "text": "最澄" },
+      { "id": "D", "text": "空海" }
+    ],
+    "answerId": "B",
+    "explanation": "鑑真和上は唐から来日し、日本に戒律を伝えた。"
+  },
+  {
+    "id": "nara-politics-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "奈良時代の政治体制の基礎を築いた藤原氏の人物は誰か。",
+    "choices": [
+      { "id": "A", "text": "藤原道長" },
+      { "id": "B", "text": "藤原不比等" },
+      { "id": "C", "text": "中臣鎌足" },
+      { "id": "D", "text": "聖武天皇" }
+    ],
+    "answerId": "B",
+    "explanation": "藤原不比等は律令国家体制の整備に大きな影響を与えた。"
+  },
+  {
+    "id": "florence-renaissance-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "14〜16世紀にフィレンツェを中心に花開いた文化運動は何か。",
+    "choices": [
+      { "id": "A", "text": "ゴシック" },
+      { "id": "B", "text": "バロック" },
+      { "id": "C", "text": "ルネサンス" },
+      { "id": "D", "text": "ロマン主義" }
+    ],
+    "answerId": "C",
+    "explanation": "フィレンツェはルネサンス文化の中心地であった。"
+  },
+  {
+    "id": "florence-family-002",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "フィレンツェで芸術家を保護し、都市の繁栄を支えた一族はどれか。",
+    "choices": [
+      { "id": "A", "text": "ボルジア家" },
+      { "id": "B", "text": "メディチ家" },
+      { "id": "C", "text": "ハプスブルク家" },
+      { "id": "D", "text": "カペー家" }
+    ],
+    "answerId": "B",
+    "explanation": "メディチ家はルネサンス芸術を保護した。"
+  },
+  {
+    "id": "english-influence-001",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "英文中の “influenced by” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "支配された" },
+      { "id": "B", "text": "破壊された" },
+      { "id": "C", "text": "影響を受けた" },
+      { "id": "D", "text": "独立した" }
+    ],
+    "answerId": "C",
+    "explanation": "influenced by ～ は「～の影響を受けた」という意味。"
+  },
+  {
+    "id": "english-cosmopolitan-002",
+    "grade": 4,
+    "chapter": "古都奈良の文化財",
+    "title": "“cosmopolitan” の意味として正しいものはどれか。",
+    "choices": [
+      { "id": "A", "text": "農村的な" },
+      { "id": "B", "text": "宗教的な" },
+      { "id": "C", "text": "国際的な" },
+      { "id": "D", "text": "閉鎖的な" }
     ],
     "answerId": "C",
     "explanation": "cosmopolitan は「国際的な」という意味。"
+  },
+  {
+    "id": "g4-horyuji-001",
+    "grade": 4,
+    "chapter":"法隆寺地域の仏教建造物群",
+    "title": "「法隆寺地域の仏教建造物群」の登録基準として正しい組み合わせはどれ？",
+    "choices": [
+      { "id": "A", "text": "①②④⑥" },
+      { "id": "B", "text": "②③⑤⑥" },
+      { "id": "C", "text": "①③④⑤" },
+      { "id": "D", "text": "⑦⑧⑨⑩" }
+    ],
+    "answerId": "A",
+    "explanation": "写真の表示どおり、法隆寺地域の仏教建造物群は登録基準①②④⑥。"
+  },
+  {
+    "id": "g4-horyuji-002",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "聖徳太子（Prince Shotoku）は、推古天皇のもとでどの立場として政治を行った？",
+    "choices": [
+      { "id": "A", "text": "摂政" },
+      { "id": "B", "text": "関白" },
+      { "id": "C", "text": "征夷大将軍" },
+      { "id": "D", "text": "太政大臣" }
+    ],
+    "answerId": "A",
+    "explanation": "聖徳太子は推古天皇を補佐する「摂政」として政治を進めた。"
+  },
+  {
+    "id": "g4-horyuji-003",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "推古天皇と聖徳太子の組み合わせとして正しい説明はどれ？",
+    "choices": [
+      { "id": "A", "text": "推古天皇のもとで聖徳太子が政治を補佐した" },
+      { "id": "B", "text": "聖徳太子のもとで推古天皇が摂政を務めた" },
+      { "id": "C", "text": "推古天皇は武士政権を開いた" },
+      { "id": "D", "text": "聖徳太子は室町時代の人物である" }
+    ],
+    "answerId": "A",
+    "explanation": "推古天皇（天皇）＋聖徳太子（摂政）が基本セット。"
+  },
+  {
+    "id": "g4-horyuji-004",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "「冠位十二階」とは何を整えるための制度？",
+    "choices": [
+      { "id": "A", "text": "能力や功績に応じて官位を与える仕組み" },
+      { "id": "B", "text": "土地を班給する仕組み" },
+      { "id": "C", "text": "武士の主従関係を固定する仕組み" },
+      { "id": "D", "text": "鎖国のルールを定めた仕組み" }
+    ],
+    "answerId": "A",
+    "explanation": "冠（かんむり）の色などで位を分け、官人の序列を整えた。"
+  },
+  {
+    "id": "g4-horyuji-005",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "「十七条憲法」の内容として最も近いものはどれ？",
+    "choices": [
+      { "id": "A", "text": "役人の心得や政治の道徳を示した" },
+      { "id": "B", "text": "国民の権利を保障する近代憲法である" },
+      { "id": "C", "text": "戦国大名の分国法である" },
+      { "id": "D", "text": "江戸幕府の武家諸法度である" }
+    ],
+    "answerId": "A",
+    "explanation": "十七条憲法は、政治の基本姿勢（和を尊ぶ等）を示した教え・規範。"
+  },
+  {
+    "id": "g4-horyuji-006",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "「伽藍（がらん）」の意味として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "寺院の主要な建物が配置された中心区域" },
+      { "id": "B", "text": "城の防御施設一式" },
+      { "id": "C", "text": "神社の参道" },
+      { "id": "D", "text": "民家の台所" }
+    ],
+    "answerId": "A",
+    "explanation": "伽藍＝金堂・塔など、寺の中心となる建築群や配置。"
+  },
+  {
+    "id": "g4-horyuji-007",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "法隆寺や法起寺が「世界最古の木造建築」といわれるポイントはどれ？",
+    "choices": [
+      { "id": "A", "text": "現存する木造建築として非常に古い年代の建物が残る" },
+      { "id": "B", "text": "すべてがコンクリート造である" },
+      { "id": "C", "text": "建物が地中に埋まって発見された" },
+      { "id": "D", "text": "現代に再建された建物しかない" }
+    ],
+    "answerId": "A",
+    "explanation": "Horyu-ji / Hoki-ji は現存する木造建築として最古級とされる。"
+  },
+  {
+    "id": "g4-horyuji-008",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "聖徳太子の活躍した時代として最も近いのはどれ？",
+    "choices": [
+      { "id": "A", "text": "飛鳥時代" },
+      { "id": "B", "text": "平安時代" },
+      { "id": "C", "text": "鎌倉時代" },
+      { "id": "D", "text": "江戸時代" }
+    ],
+    "answerId": "A",
+    "explanation": "推古天皇・聖徳太子の政治は飛鳥時代の代表テーマ。"
+  },
+  {
+    "id": "g4-horyuji-009",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "「エンタシス（entasis）」の説明として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "柱の中央部をふくらませて見せるデザイン" },
+      { "id": "B", "text": "屋根を二重にする技法" },
+      { "id": "C", "text": "床下を高くして湿気を防ぐ技法" },
+      { "id": "D", "text": "壁をガラスにして採光する技法" }
+    ],
+    "answerId": "A",
+    "explanation": "エンタシス＝柱の“ふくらみ”。古代ギリシャ建築などで有名。"
+  },
+  {
+    "id": "g4-istanbul-001",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "「イスタンブルの歴史地区」を隔てる海峡はどれ？",
+    "choices": [
+      { "id": "A", "text": "ボスフォラス海峡" },
+      { "id": "B", "text": "ジブラルタル海峡" },
+      { "id": "C", "text": "マラッカ海峡" },
+      { "id": "D", "text": "ベーリング海峡" }
+    ],
+    "answerId": "A",
+    "explanation": "イスタンブルはボスフォラス海峡を挟んでアジア側とヨーロッパ側に広がる。"
+  },
+  {
+    "id": "g4-istanbul-002",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "ボスフォラス海峡のアジア側に広がる半島はどれ？",
+    "choices": [
+      { "id": "A", "text": "アナトリア半島" },
+      { "id": "B", "text": "バルカン半島" },
+      { "id": "C", "text": "イベリア半島" },
+      { "id": "D", "text": "スカンディナヴィア半島" }
+    ],
+    "answerId": "A",
+    "explanation": "アジア側＝アナトリア半島。トルコの大部分を占める。"
+  },
+  {
+    "id": "g4-istanbul-003",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "ボスフォラス海峡のヨーロッパ側に広がる半島はどれ？",
+    "choices": [
+      { "id": "A", "text": "バルカン半島" },
+      { "id": "B", "text": "アナトリア半島" },
+      { "id": "C", "text": "アラビア半島" },
+      { "id": "D", "text": "デカン高原" }
+    ],
+    "answerId": "A",
+    "explanation": "ヨーロッパ側＝バルカン半島。イスタンブルは“東西の交点”として語られる。"
+  },
+  {
+    "id": "g4-istanbul-004",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "オスマン帝国（Ottoman Empire）について正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "アナトリアを基盤に勢力を広げたイスラム王朝・帝国" },
+      { "id": "B", "text": "日本の古代国家" },
+      { "id": "C", "text": "北欧の海洋国家" },
+      { "id": "D", "text": "南米の先住民国家" }
+    ],
+    "answerId": "A",
+    "explanation": "オスマン帝国はトルコを中心に広域を支配した大帝国として有名。"
+  },
+  {
+    "id": "g4-istanbul-005",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "アヤソフィア（Hagia Sophia）について正しい説明はどれ？",
+    "choices": [
+      { "id": "A", "text": "歴史の中で教会・モスクなど役割を変えてきた大建築" },
+      { "id": "B", "text": "古代エジプトのピラミッドの名称" },
+      { "id": "C", "text": "ローマの円形闘技場の名称" },
+      { "id": "D", "text": "中国の城壁の名称" }
+    ],
+    "answerId": "A",
+    "explanation": "アヤソフィアはイスタンブルを象徴する建築で、宗教・時代で用途が変化した。"
+  },
+  {
+    "id": "g4-eng-001",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "英文の Prince Shotoku の意味として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "聖徳太子" },
+      { "id": "B", "text": "推古天皇" },
+      { "id": "C", "text": "徳川家康" },
+      { "id": "D", "text": "織田信長" }
+    ],
+    "answerId": "A",
+    "explanation": "Prince Shotoku＝聖徳太子。Prince は「皇子・太子」ニュアンス。"
+  },
+  {
+    "id": "g4-eng-002",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "英文の survive の意味として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "生き残る／現存する" },
+      { "id": "B", "text": "破壊する" },
+      { "id": "C", "text": "輸出する" },
+      { "id": "D", "text": "禁止する" }
+    ],
+    "answerId": "A",
+    "explanation": "survive は「生き残る」。遺産文脈だと「現存する」の意味でよく出る。"
+  },
+  {
+    "id": "g4-eng-003",
+    "grade": 4,
+    "chapter": "法隆寺地域の仏教建造物群",
+    "title": "英文の Eurasian の意味として最も近いものはどれ？",
+    "choices": [
+      { "id": "A", "text": "ユーラシア（欧州＋アジア）に関係する" },
+      { "id": "B", "text": "アフリカに関係する" },
+      { "id": "C", "text": "南極に関係する" },
+      { "id": "D", "text": "太平洋の島々に関係する" }
+    ],
+    "answerId": "A",
+    "explanation": "Eurasian＝Eurasia（ユーラシア）由来。欧州（Europe）＋アジア（Asia）。"
+  },
+  {
+    "id": "g4-kii-001",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "「紀伊山地の霊場と参詣道」の登録基準として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "②③④⑥" },
+      { "id": "B", "text": "①②④⑥" },
+      { "id": "C", "text": "③⑤⑦⑧" },
+      { "id": "D", "text": "⑦⑧⑨⑩" }
+    ],
+    "answerId": "A",
+    "explanation": "紀伊山地の霊場と参詣道は、登録基準②③④⑥で評価されている。"
+  },
+  {
+    "id": "g4-kii-002",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "「参詣道」とは何を指す言葉？",
+    "choices": [
+      { "id": "A", "text": "信仰の対象へ向かう巡礼の道" },
+      { "id": "B", "text": "城下町を結ぶ街道" },
+      { "id": "C", "text": "軍事目的の道路" },
+      { "id": "D", "text": "商業専用の交易路" }
+    ],
+    "answerId": "A",
+    "explanation": "参詣道は、霊場や神社仏閣へ向かう信仰の道。"
+  },
+  {
+    "id": "g4-kii-003",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "紀伊山地の文化的特徴として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "神仏習合による信仰文化" },
+      { "id": "B", "text": "完全な神道専用地域" },
+      { "id": "C", "text": "キリスト教のみの聖地" },
+      { "id": "D", "text": "商業都市文化" }
+    ],
+    "answerId": "A",
+    "explanation": "熊野信仰など、神と仏が結びついた神仏習合が特徴。"
+  },
+  {
+    "id": "g4-kii-004",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "紀伊山地が評価される「文化的景観」とは何を意味する？",
+    "choices": [
+      { "id": "A", "text": "自然と人間の信仰活動が一体となった景観" },
+      { "id": "B", "text": "完全に自然のみの景観" },
+      { "id": "C", "text": "人工的に造成された都市景観" },
+      { "id": "D", "text": "近代工業による景観" }
+    ],
+    "answerId": "A",
+    "explanation": "霊場・参詣道・山林などが一体となった文化的景観が評価されている。"
+  },
+  {
+    "id": "g4-kii-005",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "八咫烏（やたがらす）が関係する日本神話の出来事はどれ？",
+    "choices": [
+      { "id": "A", "text": "神武天皇の東征" },
+      { "id": "B", "text": "大化の改新" },
+      { "id": "C", "text": "壬申の乱" },
+      { "id": "D", "text": "承久の乱" }
+    ],
+    "answerId": "A",
+    "explanation": "八咫烏は神武天皇の東征を導いた神の使いとされる。"
+  },
+  {
+    "id": "g4-kii-006",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "熊野詣が広まった背景として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "阿弥陀信仰の広まり" },
+      { "id": "B", "text": "武士の軍事訓練" },
+      { "id": "C", "text": "商業活動の発展" },
+      { "id": "D", "text": "外国人観光客の増加" }
+    ],
+    "answerId": "A",
+    "explanation": "阿弥陀信仰と結びつき、身分を問わず熊野詣が広まった。"
+  },
+  {
+    "id": "g4-kii-007",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "明治時代に行われ、神と仏を分けた政策はどれ？",
+    "choices": [
+      { "id": "A", "text": "神仏分離" },
+      { "id": "B", "text": "廃仏毀釈" },
+      { "id": "C", "text": "鎖国" },
+      { "id": "D", "text": "班田収授法" }
+    ],
+    "answerId": "A",
+    "explanation": "神仏分離により、長く続いた神仏習合は制度的に分けられた。"
+  },
+  {
+    "id": "g4-kii-008",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "高野山を開いた僧として正しい人物はどれ？",
+    "choices": [
+      { "id": "A", "text": "空海" },
+      { "id": "B", "text": "最澄" },
+      { "id": "C", "text": "親鸞" },
+      { "id": "D", "text": "日蓮" }
+    ],
+    "answerId": "A",
+    "explanation": "空海（弘法大師）が高野山を開き、真言密教の中心とした。"
+  },
+  {
+    "id": "g4-camino-001",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "サンティアゴ・デ・コンポステーラ巡礼の中心となる聖人は誰？",
+    "choices": [
+      { "id": "A", "text": "聖ヤコブ" },
+      { "id": "B", "text": "聖ペテロ" },
+      { "id": "C", "text": "聖パウロ" },
+      { "id": "D", "text": "聖フランチェスコ" }
+    ],
+    "answerId": "A",
+    "explanation": "サンティアゴは聖ヤコブ（Saint James）を意味する。"
+  },
+  {
+    "id": "g4-camino-002",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "キリスト教の三大巡礼地に含まれないものはどれ？",
+    "choices": [
+      { "id": "A", "text": "エルサレム" },
+      { "id": "B", "text": "ヴァティカン" },
+      { "id": "C", "text": "サンティアゴ・デ・コンポステーラ" },
+      { "id": "D", "text": "カンタベリー" }
+    ],
+    "answerId": "D",
+    "explanation": "三大巡礼地はエルサレム・ローマ（ヴァティカン）・サンティアゴ。"
+  },
+  {
+    "id": "g4-camino-003",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "世界遺産として登録されているサンティアゴ巡礼路の特徴はどれ？",
+    "choices": [
+      { "id": "A", "text": "フランス側とスペイン側に分かれて登録されている" },
+      { "id": "B", "text": "スペイン側のみ登録されている" },
+      { "id": "C", "text": "ポルトガル側のみ登録されている" },
+      { "id": "D", "text": "イタリア側が中心である" }
+    ],
+    "answerId": "A",
+    "explanation": "巡礼路はフランス側とスペイン側で別の世界遺産として登録。"
+  },
+  {
+    "id": "g4-camino-004",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "サンティアゴ巡礼路で道しるべとして使われる象徴はどれ？",
+    "choices": [
+      { "id": "A", "text": "ホタテ貝の印" },
+      { "id": "B", "text": "十字架の旗" },
+      { "id": "C", "text": "金の鳥" },
+      { "id": "D", "text": "月と星の紋章" }
+    ],
+    "answerId": "A",
+    "explanation": "ホタテ貝（貝殻）は巡礼者の象徴で、道しるべとして使われる。"
+  },
+  {
+    "id": "g4-eng-004",
+    "grade": 4,
+    "chapter": "紀伊山地の霊場と参詣道・サンティアゴ巡礼路",
+    "title": "英文の unique to ~ の意味として正しいものはどれ？",
+    "choices": [
+      { "id": "A", "text": "〜に特有の" },
+      { "id": "B", "text": "〜と共通の" },
+      { "id": "C", "text": "〜から輸入された" },
+      { "id": "D", "text": "〜によって破壊された" }
+    ],
+    "answerId": "A",
+    "explanation": "unique to ~ は「〜に特有の」という意味。"
   },
   {
     "id": "eng-hiroshima-001",
@@ -2355,14 +3253,6 @@
   "answerId": "C",
   "explanation": "include は「〜を含む」という意味である。"
 },
-
-
-
-
-
-
-
-
   {
     "id": "g4-munakata-015",
     "grade": 4,
