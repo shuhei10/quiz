@@ -1,169 +1,319 @@
-/* ===== Base: iPhoneで触りやすいサイズ感 ===== */
+/* =========================
+   Home.css (mobile-first)
+   文字を大きく / ボタンを大きく / タップしやすく
+   + 2列グリッド対応
+   ========================= */
+
 :root {
-    --sp-pad: 16px;
-    --card-radius: 18px;
-    --tap-min: 52px;
-    --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    /* ベース文字（スマホで読みやすい） */
+    --fs-1: clamp(14px, 2.6vw, 16px);
+    --fs-2: clamp(16px, 3.2vw, 18px);
+    --fs-3: clamp(18px, 3.8vw, 20px);
+    --fs-4: clamp(24px, 5.2vw, 32px);
+
+    --radius-1: 14px;
+    --radius-2: 18px;
+    --radius-3: 22px;
+
+    --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    --panel-bg: rgba(255, 255, 255, 0.85);
+    --panel-border: rgba(0, 0, 0, 0.06);
+
+    --text-1: #0f172a;
+    --text-2: rgba(15, 23, 42, 0.72);
+
+    /* ボタン（親指向け） */
+    --tap-h: 56px;
+    --tap-h-mini: 44px;
 }
 
-/* ===== 画面全体を固定枠にする ===== */
+/* 画面全体 */
 .screen {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-
-    /* ここで左右の余白を管理 */
-    padding: var(--sp-pad);
-    padding-bottom: calc(var(--sp-pad) + env(safe-area-inset-bottom)); /* タブ分はscroll側で確保する */
+    min-height: 100vh;
+    padding: 18px 14px calc(94px + env(safe-area-inset-bottom));
+    color: var(--text-1);
     background: #f6f7fb;
-
-    /* 重要：全体は伸ばさず、内側だけスクロールさせる */
-    overflow: hidden;
+    font-size: var(--fs-2);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* heroの詰まり感を改善 */
+/* 設定ボタン */
+.settings {
+    position: fixed;
+    top: calc(12px + env(safe-area-inset-top));
+    right: 12px;
+    width: var(--tap-h-mini);
+    height: var(--tap-h-mini);
+    border-radius: 14px;
+    border: 1px solid var(--panel-border);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--shadow-1);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ヘッダー */
 .hero {
-    padding: 14px 4px 10px;
+    padding-top: 40px;
+    margin-bottom: 14px;
 }
 
 .hero__title {
-    font-size: clamp(22px, 6vw, 30px);
-    line-height: 1.15;
-    letter-spacing: 0.2px;
+    font-size: var(--fs-4);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
 }
 
 .hero__sub {
-    font-size: clamp(13px, 3.6vw, 16px);
-    opacity: 0.85;
-    margin-top: 8px;
+    font-size: var(--fs-2);
+    color: var(--text-2);
+    margin: 0;
 }
 
+/* パネル */
 .panel {
-    margin-top: 12px;
-    border-radius: 20px;
-    padding: 14px;
-    box-shadow: var(--shadow);
-
-    /* 追加：panelが伸びてスクロール領域になる */
-    flex: 1 1 auto;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-
-    /* 下タブに隠れないように、panelの中に余白を持たせる */
-    padding-bottom: calc(14px + 88px + env(safe-area-inset-bottom));
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-1);
+    padding: 16px;
 }
-/* 縦スタックの間隔を広げて“タップの余裕”を作る */
+
+.panel__title {
+    font-size: var(--fs-3);
+    font-weight: 800;
+    margin: 6px 4px 12px;
+    letter-spacing: -0.01em;
+}
+
+/* メッセージ */
+.msg {
+    font-size: var(--fs-2);
+    padding: 12px 12px;
+    border-radius: var(--radius-2);
+    background: rgba(15, 23, 42, 0.06);
+    color: var(--text-1);
+    margin: 10px 0 12px;
+}
+
+.msg--error {
+    background: rgba(255, 0, 80, 0.08);
+    border: 1px solid rgba(255, 0, 80, 0.18);
+}
+
+/* 縦積み */
 .stack {
     display: grid;
     gap: 12px;
 }
 
-/* ===== Gradient card button ===== */
-.gbtn {
-    min-height: 72px;
-    width: 100%;
-    border: none;
-    border-radius: var(--card-radius);
-    padding: 14px 14px;
-    color: #fff;
-    box-shadow: var(--shadow);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
+/* =========================
+   ✅ 2列グリッド
+   ========================= */
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
 }
 
-/* タップ時の“押した感” */
-.gbtn:active {
-    transform: scale(0.98);
+/* 画面が広い時は3列でも気持ちいい（任意） */
+@media (min-width: 520px) {
+    .grid2 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   グラデカードボタン（gbtn）
+   ========================= */
+.gbtn {
+    width: 100%;
+    min-height: 76px;
+    border: 0;
+    border-radius: var(--radius-3);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    padding: 14px 14px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 44px 1fr 26px;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    cursor: pointer;
+    //*transform: translateZ(0);*/
+}
+
+.gbtn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
 }
 
 .gbtn__icon {
     width: 44px;
     height: 44px;
-    border-radius: 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.18);
     display: grid;
     place-items: center;
-    background: rgba(255, 255, 255, 0.18);
-    flex: 0 0 auto;
+    font-size: 20px;
+}
+
+.gbtn__text {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
 }
 
 .gbtn__title {
-    font-size: clamp(15px, 4.4vw, 18px);
+    font-size: var(--fs-3);
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .gbtn__sub {
-    display: block;
-    margin-top: 4px;
-    font-size: clamp(12px, 3.4vw, 14px);
-    opacity: 0.9;
+    font-size: var(--fs-2);
+    opacity: 0.92;
 }
 
 .gbtn__arrow {
-    font-size: 22px;
-    opacity: 0.9;
-    padding-left: 10px;
+    font-size: 28px;
+    opacity: 0.95;
+    justify-self: end;
 }
 
-/* ===== Primary button ===== */
-.pbtn {
-    min-height: var(--tap-min);
-    width: 100%;
-    border: none;
-    border-radius: 16px;
+/* =========================
+   ✅ 2列時はカードをコンパクトに
+   ========================= */
+.grid2 .gbtn {
+    min-height: 80px;
+    padding: 12px;
+    grid-template-columns: 40px 1fr; /* 矢印列を省略 */
+    gap: 10px;
+}
+
+.grid2 .gbtn__arrow {
+    display: none;
+}
+
+.grid2 .gbtn__title {
     font-size: 16px;
-    font-weight: 800;
+    line-height: 1.2;
+}
+
+.grid2 .gbtn__sub {
+    font-size: 13px;
+    opacity: 0.92;
+}
+
+.grid2 .gbtn__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+/* =========================
+   Primary button (pbtn)
+   ========================= */
+.pbtn {
+    width: 100%;
+    height: var(--tap-h);
+    border: 0;
+    border-radius: var(--radius-3);
     color: #fff;
-    box-shadow: var(--shadow);
+    font-size: var(--fs-3);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
 }
 
-.pbtn:active {
-    transform: scale(0.99);
+.pbtn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
 }
 
-/* ===== Bottom Tabs: safe area + 片手操作最適 ===== */
+/* =========================
+   review box
+   ========================= */
+.reviewBox {
+    border-radius: var(--radius-3);
+    border: 1px solid var(--panel-border);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 14px 14px;
+    margin-bottom: 12px;
+}
+
+.reviewBox__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewBox__badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    background: rgba(15, 23, 42, 0.06);
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+.reviewBox__text {
+    font-size: var(--fs-3);
+    font-weight: 800;
+}
+
+/* =========================
+   bottom tabs
+   ========================= */
 .tabs {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 9999;
+    padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
     background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid var(--panel-border);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    backdrop-filter: blur(10px);
 }
 
 .tabs__item {
-    min-height: 62px;
-    border: none;
-    background: transparent;
+    height: 62px;
+    border-radius: 18px;
+    border: 1px solid var(--panel-border);
+    background: rgba(15, 23, 42, 0.04);
     display: grid;
     place-items: center;
-    gap: 4px;
-    padding: 8px 0;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.tabs__item.is-active {
+    background: rgba(46, 124, 246, 0.12);
+    border-color: rgba(46, 124, 246, 0.22);
 }
 
 .tabs__icon {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .tabs__label {
-    font-size: 12px;
+    font-size: var(--fs-1);
     font-weight: 700;
-    opacity: 0.8;
-}
-
-.tabs__item.is-active .tabs__label {
-    opacity: 1;
-}
-.settings {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    margin-left: auto;
-    margin-bottom: 8px;
+    color: rgba(15, 23, 42, 0.85);
 }

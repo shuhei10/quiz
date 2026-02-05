@@ -1,4 +1,5 @@
 import type { Mode } from "../types/types";
+import "./Result.css";
 
 type Props = {
   total: number;
@@ -9,30 +10,46 @@ type Props = {
   onHome: () => void;
 };
 
-export default function Result({ total, correct, wrongCount, mode, reviewCompleted, onHome }: Props) {
+export default function Result({
+  total,
+  correct,
+  wrongCount,
+  mode,
+  reviewCompleted,
+  onHome,
+}: Props) {
   const rate = total ? Math.round((correct / total) * 100) : 0;
 
   return (
-    <div style={{ padding: 16 }}>
-      <h1 style={{ marginTop: 0 }}>結果</h1>
+    <div className="result">
+      <h1 className="result__title">結果</h1>
 
-      <p>
-        スコア： <b>{correct}</b> / {total}（{rate}%）
-      </p>
-      <p>間違い： {wrongCount} 問</p>
+      {/* スコア */}
+      <div className="result__score">
+        <div className="result__rate">{rate}%</div>
+        <div className="result__detail">
+          <span>
+            スコア <b>{correct}</b> / {total}
+          </span>
+          <span>間違い：{wrongCount}問</span>
+        </div>
+      </div>
 
+      {/* 復習完了 */}
       {mode === "review" && reviewCompleted && (
-        <div style={{ padding: 12, border: "1px solid #ddd", borderRadius: 12 }}>
-          <b>🎉 復習完了！</b>
-          <div style={{ color: "#666", marginTop: 6 }}>
-            弱点リストが空になりました。必要なら通常モードで再チェックしよう。
+        <div className="result__card">
+          <div className="result__cardTitle">🎉 復習完了！</div>
+          <div className="result__cardText">
+            弱点リストが空になりました。<br />
+            必要なら通常モードで再チェックしよう。
           </div>
         </div>
       )}
 
-      <div style={{ marginTop: 16 }}>
-        <button onClick={onHome}>ホームへ</button>
-      </div>
+      {/* ボタン */}
+      <button className="result__homeBtn" onClick={onHome} type="button">
+        ホームへ
+      </button>
     </div>
   );
 }

@@ -3,6 +3,9 @@ import type { Grade, Mode } from "../types/types";
 import { getChaptersByGrade } from "../lib/questionsLoader";
 import "./Home.css";
 
+type TabKey = "practice" | "review" | "test";
+type Variant = "blue" | "pink" | "purple" | "green" | "red";
+
 type Props = {
   onStart: (opts: { grade: Grade; chapter: string; count: number; mode: Mode }) => void;
 
@@ -15,13 +18,10 @@ type Props = {
   initialTab: TabKey;
 
   onResetReviewAll: (grade: Grade) => void;
-  onResetReviewChapter: (grade: Grade, chapter: string) => void; // ★追加
+  onResetReviewChapter: (grade: Grade, chapter: string) => void;
 
   reviewTick: number;
 };
-
-type TabKey = "practice" | "review" | "test";
-type Variant = "blue" | "pink" | "purple" | "green" | "red";
 
 const GRAD: Record<Variant, string> = {
   blue: "linear-gradient(90deg,#2E7CF6,#19D3D1)",
@@ -42,7 +42,7 @@ function ScreenShell({
 }) {
   return (
     <div className="screen">
-      <button className="settings" aria-label="settings">
+      <button className="settings" aria-label="settings" type="button">
         ⚙️
       </button>
 
@@ -63,7 +63,7 @@ function GradientCardButton({
   variant = "blue",
   onClick,
   disabled,
-  rightSlot, // ★追加（右上のミニボタンなど）
+  rightSlot,
 }: {
   icon: React.ReactNode;
   title: string;
@@ -227,7 +227,8 @@ export default function Home({
           {loadError && <div className="msg msg--error">{loadError}</div>}
           {loading && <div className="msg">読み込み中...</div>}
 
-          <div className="stack">
+          {/* ✅ 2列グリッド */}
+          <div className="grid2">
             {chapters.map((c, idx) => (
               <GradientCardButton
                 key={c}
@@ -245,6 +246,7 @@ export default function Home({
 
       {tab === "test" && (
         <ScreenShell title="実力テスト" subtitle="問題数を選んで開始">
+          {/* テストは縦のまま（押しやすい） */}
           <div className="stack">
             <GradientCardButton
               variant="blue"
@@ -305,7 +307,8 @@ export default function Home({
           {/* テーマ別 */}
           <div className="panel__title">テーマ別に復習</div>
 
-          <div className="stack">
+          {/* ✅ 2列グリッド */}
+          <div className="grid2">
             {chapters.map((c, idx) => {
               const cCount = getReviewCount(grade, c);
               const canReset = cCount > 0;
@@ -324,16 +327,16 @@ export default function Home({
                       type="button"
                       aria-label={`${c} をリセット`}
                       onClick={(e) => {
-                        e.stopPropagation(); // ★カードの復習開始を防ぐ
+                        e.stopPropagation();
                         onResetReviewChapter(grade, c);
                       }}
                       disabled={disabled || !canReset}
                       style={{
                         position: "absolute",
-                        right: 12,
-                        top: 12,
-                        width: 44,
-                        height: 44,
+                        right: 10,
+                        top: 10,
+                        width: 40,
+                        height: 40,
                         borderRadius: 14,
                         border: "1px solid rgba(255,255,255,.35)",
                         background: "rgba(0,0,0,.18)",
