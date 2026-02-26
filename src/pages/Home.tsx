@@ -75,7 +75,7 @@ function GradientCardButton({
   disabled,
   rightSlot,
 }: {
-  icon: React.ReactNode;
+  icon: React.ReactNode; // ← 必須に戻す（枠は維持）
   title: string;
   subtitle?: string;
   variant?: Variant;
@@ -83,6 +83,8 @@ function GradientCardButton({
   disabled?: boolean;
   rightSlot?: React.ReactNode;
 }) {
+  const iconEmpty = icon == null;
+
   return (
     <button
       className="gbtn"
@@ -91,7 +93,8 @@ function GradientCardButton({
       disabled={disabled}
       type="button"
     >
-      <span className="gbtn__icon">{icon}</span>
+      {/* 枠は残すが、空なら透明化 */}
+      <span className={`gbtn__icon ${iconEmpty ? "is-empty" : ""}`}>{icon}</span>
 
       <span className="gbtn__text">
         <span className="gbtn__title">{title}</span>
@@ -99,22 +102,22 @@ function GradientCardButton({
       </span>
 
       <span className="gbtn__arrow">›</span>
-
       {rightSlot}
     </button>
   );
 }
-
 function PrimaryButton({
   label,
   variant,
   onClick,
   disabled,
+  className,
 }: {
   label: string;
   variant: "green" | "red";
   onClick?: () => void;
   disabled?: boolean;
+  className?: string;
 }) {
   const bg =
     variant === "green"
@@ -123,7 +126,7 @@ function PrimaryButton({
 
   return (
     <button
-      className="pbtn"
+      className={`pbtn ${className ?? ""}`}   // ✅ ここ
       style={{ background: bg }}
       onClick={onClick}
       disabled={disabled}
@@ -276,27 +279,27 @@ export default function Home({
           {/* ✅ themes.json ベースの章フィルタ */}
           <ThemeFilter themes={themes} selectedSlugs={selectedSlugs} onChange={setSelectedSlugs} />
 
-          <div className="stack" style={{ marginBottom: 14 }}>
-            <PrimaryButton
-              label="選択したテーマで10問開始"
-              variant="green"
-              onClick={startPracticeByFilter}
-              disabled={disabled || themes.length === 0}
-            />
-          </div>
+          <div className="centerWideWrap">
+  <PrimaryButton
+    label="世界遺産基礎知識"
+    variant="green"
+    onClick={startPracticeByFilter}
+    disabled={disabled || themes.length === 0}
+    className="pbtn--centerwide"
+  />
+</div>
 
           {/* ✅ 2列グリッド（既存の章カードは残す） */}
           <div className="grid2">
             {chapters.map((c, idx) => (
               <GradientCardButton
-                key={c}
-                variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
-                icon={null}
-                title={c}
-                subtitle="このテーマの問題を解く"
-                onClick={() => startPractice(c)}
-                disabled={disabled}
-              />
+  key={c}
+  variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
+  icon={<></>}          // ✅ これ（nullはやめる）
+  title={c}
+  onClick={() => startPractice(c)}
+  disabled={disabled}
+/>
             ))}
           </div>
         </ScreenShell>
