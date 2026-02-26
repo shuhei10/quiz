@@ -1,14 +1,11 @@
-{
-  "4": [
-    { "id": "basics", "name": "基礎用語" },
-    { "id": "treaty", "name": "条約・機関" },
-    { "id": "criteria", "name": "登録基準" },
-    { "id": "japan", "name": "日本の世界遺産" }
-  ],
-  "3": [
-    { "id": "europe", "name": "ヨーロッパ" }
-  ],
-  "2": [
-    { "id": "asia", "name": "アジア" }
-  ]
-}
+[
+  { "key": "basic", "label": "世界遺産基礎知識", "order": 10 },
+  { "key": "jp", "label": "日本の世界遺産", "order": 20 },
+  { "key": "ancient", "label": "人類の誕生と古代文明", "order": 30 },
+  { "key": "asia_religion", "label": "アジア世界の形成と宗教", "order": 40 },
+  { "key": "europe", "label": "ヨーロッパ中世とルネサンス・大航海時代", "order": 50 },
+  { "key": "america_africa_oceania", "label": "アメリカ・アフリカ・オセアニアの文明", "order": 60 },
+  { "key": "eastasia_modern", "label": "東アジアの変動と近代化", "order": 70 },
+  { "key": "theme", "label": "テーマでみる世界遺産", "order": 80 },
+  { "key": "nature", "label": "世界の自然遺産", "order": 90 }
+]

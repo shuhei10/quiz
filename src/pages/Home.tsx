@@ -3,6 +3,16 @@ import type { Grade, Mode } from "../types/types";
 import { getChaptersByGrade } from "../lib/questionsLoader";
 import "./Home.css";
 
+// ✅ 章フィルタ（themes.json）関連
+import ThemeFilter from "../components/ThemeFilter";
+import {
+  loadQuestionsWithCache,
+  loadSelectedThemeSlugs,
+  saveSelectedThemeSlugs,
+  sortThemes,
+  type Theme,
+} from "../lib/questionsApi";
+
 type TabKey = "practice" | "review" | "test";
 type Variant = "blue" | "pink" | "purple" | "green" | "red";
 
@@ -173,13 +183,19 @@ export default function Home({
   const [tab, setTab] = useState<TabKey>(initialTab);
   useEffect(() => setTab(initialTab), [initialTab]);
 
+  // 既存：章（文字列）一覧（カード表示用）
   const [chapters, setChapters] = useState<string[]>([]);
+
+  // ✅ 新規：themes（slug/title）
+  const [themes, setThemes] = useState<Theme[]>([]);
+  const [selectedSlugs, setSelectedSlugs] = useState<string[]>(loadSelectedThemeSlugs(grade));
 
   useEffect(() => {
     let mounted = true;
 
     (async () => {
       try {
+        // chapters（既存カード）用
         const list = await getChaptersByGrade(grade);
         if (mounted) setChapters(list);
       } catch (e) {
@@ -193,10 +209,40 @@ export default function Home({
     };
   }, [grade]);
 
+  // ✅ themes をロード（キャッシュ付き）
+  useEffect(() => {
+    let mounted = true;
+
+    (async () => {
+      try {
+        const r = await loadQuestionsWithCache(grade);
+        if (!mounted) return;
+        setThemes(sortThemes(r.themes));
+      } catch (e) {
+        console.error(e);
+        if (mounted) setThemes([]);
+      }
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, [grade]);
+
+  // ✅ 章フィルタ選択を保存
+  useEffect(() => {
+    saveSelectedThemeSlugs(grade, selectedSlugs);
+  }, [grade, selectedSlugs]);
+
   const disabled = loading || !!loadError;
 
   const startPractice = (chapter: string) => {
     onStart({ grade, chapter, count: 10, mode: "normal" });
+  };
+
+  const startPracticeByFilter = () => {
+    // chapterは空で渡す（App側で selectedSlugs を使って絞る）
+    onStart({ grade, chapter: "", count: 10, mode: "normal" });
   };
 
   const startTest = (count: number) => {
@@ -227,13 +273,25 @@ export default function Home({
           {loadError && <div className="msg msg--error">{loadError}</div>}
           {loading && <div className="msg">読み込み中...</div>}
 
-          {/* ✅ 2列グリッド */}
+          {/* ✅ themes.json ベースの章フィルタ */}
+          <ThemeFilter themes={themes} selectedSlugs={selectedSlugs} onChange={setSelectedSlugs} />
+
+          <div className="stack" style={{ marginBottom: 14 }}>
+            <PrimaryButton
+              label="選択したテーマで10問開始"
+              variant="green"
+              onClick={startPracticeByFilter}
+              disabled={disabled || themes.length === 0}
+            />
+          </div>
+
+          {/* ✅ 2列グリッド（既存の章カードは残す） */}
           <div className="grid2">
             {chapters.map((c, idx) => (
               <GradientCardButton
                 key={c}
                 variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
-                icon={<span>{idx % 3 === 0 ? "🎓" : idx % 3 === 1 ? "📍" : "🌍"}</span>}
+                icon={null}
                 title={c}
                 subtitle="このテーマの問題を解く"
                 onClick={() => startPractice(c)}
@@ -246,7 +304,6 @@ export default function Home({
 
       {tab === "test" && (
         <ScreenShell title="実力テスト" subtitle="問題数を選んで開始">
-          {/* テストは縦のまま（押しやすい） */}
           <div className="stack">
             <GradientCardButton
               variant="blue"
@@ -307,7 +364,6 @@ export default function Home({
           {/* テーマ別 */}
           <div className="panel__title">テーマ別に復習</div>
 
-          {/* ✅ 2列グリッド */}
           <div className="grid2">
             {chapters.map((c, idx) => {
               const cCount = getReviewCount(grade, c);
@@ -354,7 +410,6 @@ export default function Home({
             })}
           </div>
 
-          {/* 全リセット */}
           <div className="stack" style={{ marginTop: 14 }}>
             <PrimaryButton
               label="間違えた問題をリセット（全テーマ）"

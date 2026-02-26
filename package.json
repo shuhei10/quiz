@@ -7,9 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export:g3": "DB_HOST=127.0.0.1 DB_PORT=3306 DB_USER=quiz DB_PASS=quizquiz DB_NAME=wh_quiz node scripts/export-questions.cjs g3",
+    "export:g4": "DB_HOST=127.0.0.1 DB_PORT=3306 DB_USER=quiz DB_PASS=quizquiz DB_NAME=wh_quiz node scripts/export-questions.cjs g4"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.8",
+    "@mui/material": "^7.3.8",
     "dotenv": "^17.3.1",
     "mysql2": "^3.18.0",
     "react": "^19.2.0",

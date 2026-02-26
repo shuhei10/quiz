@@ -1,6 +1,26 @@
 import type { Grade, Question } from "../types/types";
 
+export type Theme = {
+  grade: number;
+  chapter_id: number;
+  slug: string | null;
+  title: string | null;
+  sort_order: number;
+  count: number;
+};
 const base = import.meta.env.BASE_URL; 
+
+export async function getThemesByGrade(grade: Grade): Promise<Theme[]> {
+  const url = `${base}questions/themes.json`;
+  const res = await fetch(url);
+  if (!res.ok) return [];
+  const data = (await res.json()) as unknown;
+  if (!Array.isArray(data)) return [];
+
+  return (data as Theme[])
+    .filter((t) => t.grade === grade)
+    .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+}
 
 async function fetchQuestionsByGrade(grade: Grade): Promise<Question[]> {
   const url = `${base}questions/grade${grade}.json`;
@@ -19,6 +39,7 @@ async function fetchQuestionsByGrade(grade: Grade): Promise<Question[]> {
 
   return data as Question[];
 }
+
 
 export async function loadQuestionsByGrade(grade: Grade): Promise<Question[]> {
   return await fetchQuestionsByGrade(grade);

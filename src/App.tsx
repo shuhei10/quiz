@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { AppScreen, Grade, Mode, Question } from "./types/types";
 import { loadQuestionsByGradeAndChapter } from "./lib/questionsLoader";
 import { pickRandomQuestions } from "./lib/quizUtils";
+
 import {
   addWrongIds,
   loadWrongIds,
@@ -9,8 +10,11 @@ import {
   loadAllWrongIdsByGrade,
   removeWrongIdsFromAllChapters,
   clearAllWrongIdsByGrade,
-  clearWrongIds, // ★追加
+  clearWrongIds,
 } from "./lib/storage";
+
+// ✅ 章フィルタ（themes選択）を読む
+import { loadSelectedThemeSlugs } from "./lib/questionsApi";
 
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
@@ -22,7 +26,7 @@ export default function App() {
   const [screen, setScreen] = useState<AppScreen>("home");
   const [quiz, setQuiz] = useState<Question[]>([]);
   const [result, setResult] = useState<{ total: number; correct: number; wrongIds: string[] } | null>(
-    null
+    null,
   );
 
   const [loading, setLoading] = useState(false);
@@ -57,17 +61,37 @@ export default function App() {
 
       setHomeTab(opts.mode === "review" ? "review" : "practice");
 
+      // まず章（文字列）指定があればそれで絞る（従来通り）
+      // chapterなし = 全問題（テスト/総まとめ/章フィルタ開始用）
       const all: Question[] = await loadQuestionsByGradeAndChapter(opts.grade, ch);
 
+      // ✅ 章フィルタ（themes slug選択）を反映する
+      // 条件：chapter が空（=章フィルタ開始/テスト/総まとめ）
       let pool: Question[] = all;
 
+      if (!ch) {
+        const selectedSlugs = loadSelectedThemeSlugs(opts.grade);
+
+        // 未選択（[]）は全章
+        if (selectedSlugs.length > 0) {
+          const set = new Set(selectedSlugs);
+
+          // Question に chapter_slug が入っている前提（入ってなければ filtered は 0 になりやすい）
+          const filtered = all.filter((q: any) => q?.chapter_slug && set.has(q.chapter_slug));
+
+          // 0件救済：chapter_slug が未整備等で0件なら全章に戻す
+          pool = filtered.length > 0 ? filtered : all;
+        }
+      }
+
+      // ✅ 復習モード：wrongIdsで絞る（poolに対して適用）
       if (opts.mode === "review") {
         if (ch) {
           const wrongSet = new Set(loadWrongIds(opts.grade, ch));
-          pool = all.filter((q) => wrongSet.has(q.id));
+          pool = pool.filter((q) => wrongSet.has(q.id));
         } else {
           const wrongSet = new Set(loadAllWrongIdsByGrade(opts.grade));
-          pool = all.filter((q) => wrongSet.has(q.id));
+          pool = pool.filter((q) => wrongSet.has(q.id));
         }
       }
 
@@ -146,9 +170,8 @@ export default function App() {
   };
 
   if (screen === "quiz") {
-  return <Quiz quiz={quiz} mode={mode} onFinish={finish} onHome={goHome} />;
-}
-
+    return <Quiz quiz={quiz} mode={mode} onFinish={finish} onHome={goHome} />;
+  }
 
   if (screen === "result" && result) {
     return (

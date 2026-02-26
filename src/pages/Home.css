@@ -24,19 +24,19 @@
     --text-2: rgba(15, 23, 42, 0.72);
 
     /* ボタン（親指向け） */
-    --tap-h: 56px;
-    --tap-h-mini: 44px;
+     --tabs-h: 82px; /* tabsの“見た目の高さ”目安（62 + padding） */
+     --tabs-gap: 18px; /* 指が置ける余白 */
 }
 
 /* 画面全体 */
 .screen {
-    min-height: 100vh;
-    padding: 18px 14px calc(94px + env(safe-area-inset-bottom));
-    color: var(--text-1);
-    background: #f6f7fb;
-    font-size: var(--fs-2);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  padding: 18px 14px calc(var(--tabs-h) + var(--tabs-gap) + env(safe-area-inset-bottom));
+  color: var(--text-1);
+  background: #f6f7fb;
+  font-size: var(--fs-2);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 設定ボタン */
@@ -119,6 +119,24 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+}
+/* =========================
+   ✅ 左アイコン枠を完全に無効化（不要な文字を消す）
+   ========================= */
+
+/* アイコン枠そのものを非表示 */
+.gbtn__icon {
+  display: none;
+}
+
+/* 通常（縦積み/テスト等）のカード：テキスト + 矢印だけにする */
+.gbtn {
+  grid-template-columns: 1fr 26px; /* icon列を消す */
+}
+
+/* 2列グリッドのカード：テキストだけにする（元々矢印は非表示なので1列でOK） */
+.grid2 .gbtn {
+  grid-template-columns: 1fr; /* icon列なし */
 }
 
 /* 画面が広い時は3列でも気持ちいい（任意） */
@@ -277,18 +295,19 @@
    bottom tabs
    ========================= */
 .tabs {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    padding: 10px 10px calc(10px + env(safe-area-inset-bottom));
-    background: rgba(255, 255, 255, 0.92);
-    border-top: 1px solid var(--panel-border);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    backdrop-filter: blur(10px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+
+  padding: 12px 10px max(12px, env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.92);
+  border-top: 1px solid var(--panel-border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  backdrop-filter: blur(10px);
 }
 
 .tabs__item {
