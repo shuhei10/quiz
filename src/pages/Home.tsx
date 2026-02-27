@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { Grade, Mode } from "../types/types";
 import { getChaptersByGrade } from "../lib/questionsLoader";
 import "./Home.css";
+import "./GradeSelect.css"; // ✅ 作ったCSSを読み込む（パスは配置に合わせて調整）
 
 // ✅ 章フィルタ（themes.json）関連
 import ThemeFilter from "../components/ThemeFilter";
@@ -41,6 +42,17 @@ const GRAD: Record<Variant, string> = {
   red: "linear-gradient(90deg,#FF7A3D,#FF3D3D)",
 };
 
+const GRADE_META: Record<Grade, { label: string; variant: Variant; icon: string; desc: string }> = {
+  4: { label: "4級", variant: "green", icon: "🧭", desc: "まずは基礎をサクッと固める" },
+  3: { label: "3級", variant: "blue", icon: "🏛️", desc: "遺産数アップ、知識を広げる" },
+  2: { label: "2級", variant: "red", icon: "🔥", desc: "本気モードで合格を狙う" },
+};
+
+const lastGradeKey = "whq:lastSelectedGrade";
+
+
+
+
 function ScreenShell({
   title,
   subtitle,
@@ -75,7 +87,7 @@ function GradientCardButton({
   disabled,
   rightSlot,
 }: {
-  icon: React.ReactNode; // ← 必須に戻す（枠は維持）
+  icon: React.ReactNode;
   title: string;
   subtitle?: string;
   variant?: Variant;
@@ -93,7 +105,6 @@ function GradientCardButton({
       disabled={disabled}
       type="button"
     >
-      {/* 枠は残すが、空なら透明化 */}
       <span className={`gbtn__icon ${iconEmpty ? "is-empty" : ""}`}>{icon}</span>
 
       <span className="gbtn__text">
@@ -106,6 +117,7 @@ function GradientCardButton({
     </button>
   );
 }
+
 function PrimaryButton({
   label,
   variant,
@@ -126,7 +138,7 @@ function PrimaryButton({
 
   return (
     <button
-      className={`pbtn ${className ?? ""}`}   // ✅ ここ
+      className={`pbtn ${className ?? ""}`}
       style={{ background: bg }}
       onClick={onClick}
       disabled={disabled}
@@ -170,6 +182,89 @@ function BottomTabs({ active, onChange }: { active: TabKey; onChange: (k: TabKey
   );
 }
 
+function GradeBar({ grade, onBack }: { grade: Grade; onBack: () => void }) {
+  const meta = GRADE_META[grade];
+  return (
+    <div className="gradeBar">
+      <button className="backMini" type="button" onClick={onBack}>
+        ← 級を選び直す
+      </button>
+      <div className="gradeBadge" data-grade={grade}>
+        <span className="gradeBadge__icon" aria-hidden>
+          {meta.icon}
+        </span>
+        <span className="gradeBadge__text">{meta.label}</span>
+      </div>
+    </div>
+  );
+}
+
+function GradeSelectScreen({ onPick }: { onPick: (g: Grade) => void }) {
+  return (
+    <ScreenShell title="世界遺産クイズ" subtitle="級を選んでスタート">
+      <div className="stack">
+        <GradientCardButton
+          variant={GRADE_META[4].variant}
+          icon={<span aria-hidden>{GRADE_META[4].icon}</span>}
+          title={GRADE_META[4].label}
+          subtitle={GRADE_META[4].desc}
+          onClick={() => onPick(4)}
+        />
+        <GradientCardButton
+          variant={GRADE_META[3].variant}
+          icon={<span aria-hidden>{GRADE_META[3].icon}</span>}
+          title={GRADE_META[3].label}
+          subtitle={GRADE_META[3].desc}
+          onClick={() => onPick(3)}
+        />
+        <GradientCardButton
+          variant={GRADE_META[2].variant}
+          icon={<span aria-hidden>{GRADE_META[2].icon}</span>}
+          title={GRADE_META[2].label}
+          subtitle={GRADE_META[2].desc}
+          onClick={() => onPick(2)}
+        />
+      </div>
+
+      <div className="msg msg--hint" style={{ marginTop: 14 }}>
+        選んだ級に合わせて、演習・復習・テストが切り替わります
+      </div>
+    </ScreenShell>
+  );
+}
+
+function normalizeThemes(rawThemes: any[], grade: Grade): Theme[] {
+  return (rawThemes ?? [])
+    .map((t: any) => {
+      // slugは localStorage の selectedSlugs と一致するキーになるので必須
+      const slug = String(t.slug ?? t.key ?? "").trim();
+      const title = String(t.title ?? t.label ?? "").trim();
+
+      // chapter_id は number 必須。無い場合は order か連番で埋める
+      const chapterIdRaw = t.chapter_id ?? t.chapterId ?? t.id ?? null;
+      const chapter_id =
+        typeof chapterIdRaw === "number"
+          ? chapterIdRaw
+          : Number.isFinite(Number(chapterIdRaw))
+            ? Number(chapterIdRaw)
+            : Number(t.sort_order ?? t.order ?? 0) || 0;
+
+      const sort_order = Number(t.sort_order ?? t.order ?? 0) || 0;
+      const count = Number(t.count ?? 0) || 0;
+
+      return {
+        grade: Number(t.grade ?? grade),
+        chapter_id,
+        slug: slug || null,
+        title: title || null,
+        sort_order,
+        count,
+      } satisfies Theme;
+    })
+    // slug/title が無いものはフィルタから除外
+    .filter((t) => !!t.slug && !!t.title);
+}
+
 export default function Home({
   onStart,
   getReviewCount,
@@ -181,24 +276,40 @@ export default function Home({
   onResetReviewChapter,
   reviewTick,
 }: Props) {
-  const [grade] = useState<Grade>(4);
+  const [grade, setGrade] = useState<Grade | null>(() => {
+  try {
+    const raw = localStorage.getItem(lastGradeKey);
+    const n = raw ? Number(raw) : NaN;
+    return n === 4 || n === 3 || n === 2 ? (n as Grade) : null;
+  } catch {
+    return null;
+  }
+});
 
   const [tab, setTab] = useState<TabKey>(initialTab);
   useEffect(() => setTab(initialTab), [initialTab]);
 
-  // 既存：章（文字列）一覧（カード表示用）
+  // 章（カード表示用）
   const [chapters, setChapters] = useState<string[]>([]);
 
-  // ✅ 新規：themes（slug/title）
+  // ✅ themes + フィルタの選択状態
   const [themes, setThemes] = useState<Theme[]>([]);
-  const [selectedSlugs, setSelectedSlugs] = useState<string[]>(loadSelectedThemeSlugs(grade));
+  const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
+  // ✅ grade が決まったら、保存済み slugs を復元
   useEffect(() => {
+    if (!grade) return;
+    setSelectedSlugs(loadSelectedThemeSlugs(grade));
+  }, [grade]);
+
+  // chapters をロード
+  useEffect(() => {
+    if (!grade) return;
+
     let mounted = true;
 
     (async () => {
       try {
-        // chapters（既存カード）用
         const list = await getChaptersByGrade(grade);
         if (mounted) setChapters(list);
       } catch (e) {
@@ -214,13 +325,19 @@ export default function Home({
 
   // ✅ themes をロード（キャッシュ付き）
   useEffect(() => {
+    if (!grade) return;
+
     let mounted = true;
 
     (async () => {
       try {
         const r = await loadQuestionsWithCache(grade);
+
+       const normalized = normalizeThemes((r as any).themes ?? [], grade);
+      setThemes(sortThemes(normalized));
+
         if (!mounted) return;
-        setThemes(sortThemes(r.themes));
+        setThemes(sortThemes(normalized));
       } catch (e) {
         console.error(e);
         if (mounted) setThemes([]);
@@ -232,19 +349,30 @@ export default function Home({
     };
   }, [grade]);
 
-  // ✅ 章フィルタ選択を保存
+  // ✅ フィルタ選択を保存
   useEffect(() => {
+    if (!grade) return;
     saveSelectedThemeSlugs(grade, selectedSlugs);
   }, [grade, selectedSlugs]);
 
+  // ✅ grade 未選択は級選択へ
+  if (!grade) {
+    return <GradeSelectScreen onPick={(g) => {
+  setGrade(g);
+  localStorage.setItem(lastGradeKey, String(g));
+}} />;
+  }
+
   const disabled = loading || !!loadError;
+
+  const canStartByFilter = !disabled && themes.length > 0;
 
   const startPractice = (chapter: string) => {
     onStart({ grade, chapter, count: 10, mode: "normal" });
   };
 
   const startPracticeByFilter = () => {
-    // chapterは空で渡す（App側で selectedSlugs を使って絞る）
+    // ✅ chapterは空（Quiz側で selectedSlugs を参照して絞り込む）
     onStart({ grade, chapter: "", count: 10, mode: "normal" });
   };
 
@@ -264,49 +392,84 @@ export default function Home({
 
   const resetReviewAll = () => onResetReviewAll(grade);
 
-  void reviewTick; // 表示更新トリガ
+  void reviewTick;
   const allReviewCount = getReviewCountAll(grade);
+
+  const screenTitle =
+    tab === "practice"
+      ? `世界遺産検定${grade}級クイズ`
+      : tab === "test"
+        ? "実力テスト"
+        : "復習";
+
+  const screenSub =
+    tab === "practice"
+      ? "知識を深めて、世界の宝を発見しよう"
+      : tab === "test"
+        ? "問題数を選んで開始"
+        : "間違えた問題を復習しよう";
 
   return (
     <>
       {tab === "practice" && (
-        <ScreenShell title="世界遺産検定4級クイズ" subtitle="知識を深めて、世界の宝を発見しよう">
+        <ScreenShell title={screenTitle} subtitle={screenSub}>
+          <GradeBar
+  grade={grade}
+  onBack={() => {
+    setGrade(null);
+    localStorage.removeItem(lastGradeKey);
+  }}
+/>
+
           <div className="panel__title">テーマを選んで開始</div>
 
           {loadError && <div className="msg msg--error">{loadError}</div>}
           {loading && <div className="msg">読み込み中...</div>}
 
+          <div className="panel__title" style={{ marginTop: 10 }}>
+            章フィルタ
+          </div>
+
           {/* ✅ themes.json ベースの章フィルタ */}
           <ThemeFilter themes={themes} selectedSlugs={selectedSlugs} onChange={setSelectedSlugs} />
 
           <div className="centerWideWrap">
-  <PrimaryButton
-    label="世界遺産基礎知識"
-    variant="green"
-    onClick={startPracticeByFilter}
-    disabled={disabled || themes.length === 0}
-    className="pbtn--centerwide"
-  />
-</div>
+            <PrimaryButton
+              label="フィルタで開始（10問）"
+              variant="green"
+              onClick={startPracticeByFilter}
+              disabled={!canStartByFilter}
+              className="pbtn--centerwide"
+            />
+          </div>
+
+          {/* 読み込み終わってるのに themes が空ならメッセージ */}
+          {!loading && !loadError && themes.length === 0 && (
+            <div className="msg msg--error" style={{ marginTop: 10 }}>
+              テーマが読み込めませんでした。themes.json の形式（key/label など）と読み込みを確認してください。
+            </div>
+          )}
 
           {/* ✅ 2列グリッド（既存の章カードは残す） */}
           <div className="grid2">
             {chapters.map((c, idx) => (
               <GradientCardButton
-  key={c}
-  variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
-  icon={<></>}          // ✅ これ（nullはやめる）
-  title={c}
-  onClick={() => startPractice(c)}
-  disabled={disabled}
-/>
+                key={c}
+                variant={idx % 3 === 0 ? "blue" : idx % 3 === 1 ? "pink" : "purple"}
+                icon={<></>}
+                title={c}
+                onClick={() => startPractice(c)}
+                disabled={disabled}
+              />
             ))}
           </div>
         </ScreenShell>
       )}
 
       {tab === "test" && (
-        <ScreenShell title="実力テスト" subtitle="問題数を選んで開始">
+        <ScreenShell title={screenTitle} subtitle={screenSub}>
+          <GradeBar grade={grade} onBack={() => setGrade(null)} />
+
           <div className="stack">
             <GradientCardButton
               variant="blue"
@@ -337,11 +500,12 @@ export default function Home({
       )}
 
       {tab === "review" && (
-        <ScreenShell title="復習" subtitle="間違えた問題を復習しよう">
+        <ScreenShell title={screenTitle} subtitle={screenSub}>
+          <GradeBar grade={grade} onBack={() => setGrade(null)} />
+
           {loadError && <div className="msg msg--error">{loadError}</div>}
           {loading && <div className="msg">読み込み中...</div>}
 
-          {/* 総まとめ */}
           {allReviewCount === 0 ? (
             <div className="msg">復習する問題がまだありません</div>
           ) : (
@@ -364,7 +528,6 @@ export default function Home({
             </>
           )}
 
-          {/* テーマ別 */}
           <div className="panel__title">テーマ別に復習</div>
 
           <div className="grid2">

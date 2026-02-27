@@ -1,11 +1,11 @@
 [
-  { "key": "basic", "label": "世界遺産基礎知識", "order": 10 },
-  { "key": "jp", "label": "日本の世界遺産", "order": 20 },
-  { "key": "ancient", "label": "人類の誕生と古代文明", "order": 30 },
-  { "key": "asia_religion", "label": "アジア世界の形成と宗教", "order": 40 },
-  { "key": "europe", "label": "ヨーロッパ中世とルネサンス・大航海時代", "order": 50 },
-  { "key": "america_africa_oceania", "label": "アメリカ・アフリカ・オセアニアの文明", "order": 60 },
-  { "key": "eastasia_modern", "label": "東アジアの変動と近代化", "order": 70 },
-  { "key": "theme", "label": "テーマでみる世界遺産", "order": 80 },
-  { "key": "nature", "label": "世界の自然遺産", "order": 90 }
+  { "grade": 4, "chapter_id": 1, "slug": "basic", "title": "世界遺産基礎知識", "sort_order": 10, "count": 0 },
+  { "grade": 4, "chapter_id": 2, "slug": "jp", "title": "日本の世界遺産", "sort_order": 20, "count": 0 },
+  { "grade": 4, "chapter_id": 3, "slug": "ancient", "title": "人類の誕生と古代文明", "sort_order": 30, "count": 0 },
+  { "grade": 4, "chapter_id": 4, "slug": "asia_religion", "title": "アジア世界の形成と宗教", "sort_order": 40, "count": 0 },
+  { "grade": 4, "chapter_id": 5, "slug": "europe", "title": "ヨーロッパ中世とルネサンス・大航海時代", "sort_order": 50, "count": 0 },
+  { "grade": 4, "chapter_id": 6, "slug": "america_africa_oceania", "title": "アメリカ・アフリカ・オセアニアの文明", "sort_order": 60, "count": 0 },
+  { "grade": 4, "chapter_id": 7, "slug": "eastasia_modern", "title": "東アジアの変動と近代化", "sort_order": 70, "count": 0 },
+  { "grade": 4, "chapter_id": 8, "slug": "theme", "title": "テーマでみる世界遺産", "sort_order": 80, "count": 0 },
+  { "grade": 4, "chapter_id": 9, "slug": "nature", "title": "世界の自然遺産", "sort_order": 90, "count": 0 }
 ]

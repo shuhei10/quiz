@@ -1,0 +1,135 @@
+/* ===== Grade Select (mobile-first) ===== */
+.gradeScreen {
+    padding: 18px;
+    padding-bottom: calc(88px + env(safe-area-inset-bottom));
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.gradeHero {
+    padding: 10px 4px 18px;
+}
+
+.gradeTitle {
+    font-size: clamp(24px, 6vw, 34px);
+    line-height: 1.1;
+    letter-spacing: 0.2px;
+    margin: 0 0 8px;
+}
+
+.gradeSub {
+    margin: 0;
+    opacity: 0.75;
+    font-size: clamp(13px, 3.6vw, 16px);
+}
+
+.gradeGrid {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+@media (min-width: 520px) {
+    .gradeGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gradeCard {
+    position: relative;
+    border-radius: 20px;
+    padding: 16px 16px 14px;
+    min-height: 108px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform: translateZ(0);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        border-color 0.12s ease;
+}
+
+.gradeCard:active {
+    transform: translateY(1px) scale(0.99);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.gradeCard__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.gradeCard__label {
+    font-size: 12px;
+    opacity: 0.75;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.gradeCard__name {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 10px 0 0;
+}
+
+.gradeCard__desc {
+    margin: 8px 0 0;
+    font-size: 13px;
+    opacity: 0.75;
+    line-height: 1.35;
+}
+
+/* accent strip */
+.gradeCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    pointer-events: none;
+    background: linear-gradient(135deg, var(--g1), var(--g2));
+    opacity: 0.14;
+}
+
+/* per-grade accent */
+.gradeCard[data-grade="4"] {
+    --g1: #22c55e;
+    --g2: #86efac;
+}
+.gradeCard[data-grade="3"] {
+    --g1: #06b6d4;
+    --g2: #67e8f9;
+}
+.gradeCard[data-grade="2"] {
+    --g1: #ef4444;
+    --g2: #fb7185;
+}
+
+.gradeCard[data-grade="4"]:hover,
+.gradeCard[data-grade="3"]:hover,
+.gradeCard[data-grade="2"]:hover {
+    border-color: rgba(0, 0, 0, 0.14);
+}
+
+/* small back button */
+.backMini {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    padding: 10px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+}
