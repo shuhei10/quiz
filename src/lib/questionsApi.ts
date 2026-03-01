@@ -8,7 +8,7 @@ export type Theme = {
 };
 
 export type Question = {
-  id: string; // external_id
+  id: string;
   external_id: string;
   grade: number;
   chapter: string;
@@ -22,6 +22,7 @@ export type Question = {
   updated_at: string | null;
 };
 
+const base = import.meta.env.BASE_URL;
 const cacheKey = (grade: number) => `whq_cache_g${grade}`;
 
 type CachePayload = {
@@ -30,9 +31,14 @@ type CachePayload = {
   themes: Theme[];
 };
 
-async function fetchJson<T>(url: string): Promise<T> {
+async function fetchJson<T>(path: string): Promise<T> {
+  const url = `${base}${path}`;
   const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`fetch failed: ${url} ${res.status}`);
+
+  if (!res.ok) {
+    throw new Error(`fetch failed: ${url} ${res.status}`);
+  }
+
   return res.json();
 }
 
@@ -55,18 +61,22 @@ export async function loadQuestionsWithCache(grade: number) {
 
   try {
     const [questions, themesAll] = await Promise.all([
-      fetchJson<Question[]>(`/questions/grade${grade}.json`),
-      fetchJson<Theme[]>(`/questions/themes.json`),
+      fetchJson<Question[]>(`questions/grade${grade}.json`),
+      fetchJson<Theme[]>(`questions/themes.json`),
     ]);
 
-    const themes = themesAll.filter((t) => t.grade === grade);
+    const themes = themesAll
+      .filter((t) => t.grade === grade)
+      .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
 
     const payload: CachePayload = {
       savedAt: new Date().toISOString(),
       questions,
       themes,
     };
+
     writeCache(payload);
+
     return { ...payload, source: "network" as const };
   } catch (e) {
     const cached = readCache();
@@ -75,6 +85,10 @@ export async function loadQuestionsWithCache(grade: number) {
   }
 }
 
+/* -------------------------------
+   テーマ選択系
+-------------------------------- */
+
 const themeSelKey = (grade: number) => `whq:selectedThemeSlugs:g${grade}`;
 
 export function loadSelectedThemeSlugs(grade: number): string[] {
@@ -82,34 +96,49 @@ export function loadSelectedThemeSlugs(grade: number): string[] {
     const raw = localStorage.getItem(themeSelKey(grade));
     if (!raw) return [];
     const arr = JSON.parse(raw);
-    return Array.isArray(arr) ? arr.filter((x) => typeof x === "string") : [];
+    return Array.isArray(arr)
+      ? arr.filter((x) => typeof x === "string")
+      : [];
   } catch {
     return [];
   }
 }
 
-export function saveSelectedThemeSlugs(grade: number, slugs: string[]) {
+export function saveSelectedThemeSlugs(
+  grade: number,
+  slugs: string[]
+) {
   localStorage.setItem(themeSelKey(grade), JSON.stringify(slugs));
 }
 
 export function sortThemes(themes: Theme[]) {
-  return [...themes].sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+  return [...themes].sort(
+    (a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0)
+  );
 }
 
 export function getAllThemeSlugs(themes: Theme[]) {
-  return themes.map((t) => t.slug).filter((s): s is string => !!s);
+  return themes
+    .map((t) => t.slug)
+    .filter((s): s is string => !!s);
 }
 
 export function filterQuestionsBySelectedSlugs(
   questions: { chapter_slug: string | null }[],
-  selectedSlugs: string[],
+  selectedSlugs: string[]
 ) {
   if (selectedSlugs.length === 0) return questions;
+
   const set = new Set(selectedSlugs);
-  return questions.filter((q) => !!q.chapter_slug && set.has(q.chapter_slug));
+
+  return questions.filter(
+    (q) => !!q.chapter_slug && set.has(q.chapter_slug)
+  );
 }
 
 export function toggleSlug(selected: string[], slug: string) {
   const has = selected.includes(slug);
-  return has ? selected.filter((s) => s !== slug) : [...selected, slug];
+  return has
+    ? selected.filter((s) => s !== slug)
+    : [...selected, slug];
 }
